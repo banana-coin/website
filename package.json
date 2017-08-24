@@ -1,5 +1,5 @@
 {
-  "devDependencies": {
+  "dependencies": {
     "jquery": "3.2.*",
     "bootstrap": "3.3.7",
     "jquery-fancybox": "3.1.0",
