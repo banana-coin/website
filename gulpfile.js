@@ -72,6 +72,12 @@ gulp.task('static', function() {
         .pipe(gulp.dest(out + 'fonts/'));
     gulp.src(['files/**/*'])
         .pipe(gulp.dest(out + 'files/'));
+    gulp.src(['subscribe_files/**/*'])
+        .pipe(gulp.dest(out + 'subscribe_files/'));
+    gulp.src(['success_files/**/*'])
+        .pipe(gulp.dest(out + 'success_files/'));
+    gulp.src(['*.html'])
+        .pipe(gulp.dest(out));
 });
 
 gulp.task('img', function() {
