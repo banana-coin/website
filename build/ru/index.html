@@ -53,8 +53,12 @@
                     <div class="col-md-6">• Конец <b>12 Сентября 2017 13:00 GMT+03</b></div>
                     <div class="col-md-6">• Стоимость токена <b>$0.25</b> за <b>1 BCO</b></div>
                     <div class="col-md-6">• Кол-во Pre-Sale токенов: <b>1,000,000 BCO</b></div>
-                    <div class="col-md-12"><h3>Crowdsale Ethereum Address: <b>0xcb22b112bfb0b01ba37a5a74c2be29120e510ed6</b></h3></div>
-                    <div class="col-md-12"><h3>Статус: <b id="contributed">?</b></h3></div>
+                    <div class="col-md-12">
+                        <h3>Crowdsale Ethereum Address: <b>0xcb22b112bfb0b01ba37a5a74c2be29120e510ed6</b></h3>
+                    </div>
+                    <div class="col-md-12">
+                        <h3>Статус: <b id="contributed">?</b></h3>
+                    </div>
                 </div>
                 <div class="col-md-12 buttons">
                     <a href="https://docs.google.com/document/d/1u7HwnsyXDyt30jpAfqvP-b6ZnMqYQM0kGPHQnZm5X_s" target="_blank" class="btn btn-active">Инструкция</a>
@@ -67,7 +71,7 @@
         <div class="subscribe">
             <div class="container">
                 <h2>Подписаться на новости</h2>
-                <p>Узнай первым о начале BananaCoin Pre-sale</p>
+                <p>Узнай первым о BananaCoin ICO</p>
                 <form method="POST" action="https://cp.unisender.com/ru/subscribe?hash=6kcn93bw8orctth6roddm7i5ermmxudq3qq1cz3ei9r5cnxcmideo" name="subscribtion_form">
                     <div class="col-md-8"><input type="text" name="email" value="" placeholder="E-mail"></div>
                     <div class="col-md-4"><button type="submit">Подписаться</button></div>
@@ -76,29 +80,6 @@
                     <input type="hidden" name="overwrite" value="2">
                     <input type="hidden" name="is_v5" value="1">
                 </form>
-            </div>
-        </div>
-        <div class="countdown">
-            <div class="container">
-                <h2 data-onstart="Pre sale начался">До начала Bananacoin Pre-Sale</h2>
-                <div class="row">
-                    <div class="days">
-                        Дней
-                        <span>00</span>
-                    </div>
-                    <div class="hours">
-                        Часов
-                        <span>00</span>
-                    </div>
-                    <div class="minutes">
-                        Минут
-                        <span>00</span>
-                    </div>
-                    <div class="seconds">
-                        Секунд
-                        <span>00</span>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="about">
@@ -281,26 +262,26 @@
 
 </html>
 
-<script>
-    var numberWithCommas = function(x) {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }
-    var get_contributed_in_progress = false;
-    var $contributed = $("#contributed");
-    var get_contributed = function () {
-        if (get_contributed_in_progress === true) {
-            return;
-        }
-        get_contributed_in_progress = true;
-        $.get("/get_contributed2").done(function (data) {
-            $contributed.html(data);
-            get_contributed_in_progress = false;
-        })
-            .fail(function () {
-                $contributed.html('?');
-                get_contributed_in_progress = false;
-            });
-    };
-    get_contributed();
-    setInterval(get_contributed, 5000);
-</script>
+        <script>
+            var numberWithCommas = function(x) {
+                return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+            var get_contributed_in_progress = false;
+            var $contributed = $("#contributed");
+            var get_contributed = function() {
+                if (get_contributed_in_progress === true) {
+                    return;
+                }
+                get_contributed_in_progress = true;
+                $.get("/get_contributed2").done(function(data) {
+                        $contributed.html(data);
+                        get_contributed_in_progress = false;
+                    })
+                    .fail(function() {
+                        $contributed.html('?');
+                        get_contributed_in_progress = false;
+                    });
+            };
+            get_contributed();
+            setInterval(get_contributed, 5000);
+        </script>

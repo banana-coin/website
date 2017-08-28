@@ -20,8 +20,12 @@
                     <div class="col-md-6">• Deadline at <b>12 Sep 2017 13:00 GMT+03</b></div>
                     <div class="col-md-6">• The price is <b>$0.25</b> per <b>1 BCO</b></div>
                     <div class="col-md-6">• Pre-Sale Supply: <b>1,000,000 BCO</b></div>
-                    <div class="col-md-12"><h3>Crowdsale Ethereum Address: <b>0xcb22b112bfb0b01ba37a5a74c2be29120e510ed6</b></h3></div>
-                    <div class="col-md-12"><h3>Current Status: <b id="contributed">?</b></h3></div>
+                    <div class="col-md-12">
+                        <h3>Crowdsale Ethereum Address: <b>0xcb22b112bfb0b01ba37a5a74c2be29120e510ed6</b></h3>
+                    </div>
+                    <div class="col-md-12">
+                        <h3>Current Status: <b id="contributed">?</b></h3>
+                    </div>
                 </div>
                 <div class="col-md-12 buttons">
                     <a href="https://docs.google.com/document/d/1Tf4yet_ECK0NKACR4U-bhzZfthDZdNCHYXCSuRu3RZs" target="_blank" class="btn btn-active">See The Guide</a>
@@ -43,29 +47,6 @@
                     <input type="hidden" name="overwrite" value="2">
                     <input type="hidden" name="is_v5" value="1">
                 </form>
-            </div>
-        </div>
-        <div class="countdown">
-            <div class="container">
-                <h2 data-onstart="Pre sale начался">香蕉币Presale开始以前</h2>
-                <div class="row">
-                    <div class="days">
-                        日
-                        <span>00</span>
-                    </div>
-                    <div class="hours">
-                        小时
-                        <span>00</span>
-                    </div>
-                    <div class="minutes">
-                        分钟
-                        <span>00</span>
-                    </div>
-                    <div class="seconds">
-                        秒
-                        <span>00</span>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="about">
@@ -184,26 +165,26 @@
 
         @import "footer.html"
 
-<script>
-    var numberWithCommas = function(x) {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }
-    var get_contributed_in_progress = false;
-    var $contributed = $("#contributed");
-    var get_contributed = function () {
-        if (get_contributed_in_progress === true) {
-            return;
-        }
-        get_contributed_in_progress = true;
-        $.get("/get_contributed2").done(function (data) {
-            $contributed.html(data);
-            get_contributed_in_progress = false;
-        })
-            .fail(function () {
-                $contributed.html('?');
-                get_contributed_in_progress = false;
-            });
-    };
-    get_contributed();
-    setInterval(get_contributed, 5000);
-</script>
+        <script>
+            var numberWithCommas = function(x) {
+                return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+            var get_contributed_in_progress = false;
+            var $contributed = $("#contributed");
+            var get_contributed = function() {
+                if (get_contributed_in_progress === true) {
+                    return;
+                }
+                get_contributed_in_progress = true;
+                $.get("/get_contributed2").done(function(data) {
+                        $contributed.html(data);
+                        get_contributed_in_progress = false;
+                    })
+                    .fail(function() {
+                        $contributed.html('?');
+                        get_contributed_in_progress = false;
+                    });
+            };
+            get_contributed();
+            setInterval(get_contributed, 5000);
+        </script>

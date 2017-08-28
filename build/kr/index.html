@@ -54,8 +54,12 @@
                     <div class="col-md-6">• 2017년 9월 12일 13:00 GMT+03에 마감</div>
                     <div class="col-md-6">• 1 BCO 토큰의 가격은 $0.25 입니다.</div>
                     <div class="col-md-6">• 사전판매 발행량: 1,000,000 BCO</div>
-                    <div class="col-md-12"><h3>크라우드세일 이더리움 주소: <b>0xcb22b112bfb0b01ba37a5a74c2be29120e510ed6</b></h3></div>
-                    <div class="col-md-12"><h3>현재 구매 수량: <b id="contributed">?</b></h3></div>
+                    <div class="col-md-12">
+                        <h3>크라우드세일 이더리움 주소: <b>0xcb22b112bfb0b01ba37a5a74c2be29120e510ed6</b></h3>
+                    </div>
+                    <div class="col-md-12">
+                        <h3>현재 구매 수량: <b id="contributed">?</b></h3>
+                    </div>
                 </div>
                 <div class="col-md-12 buttons">
                     <a href="https://docs.google.com/document/d/17Abyay9ur5M3Ys87asLEteWmeezJCDFJMJIC3tQkSg0" target="_blank" class="btn btn-active">See The Guide</a>
@@ -77,29 +81,6 @@
                     <input type="hidden" name="overwrite" value="2">
                     <input type="hidden" name="is_v5" value="1">
                 </form>
-            </div>
-        </div>
-        <div class="countdown">
-            <div class="container">
-                <h2 data-onstart="Pre sale начался">BananaCoin 사전 판매 시작까지 남은 시간</h2>
-                <div class="row">
-                    <div class="days">
-                        일
-                        <span>00</span>
-                    </div>
-                    <div class="hours">
-                        시
-                        <span>00</span>
-                    </div>
-                    <div class="minutes">
-                        분
-                        <span>00</span>
-                    </div>
-                    <div class="seconds">
-                        초
-                        <span>00</span>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="about">
@@ -268,26 +249,26 @@
 
 </html>
 
-<script>
-    var numberWithCommas = function(x) {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }
-    var get_contributed_in_progress = false;
-    var $contributed = $("#contributed");
-    var get_contributed = function () {
-        if (get_contributed_in_progress === true) {
-            return;
-        }
-        get_contributed_in_progress = true;
-        $.get("/get_contributed2").done(function (data) {
-            $contributed.html(data);
-            get_contributed_in_progress = false;
-        })
-            .fail(function () {
-                $contributed.html('?');
-                get_contributed_in_progress = false;
-            });
-    };
-    get_contributed();
-    setInterval(get_contributed, 5000);
-</script>
+        <script>
+            var numberWithCommas = function(x) {
+                return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+            var get_contributed_in_progress = false;
+            var $contributed = $("#contributed");
+            var get_contributed = function() {
+                if (get_contributed_in_progress === true) {
+                    return;
+                }
+                get_contributed_in_progress = true;
+                $.get("/get_contributed2").done(function(data) {
+                        $contributed.html(data);
+                        get_contributed_in_progress = false;
+                    })
+                    .fail(function() {
+                        $contributed.html('?');
+                        get_contributed_in_progress = false;
+                    });
+            };
+            get_contributed();
+            setInterval(get_contributed, 5000);
+        </script>
