@@ -76,6 +76,8 @@ gulp.task('static', function() {
         .pipe(gulp.dest(out + 'subscribe_files/'));
     gulp.src(['success_files/**/*'])
         .pipe(gulp.dest(out + 'success_files/'));
+    gulp.src(['pre-ico/**/*'])
+        .pipe(gulp.dest(out + 'pre-ico/'));
     gulp.src(['/*.html'])
         .pipe(gulp.dest(out));
 });
