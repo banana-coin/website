@@ -277,10 +277,9 @@ automation of processes in the agroindustrial complex, sale of equipment and tra
         ga('create', 'UA-104489994-1', 'auto');
         ga('send', 'pageview');
 
-        function numberWithCommas(x) {
+        var numberWithCommas = function(x) {
             return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         }
-
         var get_contributed_in_progress = false;
         var $contributed = $("#contributed");
         var get_contributed = function () {

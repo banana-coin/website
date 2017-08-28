@@ -23,7 +23,6 @@
                 <ul class="nav navbar-nav">
                     <li><a href="/kr">프로젝트</a></li>
                     <li><a href="/kr/plantation/">친환경 농장</a></li>
-                    <li><a href="/pre-ico/">Pre-ICO</a></li>
                     <li><a href="/profile">Profile</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -49,20 +48,20 @@
     <main>
         <div class="intro">
             <div class="container">
-                <h1>세계 최초 바나나 농장 블락체인 옵션</h1>
-                <div class="advantages">
-                    <div class="col-md-6"><img src="/img/number1.png" width="24" height="24" border="0"> 바나나는 세계 최고의 상품중 하나입니다</div>
-                    <div class="col-md-6"><img src="/img/3.png" width="24" height="24" border="0"> 3년의 바나나 재배 경험</div>
-                    <div class="col-md-6"><img src="/img/savings.png" width="24" height="24" border="0"> 2백만 달러 이상 투자된 사업</div>
-                    <div class="col-md-6"><img src="/img/progress.png" width="24" height="24" border="0"> 빠른 사업 확장 가능성</div>
-                    <div class="col-md-6"><img src="/img/eco.png" width="24" height="24" border="0"> 최초의 유기농 재배지</div>
-                    <div class="col-md-6"><img src="/img/govern.png" width="24" height="24" border="0"> 라오스 정부의 지원</div>
+                <h1>Pre-ICO is ON</h1>
+                <div class="advantages" style="word-wrap: break-word;">
+                    <div class="col-md-6">• Starts at <b>28 Aug 2017 13:00 GMT+03</b></div>
+                    <div class="col-md-6">• Deadline at <b>12 Sep 2017 13:00 GMT+03</b></div>
+                    <div class="col-md-6">• The price is <b>$0.25</b> per <b>1 BCO</b></div>
+                    <div class="col-md-6">• Pre-Sale Supply: <b>1,000,000 BCO</b></div>
+                    <div class="col-md-12"><h3>Crowdsale Ethereum Address: <b>0xcb22b112bfb0b01ba37a5a74c2be29120e510ed6</b></h3></div>
+                    <div class="col-md-12"><h3>Current Status: <b id="contributed">?</b></h3></div>
                 </div>
                 <div class="col-md-12 buttons">
-                    <a href="#subscribe" id="subscribe" class="btn btn-active">토큰 사전 판매 참여</a>
-                    <a href="/files/Bananaсoin_wp_1.4_KOR.pdf" target="_blank" class="btn">백서 다운로드</a>
-                    <a href="plan/" class="btn">사업 계획</a>
-                    <a class="btn fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/_nwWJzXZYVs?autoplay=1">영상을 확인하세요!</a>
+                    <a href="https://docs.google.com/document/d/17Abyay9ur5M3Ys87asLEteWmeezJCDFJMJIC3tQkSg0" target="_blank" class="btn btn-active">See The Guide</a>
+                    <a href="/files/Bananacoin_Eng_wp_1.4.pdf" target="_blank" class="btn">Download White Paper</a>
+                    <a href="plan/" class="btn">Business plan</a>
+                    <a class="btn fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/_nwWJzXZYVs?autoplay=1">Watch video</a>
                 </div>
             </div>
         </div>
@@ -268,3 +267,27 @@
 </script>
 
 </html>
+
+<script>
+    var numberWithCommas = function(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+    var get_contributed_in_progress = false;
+    var $contributed = $("#contributed");
+    var get_contributed = function () {
+        if (get_contributed_in_progress === true) {
+            return;
+        }
+        get_contributed_in_progress = true;
+        $.get("/get_contributed2").done(function (data) {
+            $contributed.html(data);
+            get_contributed_in_progress = false;
+        })
+            .fail(function () {
+                $contributed.html('?');
+                get_contributed_in_progress = false;
+            });
+    };
+    get_contributed();
+    setInterval(get_contributed, 5000);
+</script>
