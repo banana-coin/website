@@ -98,7 +98,7 @@ a {
 
 .contacts {
     padding: 4vh 0;
-    .container > * {
+    .container>* {
         padding: 10px;
         h4 {
             margin: 0;
@@ -123,7 +123,8 @@ a {
         }
         &:hover:before {
             opacity: .8;
-            left: -2px; right: 3px;
+            left: -2px;
+            right: 3px;
             background: darken($yellow, 30%)
         }
     }
@@ -213,19 +214,22 @@ a {
     padding: 8vh 0;
     text-align: center;
     background: #FFF;
-    h2 { 
+    h2 {
         font-size: 36px;
         font-weight: 100;
         margin: 2vh 0 1vh 0;
     }
-    p { margin-bottom: 2vh; }
+    p {
+        margin-bottom: 2vh;
+    }
     form {
         width: 100%;
         max-width: 500px;
         display: block;
         margin: 1vh auto;
     }
-    input, button {
+    input,
+    button {
         border: none;
         color: #000;
         border-radius: 21px;
@@ -246,13 +250,16 @@ a {
     margin: 8vh 0;
     text-align: center;
     font-size: 36px;
-    h2 { 
+    h2 {
         font-size: 36px;
         font-weight: 100;
         margin: 0 0 4vh 0;
     }
-    .row { max-width: 600px; margin: 0 auto }
-    .row > * {
+    .row {
+        max-width: 600px;
+        margin: 0 auto
+    }
+    .row>* {
         width: 25%;
         float: left;
         font-size: 16px;
@@ -328,22 +335,33 @@ a {
     padding: 4vh 0;
     text-align: center;
     background: #FFF;
-    h2 { 
+    h2 {
         font-size: 36px;
         font-weight: 100;
         margin: 2vh 0 1vh 0;
     }
-    p { max-width: 500px; margin: 0 auto 2vh auto }
+    p {
+        max-width: 500px;
+        margin: 0 auto 2vh auto
+    }
     h3 {
         font-weight: 100;
     }
-    p { color: #666 }
+    p {
+        color: #666
+    }
     .col-md-4 {
         padding: 20px;
         text-align: center;
-        img { border-radius: 50%; width: 200px; height: 200px; margin: 4vh 0 0 0; }
+        img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin: 4vh 0 0 0;
+        }
     }
-    a.various { // для видео
+    a.various {
+        // для видео
         display: block;
         width: 200px;
         height: 200px;
@@ -355,26 +373,33 @@ a {
             border-radius: 0;
             margin: 0;
         }
-        &:before, &:after {
-            content: ''; display: block;
+        &:before,
+        &:after {
+            content: '';
+            display: block;
             position: absolute;
             opacity: 0;
             transition: opacity .2s;
         }
-        &:before { 
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0,0,0,.5);
+        &:before {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, .5);
         }
         &:after {
-            top: calc(50% - 25px); left: calc(50% - 10px);
+            top: calc(50% - 25px);
+            left: calc(50% - 10px);
             width: 0;
             height: 0;
             border-style: solid;
             border-width: 25px 0 25px 30px;
-            border-color: transparent transparent transparent rgba(255,255,255,.6);
+            border-color: transparent transparent transparent rgba(255, 255, 255, .6);
         }
         &:hover {
-            &:before, &:after {
+            &:before,
+            &:after {
                 opacity: 1;
             }
         }
