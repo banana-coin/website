@@ -54,7 +54,7 @@ gulp.task('static', function() {
     };
     var mainLang = 'en';
     for (var l in langs) {
-        var folders = ['plantation/', 'faq/', 'plan/'];
+        var folders = ['plantation/', 'faq/', 'plan/', 'token/'];
         gulp.src([langs[l] + 'index.html'])
             .pipe(htmlImport('./templates/' + langs[l]))
             .pipe(removeHtmlComments())
