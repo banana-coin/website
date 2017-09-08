@@ -10,7 +10,69 @@
 </head>
 
 <body>
-    @import "nav.html"
+    
+<script>
+    ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2098751990353631');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2098751990353631&ev=PageView&noscript=1"
+/></noscript>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"></button>
+            <a class="navbar-brand" href="/">
+                <img alt="Brand" src="/img/logo.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Project</a></li>
+                <li><a href="/plantation/">Eco plantation</a></li>
+                <li><a href="/profile">Profile</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="social">
+                    <a href="https://t.me/bananacoineng" target="_blank" class="fa fa-telegram"></a>
+                    <a href="https://twitter.com/Bananacoinico" target="_blank" class="fa fa-twitter-square"></a>
+                    <a href="https://www.facebook.com/bananacoin/" target="_blank" class="fa fa-facebook-official"></a>
+                    <a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>
+                    <a href="https://www.instagram.com/eng_bananacoin.io/" target="_blank" class="fa fa-instagram"></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="flag gb"></span>English <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/cn"><span class="flag cn"></span>中文</a></li>
+                        <li><a href="/ru"><span class="flag ru"></span>Русский</a></li>
+                        <li><a href="/kr"><span class="flag kr"></span>한국어</a></li>
+                        <li><a href="/jp/"><span class="flag jp"></span>日本</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
     <main>
         <div class="heading">
             <div class="container">
@@ -43,7 +105,7 @@
                         <p>Мы гарантируем пересчет количества токенов по курсу, актуальному на момент первоначального приобретения. Корректировка курса произойдет в течение 24 часов с момента совершения перевода на новый смарт-контракт.</p>
                         <p>Подробная инструкция для кошелька <b>MyEtherWallet</b> по возврату средств со старого краудсейл контракта (для других кошельков схема будет аналогичная, пишите <a href="http://t.me/adastreamer">adastreamer</a> для получения консультации):
 
-                            <h3><a href="https://docs.google.com/document/d/1Cg9WNyt6LE6A3wZqdJd-n3NgawvQKA70R0V4EYQkKCw" target="_blank">https://docs.google.com/document/d/1Cg9WNyt6LE6A3wZqdJd-n3NgawvQKA70R0V4EYQkKCw</a></h3>
+                            <h3><a href="https://docs.google.com/document/d/11TH-6XQZsMSuwt-wbjSczZ21NFz1YohgSDhlDIHExW0/edit?usp=sharing" target="_blank">https://docs.google.com/document/d/11TH-6XQZsMSuwt-wbjSczZ21NFz1YohgSDhlDIHExW0/edit?usp=sharing</a></h3>
 
                             <p>В качестве бонуса, мы дарим +10% от токенов, за причиненные неудобства.
 
@@ -57,4 +119,45 @@
 
             </div>
 
-            @import "footer.html"
+            <div class="container">
+    <div class="row contacts">
+        <div class="col-md-4">
+            <h4>E-mail</h4>
+            <a href="mailto:info@bananacoin.io">info@bananacoin.io</a>
+        </div>
+        <div class="col-md-4">
+            <h4>Social media</h4>
+            <a href="https://t.me/bananacoineng">Telegram</a>
+            <a href="https://twitter.com/Bananacoinico">Twitter</a>
+            <a href="https://www.facebook.com/bananacoin/">Facebook</a>
+            <a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA">Youtube</a>
+            <a href="https://www.instagram.com/eng_bananacoin.io/">Instagram</a>
+        </div>
+    </div>
+</div>
+</main>
+<footer>
+    <div class="container">
+        <div class="col-md-6">&copy; 2017 <a href="http://www.bananacoin.io">bananacoin.io</a></div>
+        <div class="col-md-6">World first blockchain option for banana plantation</div>
+    </div>
+</footer>
+<script type="text/javascript" src="/js/app.js"></script>
+</body>
+<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-104489994-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</html>
