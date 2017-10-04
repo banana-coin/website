@@ -3,8 +3,11 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>BananaCoin : New standard upgrade</title>
+    <title>BananaCoin | Private sale</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="google-site-verification" content="zHG3u_bHBY3frWHXm4QZaGQBnbCUjYESWJwAJQeGfBA">
+    <meta name="description" content="Next level cryptocurrency of 2017. A new reliable ico is gaining popularity. Investments in the fastest growing token with 100% growth to 2018.">
+    <meta name="keys" content="cryptocurrency, profitable cryptocurrency 2017, cryptocurrency news 2017, russian cryptocurrency, cryptocurrency investments, blockchain and cryptocurrency, next level cryptocurrency, new cryptocurrency 2017, new blockchain, next-level cryptocurrency 2017, top 10 cryptocurrency, cryptocurrency 2018, blockchain campaign, blockchain 2017, ico blockchain, telegram cryptocurrency, popular cryptocurrency, reliable cryptocurrency">
     <link rel="stylesheet" type="text/css" href="/styles.css" />
     <link href="/img/favicon.ico" rel="icon">
 </head>
@@ -76,49 +79,32 @@
     </div>
 </nav>
     <main>
-        <div class="heading">
+        <div class="intro">
             <div class="container">
-                <h2>New standard upgrade</h2>
+                <h1>Private sale</h1>
+
+                <div class="advantages" style="word-wrap: break-word;">
+                    <div class="col-md-6">• Starts at <b>04 Oct 2017 23:00 GMT+03</b></div>
+                    <div class="col-md-6">• Deadline at <b>18 Oct 2017 23:00 GMT+03</b></div>
+                    <div class="col-md-6">• The price is <b>$0.425</b> per <b>1 BCO</b></div>
+                    <div class="col-md-6">• Private-Sale Supply: <b>600,000 BCO</b></div>
+                    <div class="col-md-12">
+                        <h3>Crowdsale Ethereum Address: <b>0x79c35f96604665F505B63cfedA725bEE4d435C4e</b></h3>
+                        <h3>Gas limit: <b>100,000</b></h3>
+                    </div>
+
+                    <div class="col-md-12">
+                        <h3>Current Status: <b id="contributed">?</b></h3>
+                    </div>
+                </div>
+                <div class="col-md-12 buttons">
+                    <a href="/files/Bananacoin_Eng_wp_1.4.pdf" target="_blank" class="btn">Download White Paper</a>
+                    <a href="plan/" class="btn">Business plan</a>
+                </div>
             </div>
         </div>
-        <div class="about">
-            <div class="container plantation">
 
-                <h3>We read all your advices about buy-back of tokens during ICO and we've decided to make a global update of our token.</h3>
-                <p>Meet BananaCoin Extended - a token with additional features <b>
-                <a href="https://github.com/Dexaran/ERC23-tokens/tree/Recommended#erc23-token-standard">ERC223</a></b>.</p>
-
-                <p>Current token BananaCoin 1.0 is ERC20 standard, which is ok for basic purposes (send and store), but it doesn't have additional features, which can be used for transparent buy-back of the tokens.</p>
-
-                <p>We've added these functions to automate the buy-back process.</p>
-                </p>
-                <p><br/>New token address (<u>do not send ETH to this address, it's a token, not a crowd-sale contract</u>):
-                    <h3><a href="https://etherscan.io/token/0x865d176351f287fe1b0010805b110d08699c200a" target="_blank">https://etherscan.io/token/0x865d176351f287fe1b0010805b110d08699c200a</a></b>.</h3>
-                    <p><br/><b>Attention!
-Due to update and several bug-fixes, smart-contract was updated as well.
-</b></p>
-<p>Actual smart-contract version (<u>yes, here you can send your ETH</u>):
-                        <h3>
-                            <a href="https://etherscan.io/address/0x87be69e5c196e0309cdf6957fd7141fda1df2b97" target="_blank">https://etherscan.io/address/0x87be69e5c196e0309cdf6957fd7141fda1df2b97</a>.</h3>
-
-                        <p>All investors who used old smart-contract need to make a REFUND and send ETH to new address.</p>
-
-                        <p>We guarantee that same amount of tokens will be issued. We will send additional tokens to your account in 24 hours after sending ETH to new smart-contract.</p>
-                        <p>Step-by-step instruction for <b>MyEtherWallet</b> for REFUND. Write to Eugene (<a href="http://t.me/adastreamer">adastreamer</a>) if help needed:
-
-                            <h3><a href="https://docs.google.com/document/d/11TH-6XQZsMSuwt-wbjSczZ21NFz1YohgSDhlDIHExW0" target="_blank">https://docs.google.com/document/d/11TH-6XQZsMSuwt-wbjSczZ21NFz1YohgSDhlDIHExW0</a></h3>
-
-                            <p>We will issue 10% bonus for all crowdsale-contract investors for this action.
-
-                                <h3>If you use Profile section to get your tokens, you have nothing to do. You will get your Extended Tokens automatically. You will get email notification.</h3>
-
-
-
-
-
-            </div>
-
-            <div class="container">
+        <div class="container">
     <div class="row contacts">
         <div class="col-md-4">
             <h4>E-mail</h4>
@@ -162,3 +148,27 @@ Due to update and several bug-fixes, smart-contract was updated as well.
 </script>
 
 </html>
+
+        <script>
+            var numberWithCommas = function(x) {
+                return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+            var get_contributed_in_progress = false;
+            var $contributed = $("#contributed");
+            var get_contributed = function() {
+                if (get_contributed_in_progress === true) {
+                    return;
+                }
+                get_contributed_in_progress = true;
+                $.get("/get_contributed2").done(function(data) {
+                        $contributed.html(data);
+                        get_contributed_in_progress = false;
+                    })
+                    .fail(function() {
+                        $contributed.html('?');
+                        get_contributed_in_progress = false;
+                    });
+            };
+            get_contributed();
+            //setInterval(get_contributed, 5000);
+        </script>
