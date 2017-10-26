@@ -2,27 +2,39 @@ $(document).ready(function () {
     $('.fancybox').fancybox({
         padding: 0
     });
-    var point = 1503916273;
-    var sec = 0;
 
-    var startInterval = setInterval(function () {
-        var left = point - Math.round(Date.now() / 1000);
-        if (left > 0 && sec < 16) {
-            left = seconds_to_data(left);
-            $('.countdown .days span').text(left.days.pad());
-            $('.countdown .hours span').text(left.hours.pad());
-            $('.countdown .minutes span').text(left.minutes.pad());
-            $('.countdown .seconds span').text(left.seconds.pad());
-            sec = left.seconds;
-        } else if (sec > 15) {
-            sec--;
-            $('.countdown .seconds span').text(sec);
-        } else {
-            $('.countdown h2').text($('.countdown h2').attr('data-onstart'));
-            $('.countdown .row').remove();
-            clearInterval(startInterval);
-        }
-    }, 1000);
+    if ($('.countdown .days').length) {
+        var point = $('.countdown').attr('data-point') ? $('.countdown').attr('data-point') : 1503916273;
+        var sec = 0;
+        var startInterval = setInterval(function () {
+            var left = point - Math.round(Date.now() / 1000);
+            if (left > 0 && sec < 16) {
+                left = seconds_to_data(left);
+                $('.countdown .days span').text(left.days.pad());
+                $('.countdown .hours span').text(left.hours.pad());
+                $('.countdown .minutes span').text(left.minutes.pad());
+                $('.countdown .seconds span').text(left.seconds.pad());
+                sec = left.seconds;
+            } else if (sec > 15) {
+                sec--;
+                $('.countdown .seconds span').text(sec);
+            } else {
+                $('.countdown h2').text($('.countdown h2').attr('data-onstart'));
+                $('.countdown .row').remove();
+                clearInterval(startInterval);
+            }
+        }, 1000);
+    }
+
+    $('*[data-clipboard]').css('cursor', 'pointer');
+    $(document).on('click', '*[data-clipboard]', function(){
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(this).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+        alert('Copied to clipboard');
+    });
 });
 
 function seconds_to_data(s) {
