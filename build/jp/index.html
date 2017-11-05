@@ -13,7 +13,21 @@
 </head>
 
 <body>
-    
+    <script type="text/javascript">
+    function sendEvent(eventName) {
+        try {
+            ga('send', 'event', 'btn_click', eventName);
+        } catch (e) {}
+
+        try {
+            fbq('track', eventName);
+        } catch (e) {}
+
+        console.log("FIRED sendEvent -> " + eventName);
+    }
+</script>
+
+
 <script type="text/javascript">
     (function() {
         function Build(name, args) {
@@ -137,7 +151,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="social">
-                    <a href="https://t.me/bananacoinjapan" target="_blank" class="fa fa-telegram"></a>
+                    <a href="https://t.me/bananacoinjapan" onClick="sendEvent('ViewContent')" target="_blank" class="fa fa-telegram"></a>
                     <a href="/img/qrcode_for_bananacoin_wechat.jpg" target="_blank" class="fa fa-wechat"></a>
                     <a href="https://twitter.com/Bananacoinico" target="_blank" class="fa fa-twitter-square"></a>
                     <a href="https://www.facebook.com/bananacoin/" target="_blank" class="fa fa-facebook-official"></a>
@@ -169,8 +183,8 @@
                     </div>
                 </div>
                 <div class="col-md-12 buttons">
-                    <a href="https://goo.gl/forms/pKCYyOURcMkxzcQJ3" target="_blank" class="btn btn-active">Join private sale</a>
-                    <a href="/files/BananaCoinwp1.4JP.pdf" target="_blank" class="btn">WhitePaperをダウンロードする </a>
+                    <a href="https://goo.gl/forms/pKCYyOURcMkxzcQJ3" onClick="sendEvent('ViewContent')" target="_blank" class="btn btn-active">Join private sale</a>
+                    <a href="/files/BananaCoinwp1.4JP.pdf" onClick="sendEvent('ViewContent')" target="_blank" class="btn">WhitePaperをダウンロードする </a>
                     <a href="http://www.bananacoin.ru/plan/" class="btn">ビジネス計画</a>
                 </div>
             </div>
@@ -181,7 +195,7 @@
                 <p>BananaCoin ICO開始についてすぐに知りちたい！</p>
                 <form method="POST" action="https://cp.unisender.com/ru/subscribe?hash=6kcn93bw8orctth6roddm7i5ermmxudq3qq1cz3ei9r5cnxcmideo" name="subscribtion_form">
                     <div class="col-md-8"><input type="text" name="email" value="" placeholder="E-mail"></div>
-                    <div class="col-md-4"><button type="submit">Eメール </button></div>
+                    <div class="col-md-4"><button type="submit" onClick="sendEvent('Lead')">Eメール </button></div>
                     <input type="hidden" name="charset" value="UTF-8">
                     <input type="hidden" name="default_list_id" value="10608469">
                     <input type="hidden" name="overwrite" value="2">

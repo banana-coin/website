@@ -10,7 +10,21 @@
 </head>
 
 <body>
-    
+    <script type="text/javascript">
+    function sendEvent(eventName) {
+        try {
+            ga('send', 'event', 'btn_click', eventName);
+        } catch (e) {}
+
+        try {
+            fbq('track', eventName);
+        } catch (e) {}
+
+        console.log("FIRED sendEvent -> " + eventName);
+    }
+</script>
+
+
 <script type="text/javascript">
     (function() {
         function Build(name, args) {
@@ -135,7 +149,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="social">
-                        <a href="https://t.me/bananacoinkorea" target="_blank" class="fa fa-telegram"></a>
+                        <a href="https://t.me/bananacoinkorea" target="_blank" onClick="sendEvent('ViewContent')" class="fa fa-telegram"></a>
                         <a href="/img/qrcode_for_bananacoin_wechat.jpg" target="_blank" class="fa fa-wechat"></a>
                         <a href="https://twitter.com/BananaCoinKorea" target="_blank" class="fa fa-twitter-square"></a>
                         <a href="https://www.facebook.com/groups/bananacoinkorea/" target="_blank" class="fa fa-facebook-official"></a>
