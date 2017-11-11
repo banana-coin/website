@@ -1,0 +1,81 @@
+.roadmap {
+    background: $yellow;
+    padding: 3vh 0 2vh 0;
+    h2 {
+        text-align: center;
+    }
+    ul {
+        list-style: none;
+        width: 800px;
+        max-width: 100%;
+        position: relative;
+        margin: 4vh auto;
+        padding: 0 0 3vh 0;
+        &:before {
+            content: '';
+            display: block;
+            //background: $black;
+            background-image: linear-gradient(to top, $yellow 0, $black 150px);
+            position: absolute;
+            width: 2px;
+            top: 16px;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+        li {
+            @include clearfix;
+            position: relative;
+            padding: 10px 2vw;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                background: $yellow;
+                border: solid 2px #000000;
+                outline: 4px solid $yellow;
+                border-radius: 50%;
+                top: 15px;
+            }
+            &:nth-child(even) {
+                text-align: right;
+                margin-right: 50%;
+                &:before { right: -7px; }
+                p { float: right }
+            }
+            &:nth-child(odd) {
+                margin-left: 50%;
+                &:before { left: -7px; }
+                p { float: left }
+            }
+            h4 {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 1.5;
+                color: $black;
+            }
+            p {
+                font-size: 14px;
+                line-height: 1.43;
+                color: $black;
+            }
+            &:not(.completed) {
+                p {
+                    background: $white;
+                    padding: 10px;
+                    border-radius: 4px;
+                    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+                }
+                &:before {
+                    background-color: $white;
+                }
+            }
+            &.completed {
+                p { color: darken($yellow, 35%); }
+                b { font-weight: normal; }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{% set roadmap = { 
+    title: 'Roadmap', 
+    steps: [
+        { completed: true, title: 'March 2015', description: 'Work in cooperation with chinese specialists on a leased plantation' },
+        { completed: true, title: 'June 2016', description: 'Getting started in&nbsp;our own&nbsp;plantation' },
+        { completed: true, title: 'December 2016', description: 'First harvest' },
+        { completed: true, title: 'September 2017', description: '<b>1st stage.</b><br> Pre-ICO' },
+        { completed: false, title: 'October — 30 November 2017', description: '<b>2nd stage</b>.<br>Private sale' },
+        { completed: false, title: '25 November — 30 december 2017', description: '<b>3rd stage</b>.<br>ICO' },
+        { completed: false, title: 'November 2017 — March 2018', description: '<b>4rd stage</b>.<br>Ground preparation' },
+        { completed: false, title: 'April — December 2018', description: '<b>5th stage</b>.<br>Growing bananas on a new plantation' },
+        { completed: false, title: 'December 2018', description: '<b>6th stage</b>.<br>Token' },
+    ]
+} %}
+{% if lang == 'ru' %}
+    {% set roadmap = { title: 'Путь', steps: roadmap.steps } %}
+{% endif %}
+<div class="roadmap">
+    <h2>{{ roadmap.title }}</h2>
+    <ul>
+        {% for step in roadmap.steps %}
+        <li{{ step.completed ? ' class="completed"' : '' }}>
+            <h4>{{ step.title }}</h4>
+            <p>{{ step.description }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
