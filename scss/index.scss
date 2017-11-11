@@ -2,11 +2,26 @@
 @import 'fancybox';
 @import 'fontawesome/font-awesome';
 
-@import 'colors';
+@font-face {
+    font-family: 'London Two';
+    src: url('/fonts/londontwo-webfont.woff2') format('woff2'),
+         url('/fonts/londontwo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@import 'colors';
+$font-size-h2: 50px;
 $font-family-sans-serif: 'Open Sans', sans-serif;
 $font-family-serif: $font-family-sans-serif;
 $font-family-base: $font-family-sans-serif;
+
+body.en {
+    h1, h2, h3 { 
+        font-family: 'London Two', $font-family-sans-serif;
+        font-weight: normal;
+    }
+}
 
 /* BOOTSTRAP */
 // Core variables and mixins
