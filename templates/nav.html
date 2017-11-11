@@ -7,7 +7,6 @@
         try {
             fbq('track', eventName);
         } catch (e) {}
-
         console.log("FIRED sendEvent -> " + eventName);
     }
 </script>
@@ -120,38 +119,36 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/46346796" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-toggleable-md navbar-fixed-top">
+    <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"></button>   
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"></button>
-            <a class="navbar-brand" href="/">
-                <img alt="Brand" src="/img/logo.png">
-            </a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="/">Project</a></li>
-                <li><a href="/plantation/">Eco plantation</a></li>
-                <li><a href="/faq/">F.A.Q</a></li>
-                <li><a href="/profile">Profile</a></li>
+		<a class="navbar-brand" href="/">
+            <img alt="Bananacoin" src="/img/logo.png">
+		</a>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="mr-auto hidden-md-down"></ul>
+            <ul class="navbar-nav">
+                {% for n in nav %}
+                <li class="nav-item"><a class="nav-link" href="{{ n.url }}">{{ n.title }}</a></li>                
+                {% endfor %}
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="social">
-                    <a href="https://t.me/bananacoineng" onClick="sendEvent('ViewContent')" target="_blank" class="fa fa-telegram"></a>
-                    <a href="/img/qrcode_for_bananacoin_wechat.jpg" target="_blank" class="fa fa-wechat"></a>
-                    <a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter-square"></a>
-                    <a href="https://www.facebook.com/bananacoinENG/" target="_blank" class="fa fa-facebook-official"></a>
-                    <a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>
-                    <a href="https://www.instagram.com/eng_bananacoin.io/" target="_blank" class="fa fa-instagram"></a>
+                    {% if socials %}
+                    {% for social in socials %}
+                    {{ social }}
+                    {% endfor %}
+                    {% endif %}
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="flag gb"></span>English <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/cn"><span class="flag cn"></span>中文</a></li>
-                        <li><a href="/ru"><span class="flag ru"></span>Русский</a></li>
-                        <li><a href="/kr"><span class="flag kr"></span>한국어</a></li>
-                        <li><a href="/jp/"><span class="flag jp"></span>日本</a></li>
-                    </ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ langs[lang].title }}</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {% for k, l in langs %}
+                        {% if k != lang %}
+                        <a class="dropdown-item" href="{{ l.link }}">{{ l.title }}</a>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
                 </li>
             </ul>
         </div>

@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "jquery": "3.2.*",
-    "bootstrap": "3.3.7",
+    "bootstrap": "4.0.0-alpha.6",
     "jquery-fancybox": "3.1.0",
     "gulp": "3.9.*",
     "gulp-concat": "2.6.*",
@@ -15,7 +15,7 @@
     "gulp-watch": "4.3.*",
     "imagemin-pngquant": "5.0.*",
     "del": "3.0.*",
-    "gulp-html-import": "0.0.2",
+    "gulp-twig": "1.1.1",
     "gulp-remove-html-comments": "1.0.1",
     "express": "4.15.3",
     "gulp-util": "3.0.8",
