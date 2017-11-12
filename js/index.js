@@ -57,6 +57,11 @@ $(document).ready(function () {
         get_contributed();
         //setInterval(get_contributed, 5000);
     }
+
+    $(".plantation .slider").slick({
+          infinite: false
+    });
+
     /*$('.fancybox').fancybox({
         padding: 0
     });*/

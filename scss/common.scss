@@ -7,11 +7,20 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
+
+* {
+    outline: none;
+}
+
 body.en {
     h1, h2, h3 { 
         font-family: 'London Two', $font-family-sans-serif;
         font-weight: normal;
     }
+}
+
+h2 {
+    margin: 2vh 0;
 }
 
 .panel {
@@ -27,4 +36,10 @@ body.en {
 
 ::-moz-selection {
     background: $yellow;
+}
+
+.play {
+    width: 60px; height: 60px;
+    background-image: url(/img/play.svg);
+    background-size: cover;
 }

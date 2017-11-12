@@ -1,0 +1,60 @@
+{% set plantation = { 
+    title: 'Eco plantation', 
+    status: 'First eco token pre-sale was successful. <br><b id="contributed">?</b> tokens been sold.',
+    description: 'The first environmentally friendly plantation in Laos which has released a token based on Ethereum, pegged to the export price of 1 kg of bananas.',
+    buttons: [
+        '<a href="https://goo.gl/forms/pKCYyOURcMkxzcQJ3" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-active">Join private sale</a>',
+        '<a href="/files/Bananacoin_Eng_wp_1.4.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn">Download White Paper</a>',
+        '<a href="/plan/" class="btn">Business plan</a>',
+    ]
+} %}
+
+{% if lang == 'ru' %}
+    {% set plantation = { 
+        title: 'Эко плантация', 
+        status: 'Запуск первого органического токена был успешным. <b id="contributed">?</b> токенов было продано во время Pre-sale.',
+        description: 'Bananacoin - это токен на блокчейне Ethereum, привязанная к экспортной цене 1-го килограмма бананов.',
+        buttons: plantation.buttons 
+    } %}
+{% endif %}
+
+<div class="plantation">
+    <div class="container">
+        <div class="row">
+            <h2>{{ plantation.title }}</h2>
+        </div>
+        <div class="row">
+            <div class="slider">
+                <div class="slide">
+                    <div class="image">
+                        <img src="/img/vid1.jpg">
+                        <a href="https://www.youtube.com/embed/SYd4m6IRfCM?autoplay=1" class="play"></a>
+                    </div>
+                    <div class="description">
+                        Welcome to the world of BananaCoin!
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image">
+                        <img src="/img/vid2.jpg">
+                        <a href="https://www.youtube.com/embed/SYd4m6IRfCM?autoplay=1" class="play"></a>
+                    </div>
+                    <div class="description">
+                        Legal information                            
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image">
+                        <img src="/img/vid3.jpg">
+                        <a href="https://www.youtube.com/embed/SYd4m6IRfCM?autoplay=1" class="play"></a>
+                    </div>
+                    <div class="description">
+                        Shooting of a new plot of 360 hectares
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if fullView %}<!-- описание внутри страницы -->
+    {% endif %}
+</div>

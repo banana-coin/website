@@ -63,9 +63,12 @@
 //@import 'node_modules/bootstrap/scss/bootstrap';
 /* BOOTSTRAP END */
 
+@import "node_modules/slick-carousel/slick/slick.scss";
+
 @import "common";
 @import "forms";
 @import "header";
 @import "intro";
 @import "countdown";
+@import "plantation";
 @import "roadmap";
