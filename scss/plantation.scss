@@ -86,4 +86,41 @@
             margin: -30px 0 0 -30px;
         }
     }
+    .info-item {
+        position: relative;
+        background: $white;
+        border-radius: 4px;
+        margin: 30px 0;
+        @include bananashadow();
+        padding: 45px 30px 30px 30px;
+        .icon {
+            position: absolute;
+            top: -30px;
+            left: 30px;
+            width: 60px; 
+            height: 60px;
+            border-radius: 30px;
+            background: darken($white, 40%);
+            overflow: hidden;
+            img {
+                width: 60px; height: 60px;
+            }
+            &.icon-green {
+                background: linear-gradient(135deg, #86e56c 0%,#30b473 100%);
+            }
+            &.icon-yellow {
+                background: linear-gradient(135deg, #f1da57 0%,#cbaf18 100%);
+            }
+        }
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+            color: $black;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.62;
+            color: #989898;
+        }
+    }
 }
