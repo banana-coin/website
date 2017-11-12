@@ -10,18 +10,7 @@
     font-style: normal;
 }
 
-@import 'colors';
-$font-size-h2: 50px;
-$font-family-sans-serif: 'Open Sans', sans-serif;
-$font-family-serif: $font-family-sans-serif;
-$font-family-base: $font-family-sans-serif;
-
-body.en {
-    h1, h2, h3 { 
-        font-family: 'London Two', $font-family-sans-serif;
-        font-weight: normal;
-    }
-}
+@import 'variables';
 
 /* BOOTSTRAP */
 // Core variables and mixins
@@ -74,36 +63,9 @@ body.en {
 //@import 'node_modules/bootstrap/scss/bootstrap';
 /* BOOTSTRAP END */
 
+@import "common";
+@import "forms";
 @import "header";
+@import "intro";
+@import "countdown";
 @import "roadmap";
-
-img {
-    border: none;
-    max-width: 100%;
-}
-
-.countdown {
-    margin: 8vh 0;
-    text-align: center;
-    font-size: 36px;
-    h2 {
-        font-size: 36px;
-        font-weight: 100;
-        margin: 0 0 4vh 0;
-    }
-    .row {
-        max-width: 600px;
-        margin: 0 auto
-    }
-    .row>* {
-        width: 25%;
-        float: left;
-        font-size: 16px;
-        span {
-            font-size: 60px;
-            display: block;
-            font-weight: 100;
-            line-height: 60px;
-        }
-    }
-}

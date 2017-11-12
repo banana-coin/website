@@ -15,24 +15,7 @@
 <body class="{{ lang }}">
     {% include 'nav.html' %}
     <main>
-        <div class="intro">
-            <div class="container">
-                <h1>Blockchain option for banana plantation</h1>
-                <div class="advantages" style="word-wrap: break-word;">
-                    <div class="col-md-12">
-                        <h3>First eco token pre-sale was successful. <b id="contributed">?</b> tokens been sold.</h3>
-                        <h3>Bananacoin is a new Ethereum based token that is tied to the price of 1 kg of bananas on the international market. </h3>
-                        <h3> Our mission is to grow organic and healthy variety of bananas known as "lady finger" in our plantations in Laos and to export them to China where demand is greater than supply.</h3>
-                        <h3>ICO dates will be announced later.</h3>
-                    </div>
-                </div>
-                <div class="col-md-12 buttons">
-                    <a href="https://goo.gl/forms/pKCYyOURcMkxzcQJ3" onClick="sendEvent('ViewContent')" target="_blank" class="btn btn-active">Join private sale</a>
-                    <a href="/files/Bananacoin_Eng_wp_1.4.pdf" onClick="sendEvent('ViewContent')" target="_blank" class="btn">Download White Paper</a>
-                    <a href="plan/" class="btn">Business plan</a>
-                </div>
-            </div>
-        </div>
+        {% include 'intro.html' %}
         {% include 'roadmap.html' %}
         <div class="subscribe">
             <div class="container">

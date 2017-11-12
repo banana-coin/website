@@ -1,8 +1,4 @@
 $(document).ready(function () {
-    $('.fancybox').fancybox({
-        padding: 0
-    });
-
     if ($('.countdown .days').length) {
         var point = $('.countdown').attr('data-point') ? $('.countdown').attr('data-point') : 1503916273;
         var sec = 0;
@@ -19,7 +15,9 @@ $(document).ready(function () {
                 sec--;
                 $('.countdown .seconds span').text(sec);
             } else {
-                $('.countdown h2').text($('.countdown h2').attr('data-onstart'));
+                $('.countdown[data-onstart]').each(function(){
+                    $(this).text($(this).attr('data-onstart'));
+                });
                 $('.countdown .row').remove();
                 clearInterval(startInterval);
             }
@@ -59,6 +57,9 @@ $(document).ready(function () {
         get_contributed();
         //setInterval(get_contributed, 5000);
     }
+    /*$('.fancybox').fancybox({
+        padding: 0
+    });*/
 });
 
 function seconds_to_data(s) {

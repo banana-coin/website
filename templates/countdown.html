@@ -1,0 +1,44 @@
+{% set start = '25.11.2017 12:00'|date('U') %}{# время компа #}
+
+{% set countdown = { 
+    title: 'Token sale starts in', 
+    titleStart: 'Token sale started',
+    description: 'The first environmentally friendly plantation in Laos which has released a token based on Ethereum, pegged to the export price of 1 kg of bananas.',
+    buttons: [
+        '<a href="https://goo.gl/forms/pKCYyOURcMkxzcQJ3" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-active">Join private sale</a>',
+        '<a href="/files/Bananacoin_Eng_wp_1.4.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn">Download White Paper</a>',
+        '<a href="/plan/" class="btn">Business plan</a>',
+    ]
+} %}
+
+{% if lang == 'ru' %}
+    {% set countdown = { 
+        title: 'Старт продаж токенов начнется через', 
+        titleStart: 'Старт продаж токенов начался',
+        description: intro.description,
+        buttons: intro.buttons 
+    }%}
+{% endif %}
+
+<div class="panel countdown" data-point="{{start}}">
+    <div class="title" data-onstart="{{ countdown.titleStart }}">{{ countdown.title }}</div>
+    <div class="row left">
+        <div class="days">
+            <span>00</span>
+            Days
+        </div>
+        <div class="hours">
+            <span>00</span>
+            Hours
+        </div>
+        <div class="minutes">
+            <span>00</span>
+            Minutes
+        </div>
+        <div class="seconds">
+            <span>00</span>
+            Seconds
+        </div>
+    </div>
+    <div class="starttime">25th November 15:00 GMT — 30th December 16:00 GMT</div>
+</div>

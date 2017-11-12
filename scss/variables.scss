@@ -1,0 +1,24 @@
+$white:  #fff !default;
+$black:  #000 !default;
+$red:    #d9534f !default;
+$orange: #f0ad4e !default;
+$yellow: #fed800;
+$green:  #5cb85c !default;
+$blue:   #0275d8 !default;
+$teal:   #5bc0de !default;
+$pink:   #ff5b77 !default;
+$purple: #613d7c !default;
+
+$brand-primary: $black;
+
+$font-size-h1: 70px;
+$font-size-h2: 50px;
+$font-size-h3: 30px;
+$headings-font-weight: 600;
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-serif: $font-family-sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+@mixin bananashadow($alpha: 0.1) {
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, $alpha);    
+}

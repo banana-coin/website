@@ -1,0 +1,30 @@
+img {
+    border: none;
+    max-width: 100%;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+body.en {
+    h1, h2, h3 { 
+        font-family: 'London Two', $font-family-sans-serif;
+        font-weight: normal;
+    }
+}
+
+.panel {
+    background: $white;
+    border-radius: 4px;
+    padding: 30px 40px 50px 40px;
+    @include bananashadow();
+}
+
+::selection {
+    background: $yellow; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: $yellow;
+}

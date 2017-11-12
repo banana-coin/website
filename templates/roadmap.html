@@ -13,7 +13,10 @@
     ]
 } %}
 {% if lang == 'ru' %}
-    {% set roadmap = { title: 'Путь', steps: roadmap.steps } %}
+    {% set roadmap = { 
+        title: 'Путь', 
+        steps: roadmap.steps 
+    } %} <!-- пример наследования англ варианта -->
 {% endif %}
 <div class="roadmap">
     <h2>{{ roadmap.title }}</h2>

@@ -1,0 +1,36 @@
+.intro {
+    position: relative;
+    &:before {
+        content: '';
+        display: block;
+        width: 10000px;
+        height: 500px;
+        transform: rotate(-25deg);
+        position: absolute;
+        left: -5000px;
+        top: 350px;
+        margin-left: 50%;
+        background: $yellow;
+        z-index: -1;
+    }
+    h1 {
+        margin: 60px 0 30px 0;
+    }
+    p {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.75;
+    }
+    .bush {
+        position: relative;
+        img {
+            max-width: 500px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+    .panel {
+        margin: 50px 0 50px 0;
+    }
+}

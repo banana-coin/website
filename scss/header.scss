@@ -11,4 +11,10 @@ nav.navbar {
         font-weight: 600;
         color: #000000;
     }
+    .navbar-brand {
+        img {
+            width: 63px;
+            height: 63px;
+        }
+    }
 }
