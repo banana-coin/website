@@ -1,0 +1,32 @@
+{% set documents = { 
+    title: 'Documents', 
+    description: 'Read our documents in order to know more about the Bananacoin, the token, the team and ICO round details.',
+    links: [
+        { html: '<a href="#test">test</a>' },
+    ]
+} %}
+{% if lang == 'ru' %}
+    {% set documents = { 
+        title: 'Документы', 
+        description: documents.description,
+        links: documents.links 
+    } %} <!-- пример наследования англ варианта -->
+{% endif %}
+<div class="documents">
+    <div class="container">
+        <h2>{{ documents.title }}</h2>
+        <div class="row">
+            <div class="col-lg-4 hidden-md-down">
+                <div class="image">
+                    <img src="/img/documents.svg">
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <p>{{ documents.description }}</p>
+                <div class="buttons">
+                    {% for link in documents.links %} {{ link.html }} {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
