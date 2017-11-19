@@ -1,3 +1,29 @@
 .faq {
-    
+    .questions {
+        .question {
+            h3 {
+                cursor: pointer;
+                border-radius: 4px;
+                background-color: #f0f5f5;
+                font-size: 16px;
+                font-weight: 600;
+                color: $black;
+                padding: 15px 50px 15px 15px;
+                line-height: 30px;
+            }
+            .answer {
+                max-height: 1px;
+                opacity: 0;
+                transition: all .2s;
+                pointer-events: none;
+            }
+            &.active {
+                .answer {
+                    max-height: 500px;
+                    opacity: 1;
+                    pointer-events: all;
+                }
+            }
+        }
+    }
 }

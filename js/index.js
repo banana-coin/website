@@ -62,6 +62,13 @@ $(document).ready(function () {
           infinite: false
     });
 
+    if ($('.faq').length) {
+        $('.faq .question h3').on('click', function(){
+            $('.faq .question.active').removeClass('active');
+            $(this).closest('.question').addClass('active');
+        });
+    }
+
     /*$('.fancybox').fancybox({
         padding: 0
     });*/
