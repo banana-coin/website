@@ -63,9 +63,12 @@ $(document).ready(function () {
     });
 
     if ($('.faq').length) {
-        $('.faq .question h3').on('click', function(){
+        $('.faq').on('click', '.question:not(.active)', function(){
             $('.faq .question.active').removeClass('active');
-            $(this).closest('.question').addClass('active');
+            $(this).addClass('active');
+        });
+        $('.faq').on('click', '.question.active .plus', function(){
+            $(this).closest('.question').removeClass('active');
         });
     }
 

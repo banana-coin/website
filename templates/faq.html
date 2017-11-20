@@ -223,7 +223,7 @@
             {% for q in faq.questions %}
                 {% if not limit or limit > loop.index %}
                 <div class="question{{ loop.index == 1 ? ' active' }}">
-                    <h3>{{ q.title }}</h3>
+                    <div class="q">{{ q.title }}<div class="plus"></div></div>
                     <div class="answer">{{ q.answer }}</div>
                 </div>
                 {% endif %}
