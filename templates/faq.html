@@ -221,11 +221,16 @@
         <p>{{ faq.description }}</p>
         <div class="questions">
             {% for q in faq.questions %}
+                {% if not limit or limit > loop.index %}
                 <div class="question{{ loop.index == 1 ? ' active' }}">
                     <h3>{{ q.title }}</h3>
                     <div class="answer">{{ q.answer }}</div>
                 </div>
+                {% endif %}
             {% endfor %}
+            {% if limit %}
+                <a href="{{ lang != 'en' ? '/'~lang : '' }}/faq/">Show more</a>
+            {% endif %}
         </div>
     </div>
 </div>
