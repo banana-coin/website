@@ -1,26 +1,31 @@
 {% set why = { 
     title: 'Why invest in Bananacoin', 
     description: 'Bananacoin is the world’s first blockchain option for investing in the production of organic bananas in Vientiane province, the Lao PDR.',
-    links: [
-        { html: '<a href="#test">test</a>' },
+    adv: [
+        'The deficit of export of bananas to China is estimated at 30,000 hectares, the consumption growth is increasing',
+        'The price of token Bananacoin is protected by the cost of one kilogram of bananas',
+        'Bananacoin is a full-fledged financial instrument that will be freely traded on the exchange',
+        'Having invested in Bananacoin you have the opportunity to get a minimum of 100% profit of the project implementation',
+        'Every investor has the right to personally visit our plantations in Vientiane province, the Lao PDR',
+        'Our business is easy to scale and it is growing into a serious player in the Asian fruit market'
     ]
 } %}
 {% if lang == 'ru' %}
     {% set why = { 
         title: 'Зачем инвестировать в Banancoin', 
         description: why.description,
-        links: why.links 
+        adv: why.adv 
     } %} <!-- пример наследования англ варианта -->
 {% endif %}
 <div class="why">
     <div class="container">
         <h2>{{ why.title }}</h2>
+        <div class="banana-coin"></div>
         <p>{{ why.description }}</p>
-        <div class="row">
-            <p>{{ why.description }}</p>
-            <div class="buttons">
-                {% for whyitem in why.links %} {{ whyitem.html }} {% endfor %}
-            </div>
-        </div>
+        <ol>
+            {% for a in why.adv %}
+            <li>{{ a }}</li>
+            {% endfor %}
+        </ol>
     </div>
 </div>
