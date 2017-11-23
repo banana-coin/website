@@ -203,19 +203,28 @@
                     <p>Все это говорит, что в ближайшее время цена на бананы только будет подниматься</p>
             </div>
 
-            <div class="container">
-    <div class="row contacts">
-        <div class="col-md-4">
-            <h4>E-mail</h4>
-            <a href="mailto:info@bananacoin.io">info@bananacoin.io</a>
-        </div>
+                <div class="subscribe">
+    <div class="container">
+        <h2>Subscribe</h2>
+        <p>Be the first to know about BananaCoin news</p>
+        <form method="POST" action="https://cp.unisender.com/ru/subscribe?hash=6kcn93bw8orctth6roddm7i5ermmxudq3qq1cz3ei9r5cnxcmideo"
+            name="subscribtion_form">
+            <div class="col-md-8">
+                <input type="text" name="email" value="" placeholder="E-mail">
+            </div>
+            <div class="col-md-4">
+                <button type="submit" onClick="sendEvent('Lead')">Subscribe</button>
+            </div>
+            <input type="hidden" name="charset" value="UTF-8">
+            <input type="hidden" name="default_list_id" value="10608469">
+            <input type="hidden" name="overwrite" value="2">
+            <input type="hidden" name="is_v5" value="1">
+        </form>
     </div>
-</div>
-</main>
+</div></main>
 <footer>
     <div class="container">
-        <div class="col-md-6">&copy; 2017 <a href="http://www.bananacoin.io">bananacoin.io</a></div>
-        <div class="col-md-6">Первый в мире блокчейн-опцион на производство бананов</div>
+        <div class="col-md-6 col-sm-12">&copy; 2017 <a href="http://www.bananacoin.io">bananacoin.io</a> - All Rights Reserved</div>
     </div>
 </footer>
 <script type="text/javascript" src="/js/app.js"></script>
@@ -235,5 +244,4 @@
     ga('create', 'UA-104489994-1', 'auto');
     ga('send', 'pageview');
 </script>
-
 </html>
