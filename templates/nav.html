@@ -126,12 +126,14 @@
             <img alt="Bananacoin" src="/img/logo.svg">
 		</a>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="mr-auto hidden-md-down"></ul>
             <ul class="navbar-nav">
                 {% for n in nav %}
-                <li class="nav-item"><a class="nav-link" href="{{ n.url }}">{{ n.title }}</a></li>                
+                {% if not loop.last %}
+                <li class="nav-item"><a class="nav-link" href="{{ n.url }}">{{ n.title }}</a></li>
+                {% endif %}                
                 {% endfor %}
             </ul>
+            <ul class="mr-auto hidden-md-down"></ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="social">
                     {% if socials %}
@@ -150,6 +152,8 @@
                         {% endfor %}
                     </div>
                 </li>
+                {% set p = nav|last %}
+                <li class="nav-item profile"><a class="nav-link" href="{{ p.url }}">{{ p.title }}</a></li>
             </ul>
         </div>
     </div>
