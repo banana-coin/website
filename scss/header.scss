@@ -1,4 +1,8 @@
 nav.navbar {
+    height: 120px;
+    > .container {
+        height: 71px;
+    }
     a {
         &:hover {
             text-decoration: none;
@@ -10,11 +14,89 @@ nav.navbar {
         font-size: 16px;
         font-weight: 600;
         color: #000000;
+        &.dropdown-toggle {
+            &:after {
+                display: inline-block;
+                width: 7px;
+                height: 7px;    
+                margin-left: .5em;
+                margin-top: -4px;
+                vertical-align: middle;
+                border-top: none;
+                border-right: 2px solid $black;
+                border-bottom: 2px solid $black;
+                border-left: none;
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    .dropdown-menu {
+        border: none;
+        border-radius: 4px;
+        @include bananashadow();
+    }
+    .nav-item {
+        margin-right: 20px;
+        &.profile .nav-link {
+            border-radius: 4px;
+            border: solid 1px #000000;
+            width: 124px;
+            text-align: center;
+        }
     }
     .navbar-brand {
+        padding: 4px 0;
+        margin: 0;
+        margin-right: 37px;
         img {
             width: 63px;
             height: 63px;
+        }
+    }
+    .navbar-right {
+        .nav-item {
+            margin-right: 0;
+            margin-left: 20px;
+        }
+    }
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            margin: 0 8px;
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            text-align: center;
+            background: $black;
+            color: $white;
+            line-height: 30px;
+            text-decoration: none !important;
+            overflow: hidden;
+            &.fa-telegram {
+                color: #000;
+                background: #FFF;
+                font-size: 32px;
+                text-indent: -1px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1480px) {
+    nav.navbar {
+        .nav-link {
+            font-size: 18px;
+        }
+        .navbar-brand {
+            position: absolute;
+            left: -100px;
+        }
+        .nav-item.profile .nav-link {
+            position: absolute;
+            right: -140px;
         }
     }
 }
