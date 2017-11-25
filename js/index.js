@@ -72,9 +72,9 @@ $(document).ready(function () {
         });
     }
 
-    /*$('.fancybox').fancybox({
+    $('.fancybox').fancybox({
         padding: 0
-    });*/
+    });
 });
 
 function seconds_to_data(s) {
