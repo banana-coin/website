@@ -1,3 +1,26 @@
+form[name=subscribtion_form] {
+    position: relative;
+    border-radius: 4px;
+    border: solid 1px #000000;
+    padding: 2px;
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: transparent;
+        height: 62px;
+        padding: 20px 0 20px 30px;
+        font-size: 16px;
+        font-weight: 600;
+        color: $black;
+    }
+    .d-flex {
+        > *:first-child { flex: 1 }
+    }
+    .btn {
+    }
+}
+
 .subscribe {
     background: $ltblue;
     padding: 3vh 0 2vh 0;

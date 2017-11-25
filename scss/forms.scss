@@ -49,8 +49,43 @@
         &.icon-sale:before { background-image: url(/img/buttons/sale.svg); }
         &.icon-close:before { background-image: url(/img/buttons/close.svg); }
     }
+    &.connect-telegram {
+        &:before {
+            content: "\f2c6";
+            color: #11B5E4;
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-size: 40px;
+            display: inline-block;
+            margin-right: 10px;
+            float: left;
+            width: 40px;
+            text-align: right;
+        }
+        &:after {
+            content: '';
+            display: block;
+            right: 34px;
+            left: 84px;
+            bottom: 16px;
+            position: absolute;
+            height: 2px;
+            background-color: $yellow;
+            transition: all .1s;
+        }
+        &:hover {
+            &:after {
+                right: 31px;
+                left: 81px;
+            }
+        }
+    }
 }
 
 .buttons {
-    .btn { margin-right: 20px; }
+    .btn { margin: 0 20px 20px 0; }
+}
+
+input, textarea, button {
+    font-family: "Open Sans",sans-serif;
 }
