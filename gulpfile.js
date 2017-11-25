@@ -19,9 +19,9 @@ var structure = {
     langs: {
         en: { title: 'En', link: '/' },
         ru: { title: 'Рус', link: '/ru' },
-        cn: { title: '中文', link: '/cn' },
-        kr: { title: '한국어', link: '/kr' },
-        jp: { title: '日本', link: '/jp' }
+        //cn: { title: '中文', link: '/cn' },
+        //kr: { title: '한국어', link: '/kr' },
+        //jp: { title: '日本', link: '/jp' }
     },
     nav: {
         en: {
@@ -30,7 +30,7 @@ var structure = {
                 { title: 'Project', url: '/' },
                 { title: 'Eco plantation', url: '/plantation/' },
                 { title: 'F.A.Q', url: '/faq/' },
-                { title: 'Profile', url: '/profile' },
+                { title: 'Login', url: '/profile' },
             ],
             socials: [
                 '<a href="https://t.me/bananacoineng" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
@@ -47,7 +47,7 @@ var structure = {
                 { title: 'Проект', url: '/ru/' },
                 { title: 'Эко плантация', url: '/ru/plantation/' },
                 { title: 'F.A.Q', url: '/ru//faq/' },
-                { title: 'Profile', url: '/profile' },
+                { title: 'Login', url: '/profile' },
             ],
             socials: [
                 '<a href="https://t.me/bananacoin" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
@@ -63,7 +63,7 @@ var structure = {
             nav: [
                 { title: '项目', url: '/cn/' },
                 { title: '种植园', url: '/cn/plantation/' },
-                { title: 'Profile', url: '/profile' },
+                { title: 'Login', url: '/profile' },
             ],
             socials: [
                 '<a href="https://t.me/bananacoineng" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
@@ -78,7 +78,7 @@ var structure = {
             nav: [
                 { title: '프로젝트', url: '/kr' },
                 { title: '친환경 농장', url: '/kr/plantation/' },
-                { title: 'Profile', url: '/profile' },
+                { title: 'Login', url: '/profile' },
             ],
             socials: [
                 '<a href="https://t.me/bananacoinkorea" target="_blank" onClick="sendEvent(\'ViewContent\')" class="fa fa-telegram"></a>',
