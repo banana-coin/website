@@ -6,6 +6,8 @@ img {
 body {
     width: 100%;
     overflow-x: hidden;
+    background: $white url(/img/bananas.png);
+    background-size: 258px 269px;
 }
 
 * {

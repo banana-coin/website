@@ -1,6 +1,36 @@
 .partners {
-    background: $ltblue;
     padding: 3vh 0 2vh 0;
-    z-index: 1;
     position: relative;
+    overflow: hidden;
+    text-align: center;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 10000px;
+        height: 1500px;
+        transform: rotate(-25deg);
+        position: absolute;
+        left: -5000px;
+        top: -1000px;
+        margin-left: 50%;
+        background: $ltblue;
+        z-index: 0;
+    }
+    .col-md-4 {
+        text-align: center;
+        margin: 2vh 0;
+        img {
+            max-width: 165px;
+            margin: 0 auto;
+            max-height: 120px;
+            filter: grayscale(1);
+            opacity: 0.5;
+            transition: all .2s;
+        }
+        a:hover img {
+            filter: none;
+            opacity: 1;
+        }
+    }
 }
