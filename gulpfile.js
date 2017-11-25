@@ -19,9 +19,9 @@ var structure = {
     langs: {
         en: { title: 'En', link: '/' },
         ru: { title: 'Рус', link: '/ru' },
-        cn: { title: '中文', link: '/cn' },
-        kr: { title: '한국어', link: '/kr' },
-        jp: { title: '日本', link: '/jp' }
+        //cn: { title: '中文', link: '/cn' },
+        //kr: { title: '한국어', link: '/kr' },
+        //jp: { title: '日本', link: '/jp' }
     },
     nav: {
         en: {
