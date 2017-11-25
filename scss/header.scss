@@ -15,6 +15,7 @@ nav.navbar {
         font-size: 16px;
         font-weight: 600;
         color: #000000;
+        white-space: nowrap;
         &.dropdown-toggle {
             &:after {
                 display: inline-block;
@@ -95,9 +96,12 @@ nav.navbar {
             position: absolute;
             left: -100px;
         }
-        .nav-item.profile .nav-link {
-            position: absolute;
-            right: -140px;
+        .nav-item.profile {
+            margin: 0;
+            .nav-link {
+                position: absolute;
+                left: 100%;
+            }
         }
     }
 }
