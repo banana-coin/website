@@ -1,0 +1,42 @@
+.btn {
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 19px 34px;
+    white-space: nowrap;
+    transition: all .2s;
+    &:focus { box-shadow: none }
+    &.btn-black {
+        background-color: $black;
+        color: $white;
+        &:hover {
+            background-color: lighten($black, 15%);
+            box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+        }
+    }
+    &.btn-yellow {
+        background-color: $yellow;
+        color: $black;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+        &:hover {
+            background-color: lighten($yellow, 5%);
+            box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+        }
+    }
+    &.btn-outline {
+        border: solid 1px #cbcbcb;
+        background: transparent;
+        color: $black;
+        &:hover {
+            border: solid 1px darken(#cbcbcb, 10%);
+        }
+    }
+    &.btn-icon {
+        padding-left: 68px;
+    }
+}
+
+.buttons {
+    .btn { margin-right: 20px; }
+}
