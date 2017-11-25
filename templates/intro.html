@@ -1,7 +1,7 @@
 {% set intro = { 
     title: 'Bananacoin', 
     status: 'The first environmentally friendly plantation in Laos which has released a token based on Ethereum, pegged to the export price of 1 kg of bananas.',
-    description: '',
+    description: 'Our mission is to grow organic and healthy variety of bananas known as "lady finger" in our plantations in Laos and to export them to China where demand is greater than supply.',
     buttons: [
         '<a href="https://goo.gl/forms/pKCYyOURcMkxzcQJ3" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-active">Join private sale</a>',
         '<a href="/files/Bananacoin_Eng_wp_1.4.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn">Download White Paper</a>',
@@ -12,8 +12,8 @@
 {% if lang == 'ru' %}
     {% set intro = { 
         title: 'Bananacoin', 
-        status: 'Запуск первого органического токена был успешным. <b id="contributed">?</b> токенов было продано во время Pre-sale.',
-        description: 'Bananacoin - это токен на блокчейне Ethereum, привязанная к экспортной цене 1-го килограмма бананов.',
+        status: 'Bananacoin - это токен на блокчейне Ethereum, привязанный к экспортной цене 1-го килограмма бананов.',
+        description: 'Наша цель - выращивать органический и полезный сорт бананов "Lady Finger" на плантации в Лаосе и экспортировать в Китай, где спрос на этот сорт превышает предложение.',
         buttons: intro.buttons 
     } %}
 {% endif %}
