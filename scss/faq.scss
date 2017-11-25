@@ -1,5 +1,6 @@
 .faq {
     padding: 3vh 0 2vh 0;
+    &.nobg { background: $white; }
     h2 {
         text-align: center;
     }
