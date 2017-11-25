@@ -42,6 +42,7 @@
         counter-reset: adv;
         list-style: none;
         padding: 0;
+        margin-top: -16px;
         li {
             position: absolute;
             counter-increment: adv;
@@ -138,6 +139,7 @@
 @include media-breakpoint-down(lg) {
     .why {
         ol {
+            margin-top: 0;
             li {
                 &:after {
                     display: none;
