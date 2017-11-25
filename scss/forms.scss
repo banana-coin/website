@@ -7,6 +7,7 @@
     white-space: nowrap;
     transition: all .2s;
     position: relative;
+    cursor: pointer;
     &:focus { box-shadow: none }
     &.btn-black {
         background-color: $black;

@@ -324,7 +324,7 @@
 {% endif %}
 
 
-<div class="faq">
+<div class="faq{{ not limit ? ' nobg' }}">
     <div class="container">
         <h2>{{ faq.title }}</h2>
         <p>{{ faq.description }}</p>
