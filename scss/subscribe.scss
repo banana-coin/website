@@ -24,4 +24,27 @@ form[name=subscribtion_form] {
 .subscribe {
     background: $ltblue;
     padding: 3vh 0 2vh 0;
+
+    .social {
+        a {
+            margin: 0 30px 0 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            text-align: center;
+            background: #989898;
+            color: $ltblue;
+            line-height: 30px;
+            text-decoration: none !important;
+            overflow: hidden;
+            opacity: 0.7;
+            &.fa-telegram {
+                color: #989898;
+                background: $ltblue;
+                font-size: 32px;
+                text-indent: -1px;
+            }
+            &:hover { opacity: 1 }
+        }
+    }
 }
