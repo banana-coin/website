@@ -1,13 +1,14 @@
 .why {
     background: $ltblue;
     padding: 3vh 0 2vh 0;
-    height: 800px;
     z-index: 1;
     position: relative;
     h2 {
         text-align: center;
     }
     .container {
+        position: relative;
+        height: 700px;
         > p {
             font-size: 20px;
             line-height: 1.75;
@@ -36,10 +37,9 @@
         }
     }
     ol {
-        position: absolute;
+        position: relative;
+        height: 600px;
         counter-reset: adv;
-        top: 204px;
-        left: 0; right: 0;
         list-style: none;
         padding: 0;
         li {
@@ -49,6 +49,7 @@
             font-size: 14px;
             font-weight: 600;
             line-height: 1.71;
+            top: 15px;
             &:before {
                 position: absolute;
                 top: 0px;
@@ -80,10 +81,10 @@
                 right: 75px;
                 &:before { left: -43px; }
             }
-            &:nth-child(2) { left: 20px; top: 194px } // 2
-            &:nth-child(5) { right: 20px; top: 194px } // 5
-            &:nth-child(3) { top: 388px } // 4
-            &:nth-child(6) { top: 388px } // 6
+            &:nth-child(2) { left: 15px; top: 210px } // 2
+            &:nth-child(5) { right: 15px; top: 210px } // 5
+            &:nth-child(3) { top: 410px } // 4
+            &:nth-child(6) { top: 410px } // 6
 
             // линии 
             &:nth-child(1):after {

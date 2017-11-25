@@ -3,9 +3,8 @@
     status: 'The first environmentally friendly plantation in Laos which has released a utility token based on Ethereum, pegged to the export price of 1 kg of bananas.',
     description: 'Our mission is to grow organic and healthy variety of bananas known as "lady finger" in our plantations in Laos and to export them to China where demand is greater than supply.',
     buttons: [
-        '<a href="https://goo.gl/forms/pKCYyOURcMkxzcQJ3" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-active">Join private sale</a>',
-        '<a href="/files/Bananacoin_Eng_wp_1.4.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn">Download White Paper</a>',
-        '<a href="/plan/" class="btn">Business plan</a>',
+        '<a href="https://goo.gl/forms/pKCYyOURcMkxzcQJ3" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-yellow btn-icon icon-sale">Join private sale</a>',
+        '<a href="/files/Bananacoin_Eng_wp_1.4.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-yellow">Download White Paper</a>',
     ]
 } %}
 
@@ -26,7 +25,9 @@
                 <p>{{ intro.status }}</p>
                 <p>{{ intro.description }}</p>
                 <div class="buttons">
-                    {% for button in intro.buttons %}{{ button }}{% endfor %}
+                    {% for button in intro.buttons %}
+                    {{ button }}
+                    {% endfor %}
                 </div>
             </div>
             <div class="col-lg-6 hidden-md-down bush">

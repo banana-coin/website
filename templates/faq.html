@@ -338,7 +338,9 @@
                 {% endif %}
             {% endfor %}
             {% if limit %}
-                <a href="{{ lang != 'en' ? '/'~lang : '' }}/faq/">Show more</a>
+            <div class="row justify-content-center m-5">
+                <a href="{{ lang != 'en' ? '/'~lang : '' }}/faq/" class="btn btn-black btn-icon icon-plus">Show more</a>
+            </div>
             {% endif %}
         </div>
     </div>
