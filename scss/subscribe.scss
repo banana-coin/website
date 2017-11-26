@@ -48,6 +48,17 @@ form[name=subscribtion_form] {
 }
 
 @include media-breakpoint-down(lg) { 
+    .subscribe {
+        text-align: center;
+        .buttons {
+            .btn { margin-right: 0; min-width: 70% }
+        }
+        h3 { margin-top: 2vh }
+        .social { 
+            justify-content: center;
+            a { margin: 5px 10px; }
+        }
+    }
     form[name=subscribtion_form] {
         border: none;
         input { 

@@ -2,10 +2,22 @@
     title: 'Eco plantation', 
     status: 'First eco token pre-sale was successful. <br><b id="contributed">?</b> tokens been sold.',
     description: 'The first environmentally friendly plantation in Laos which has released a token based on Ethereum, pegged to the export price of 1 kg of bananas.',
-    buttons: [
-        '<a href="https://goo.gl/forms/pKCYyOURcMkxzcQJ3" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-active">Join private sale</a>',
-        '<a href="/files/Bananacoin_Eng_wp_1.4.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn">Download White Paper</a>',
-        '<a href="/plan/" class="btn">Business plan</a>',
+    videos: [
+        {
+            image: 'https://img.youtube.com/vi/SYd4m6IRfCM/hqdefault.jpg',
+            href: 'https://www.youtube.com/embed/SYd4m6IRfCM?autoplay=1',
+            description: 'At present the authorities of northern Lao Bokeo province have suspended the activities of 18 Chinese supported banana plantations after that they discovered violations of the rules of the use of agricultural chemicals.'
+        },
+        {
+            image: 'https://img.youtube.com/vi/dT6dMY-7NlU/hqdefault.jpg',
+            href: 'https://www.youtube.com/embed/dT6dMY-7NlU?autoplay=1',
+            description: 'Legal information'
+        },
+        {
+            image: 'https://img.youtube.com/vi/tzoRWZAX-CA/hqdefault.jpg',
+            href: 'https://www.youtube.com/embed/tzoRWZAX-CA?autoplay=1',
+            description: 'Shooting of a new plot of 360 hectares'
+        }
     ]
 } %}
 
@@ -14,7 +26,23 @@
         title: 'Эко плантация', 
         status: 'Запуск первого органического токена был успешным. <b id="contributed">?</b> токенов было продано во время Pre-sale.',
         description: 'Bananacoin - это токен на блокчейне Ethereum, привязанная к экспортной цене 1-го килограмма бананов.',
-        buttons: plantation.buttons 
+        videos: [
+            {
+                image: plantation.videos[0].image,
+                href: plantation.videos[0].href,
+                description: 'At present the authorities of northern Lao Bokeo province have suspended the activities of 18 Chinese supported banana plantations after that they discovered violations of the rules of the use of agricultural chemicals.'                
+            },
+            {
+                image: plantation.videos[1].image,
+                href: plantation.videos[1].href,
+                description: 'Legal information'                
+            },
+            {
+                image: plantation.videos[2].image,
+                href: plantation.videos[2].href,
+                description: 'Shooting of a new plot of 360 hectares'                
+            }
+        ]
     } %}
 {% endif %}
 
@@ -23,8 +51,9 @@
         <div class="row">
             <h2>{{ plantation.title }}</h2>
         </div>
-        <div class="row">
+        <div class="row slider-videos">
             <div class="slider">
+<<<<<<< HEAD
              <div class="slide">
                     <div class="image">
                         <img src="https://img.youtube.com/vi/wOgn7KnR4p0/hqdefault.jpg">
@@ -34,15 +63,19 @@
                         Oleg lives in Vietnam for over 10 years now and investing in real estate and exporting fruits. He spent 50 USD to Bananacoin and his wife 500 USD, but he was luckier. He won trip to Bananacoin plantation. Listen to his words said during trip to Vientiane, Lao PDR.
                     </div>
                 </div>
+=======
+                {% for video in plantation.videos %}
+>>>>>>> 1eee86f309711c5a7bf16e886ede0edc6f7e4421
                 <div class="slide">
                     <div class="image">
-                        <img src="https://img.youtube.com/vi/SYd4m6IRfCM/hqdefault.jpg">
-                        <a href="https://www.youtube.com/embed/SYd4m6IRfCM?autoplay=1" class="play fancybox" data-fancybox-type="iframe"></a>
+                        <img src="{{ video.image }}">
+                        <a href="{{ video.href }}" class="play fancybox" data-fancybox-type="iframe"></a>
                     </div>
                     <div class="description">
-                        At present the authorities of northern Lao Bokeo province have suspended the activities of 18 Chinese supported banana plantations after that they discovered violations of the rules of the use of agricultural chemicals.
+                        {{ video.description }}
                     </div>
                 </div>
+<<<<<<< HEAD
                 <div class="slide">
                     <div class="image">
                         <img src="https://img.youtube.com/vi/zsingDPrHZY/hqdefault.jpg">
@@ -59,20 +92,56 @@
                     </div>
                     <div class="description">
                         We use guano or manure of bats which is organic, eco-friendly and well-balanced fertilizer. It supports and greatly accelerates the formation of new roots, enriches plants during the flowering period and increases their resistance to bacteria. It improves the quality and taste of bananas.                            
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="image">
-                        <img src="https://img.youtube.com/vi/tzoRWZAX-CA/hqdefault.jpg">
-                        <a href="https://www.youtube.com/embed/tzoRWZAX-CA?autoplay=1" class="play fancybox" data-fancybox-type="iframe"></a>
-                    </div>
-                    <div class="description">
-                        Shooting of a new plot of 360 hectares
-                    </div>
-                </div>
+=======
+                {% endfor %}
             </div>
         </div>
-        <div class="row">
+        <div class="row info-items">
+            {% if lang == 'ru' %}
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon1.png"></div>
+                        <p class="title">No pesticides</p>
+                        <p>It is impossible to fully evaluate the negative impact of the use of chemical fertilizers on nature and human life.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon2.svg"></div>
+                        <p class="title">Eco-friendly</p>
+                        <p>It is impossible to fully evaluate the negative impact of the use of chemical fertilizers on nature and human life.</p>
+>>>>>>> 1eee86f309711c5a7bf16e886ede0edc6f7e4421
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon3.svg"></div>
+                        <p class="title">3 year old</p>
+                        <p>It is impossible to fully evaluate the negative impact of the use of chemical fertilizers on nature and human life.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon4.svg"></div>
+                        <p class="title">Profitable business</p>
+                        <p>It is impossible to fully evaluate the negative impact of the use of chemical fertilizers on nature and human life.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon5.png"></div>
+                        <p class="title">Government support</p>
+                        <p>It is impossible to fully evaluate the negative impact of the use of chemical fertilizers on nature and human life.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon6.svg"></div>
+                        <p class="title">Real proof asset</p>
+                        <p>It is impossible to fully evaluate the negative impact of the use of chemical fertilizers on nature and human life.</p>
+                    </div>
+                </div>
+            {% else %}{# english и остальные #}
                 <div class="col-lg-4">
                     <div class="info-item">
                         <div class="icon icon-green"><img src="/img/plantation_icon1.png"></div>
@@ -115,6 +184,7 @@
                         <p>It is impossible to fully evaluate the negative impact of the use of chemical fertilizers on nature and human life.</p>
                     </div>
                 </div>
+            {% endif  %}
         </div>
     </div>
     {% if fullView %}<!-- описание внутри страницы -->

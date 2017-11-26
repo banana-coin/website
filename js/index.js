@@ -58,11 +58,7 @@ $(document).ready(function () {
         //setInterval(get_contributed, 5000);
     }
 
-    $(".plantation .slider").slick({
-          infinite: true
-    });
-
-    var $sliders = $('.team .members');
+    var $sliders = $('.team .members, .plantation .info-items, .plantation .slider');
     function runSlider() {
         if ($(window).width() < 768) {
             $sliders.slick({
@@ -71,14 +67,18 @@ $(document).ready(function () {
                 infinite: true,
                 speed: 300,
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                adaptiveHeight: true
             });
         } else {
-            $sliders.slick('unslick');
+            $(".plantation .slider").slick({
+                infinite: true,
+                adaptiveHeight: true
+            });
+            //$sliders.slick('unslick');
         }
     }
-    runSlider();
-    var r;
+    var r = setTimeout(runSlider, 500);
     $(window).resize(function () {
         clearTimeout(r);
         r = setTimeout(runSlider, 500);
