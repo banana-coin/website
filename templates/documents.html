@@ -1,16 +1,21 @@
 {% set documents = { 
     title: 'Documents', 
-    description: 'Read our documents in order to know more about the Bananacoin, the token, the team and ICO round details.',
+    description: 'Read our documents in order to know more about the Bananacoin, the token, the team and TGE round details.',
     links: [
-    { html: '<a href="#test" class="btn btn-outline">test</a>' },
-    { html: '<a href="#test" class="btn btn-outline">test</a>' },
+    { html: '<a href="/files/Bananacoin_Eng_wp_1.4.pdf" target="_blank" class="btn btn-outline">White Paper</a>' },
+    { html: '<a href="/files/Light_eng.pdf" target="_blank" class="btn btn-outline">Light Paper</a>' },
+    { html: '<a href="/plan/" class="btn btn-outline">Business plan</a>' },
     ]
 } %}
 {% if lang == 'ru' %}
     {% set documents = { 
         title: 'Документы', 
-        description: documents.description,
-        links: documents.links 
+        description: 'Предлагаем вашему вниманию документы, которые позволят узнать больше о проекте Bananacoin, токене, команде и TGE раунде.',
+    links: [
+    { html: '<a href="/files/Bananacoin_Eng_wp_1.4.pdf" target="_blank" class="btn btn-outline">White Paper</a>' },
+    { html: '<a href="/files/Light_eng.pdf" target="_blank" class="btn btn-outline">Light Paper</a>' },
+    { html: '<a href="/plan/" class="btn btn-outline">Бизнес план</a>' },
+    ]
     } %} <!-- пример наследования англ варианта -->
 {% endif %}
 <div class="documents">
