@@ -72,3 +72,30 @@ h2 {
         transform: rotate(-45deg)
     } 
 }
+
+.slick-dots {
+    display: flex;
+    padding: 0;
+    margin: -20px 0 0 0;
+    justify-content: center;
+    position: relative;
+    li {
+        list-style: none;
+        padding: 5px;
+        button {
+            text-indent: -5000px;
+            width: 10px;
+            height: 10px;
+            background-color: #cbcbcb;
+            border-radius: 5px;
+            border: none;
+            overflow: hidden;
+            padding: 0;
+            outline: none;
+            transition: background-color .2s;
+        }
+        &.slick-active button {
+            background-color: $black;
+        }
+    }
+}

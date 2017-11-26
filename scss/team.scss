@@ -83,18 +83,42 @@
             p { margin-bottom: 4px; }
             .experience { color: lighten($black, 15%) }
         }
-        &:hover {
-            h4 {
-                opacity: .9;
+    }
+    .col-md-4:hover, .slick-slide.slick-current .col-md-4 {
+        h4 {
+            opacity: .9;
+        }
+        .photo {
+            @include bananashadow();
+        }
+        .info {
+            opacity: 1;
+            pointer-events: all;
+            transform: translate(0, 0);
+            color: $black;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) { 
+    .team {
+        h2 { font-size: 30px; margin: 1vh 0; }
+        &:before {
+            height: 162px;
+            clip-path: polygon(0 0, 100% 0, 100% 2px, 0 100%);
+        }
+        .container {
+            > p {
+                font-size: 14px;
+                line-height: 1.7;
+                margin: 1vh auto 2vh auto;
             }
-            .photo {
-                @include bananashadow();
-            }
-            .info {
-                opacity: 1;
-                pointer-events: all;
-                transform: translate(0, 0);
-                color: $black;
+            .members {
+                margin: 3vh -15px;
+                .info {
+                    font-size: 12px;
+                    line-height: 1.4;
+                }
             }
         }
     }
