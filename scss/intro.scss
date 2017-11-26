@@ -38,12 +38,32 @@
 
 @include media-breakpoint-down(lg) {
     .intro {
+        text-align: center;
+        &:before {
+            top: -70px;
+            clip-path: polygon(0 160px, 100% 0%, 100% 100%, 0% 100%);
+            bottom: 0;
+            height: auto;
+        }
         h1 {
             margin: 30px 0 15px 0;
+            font-size: 50px;
         }
         p {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.6;
+        }
+        .buttons {
+            .btn {
+                margin: 10px auto;
+                &.btn-yellow { 
+                    background: $white; 
+                    &:before { background-image: url('/img/buttons/sale-yellow.svg') }
+                }
+            }
+        }
+        .panel {
+            padding: 20px 15px;
         }
     }
 }

@@ -17,8 +17,6 @@ form[name=subscribtion_form] {
     .d-flex {
         > *:first-child { flex: 1 }
     }
-    .btn {
-    }
 }
 
 .subscribe {
@@ -46,5 +44,18 @@ form[name=subscribtion_form] {
             }
             &:hover { opacity: 1 }
         }
+    }
+}
+
+@include media-breakpoint-down(lg) { 
+    form[name=subscribtion_form] {
+        border: none;
+        input { 
+            border-bottom: 1px solid $black; margin-bottom: 30px; 
+            text-align: center;
+            padding: 10px;
+        }
+        .btn { width: 100% }
+        .d-flex { flex-direction: column; }
     }
 }

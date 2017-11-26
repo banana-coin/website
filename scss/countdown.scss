@@ -48,3 +48,22 @@
         color: #989898;
     }
 }
+
+
+@include media-breakpoint-down(lg) { 
+    .countdown {
+        .starttime { font-size: 14px; }
+        .left {
+            //margin: 20px -30px;
+            > * { 
+                font-size: 10px;
+                span {
+                    font-size: 36px;
+                }
+            } 
+        }
+        .connect-telegram {
+            margin: 3vh -40px 0 -40px;
+        }
+    }
+}
