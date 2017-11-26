@@ -149,3 +149,21 @@
         }
     }
 }
+
+@include media-breakpoint-down(sm) { 
+    .why {
+        h2 { font-size: 30px; margin: 1vh 0; }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .banana-coin {
+            position: relative;
+            top: 15px;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+        }
+    }
+}
