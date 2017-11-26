@@ -4,20 +4,22 @@
     title: 'Token sale starts in', 
     titleStart: 'Token sale started',
     description: 'The first environmentally friendly plantation in Laos which has released a token based on Ethereum, pegged to the export price of 1 kg of bananas.',
-    buttons: [
-        '<a href="https://goo.gl/forms/pKCYyOURcMkxzcQJ3" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-active">Join private sale</a>',
-        '<a href="/files/Bananacoin_Eng_wp_1.4.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn">Download White Paper</a>',
-        '<a href="/plan/" class="btn">Business plan</a>',
-    ]
+    time: ['Days', 'Hours', 'Minutes', 'Seconds'],
+    starttime: '29th November 12:00 GMT — 30th December 12:00 GMT',
 } %}
+{% set text_subscribe = 'Subscribe' %}
+{% set text_tg = 'Connect with Telegram' %}
 
 {% if lang == 'ru' %}
     {% set countdown = { 
         title: 'Старт продаж токенов начнется через', 
         titleStart: 'Старт продаж токенов начался',
-        description: intro.description,
-        buttons: intro.buttons 
+        description: countdown.description,
+        time: ['Дней', 'Часов', 'Минут', 'Секунд'],
+        starttime: countdown.starttime
     }%}
+    {% set text_subdcribe = 'Подписаться' %}
+    {% set text_tg = 'Connect with Telegram' %}
 {% endif %}
 
 <div class="panel countdown" data-point="{{start}}">
@@ -25,22 +27,22 @@
     <div class="row left">
         <div class="days">
             <span>00</span>
-            Days
+            {{ countdown.time[0] }}
         </div>
         <div class="hours">
             <span>00</span>
-            Hours
+            {{ countdown.time[1] }}
         </div>
         <div class="minutes">
             <span>00</span>
-            Minutes
+            {{ countdown.time[2] }}
         </div>
         <div class="seconds">
             <span>00</span>
-            Seconds
+            {{ countdown.time[3] }}
         </div>
     </div>
-    <div class="starttime">29th November 12:00 GMT — 30th December 12:00 GMT</div>
+    <div class="starttime">{{ countdown.starttime }}</div>
     <div class="row mt-4 justify-content-md-center">
         <div class="col-md-10 col-lg-6 col-xl-5">
             <form method="POST" action="https://cp.unisender.com/ru/subscribe?hash=6kcn93bw8orctth6roddm7i5ermmxudq3qq1cz3ei9r5cnxcmideo" name="subscribtion_form">
@@ -49,7 +51,7 @@
                         <input type="text" name="email" value="" placeholder="E-mail">
                     </div>
                     <div>
-                        <button type="submit" onClick="sendEvent('Lead')" class="btn btn-yellow">Subscribe</button>
+                        <button type="submit" onClick="sendEvent('Lead')" class="btn btn-yellow">{{ text_subscribe }}</button>
                     </div>
                 </div>
                 <input type="hidden" name="charset" value="UTF-8">
@@ -58,6 +60,6 @@
                 <input type="hidden" name="is_v5" value="1">
             </form>
         </div>
-        <div class="col-md-10 col-lg-5 col-xl-4"><a href="https://t.me/bananacoin{{ lang != 'ru' ? 'eng' : '' }}" target="_blank" class="btn connect-telegram">Connect with Telegram</a></div>
+        <div class="col-md-10 col-lg-5 col-xl-4"><a href="https://t.me/bananacoin{{ lang != 'ru' ? 'eng' : '' }}" target="_blank" class="btn connect-telegram">{{ text_tg }}</a></div>
     </div>
 </div>
