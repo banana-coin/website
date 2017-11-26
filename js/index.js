@@ -59,7 +59,29 @@ $(document).ready(function () {
     }
 
     $(".plantation .slider").slick({
-          infinite: false
+          infinite: true
+    });
+
+    var $sliders = $('.team .members');
+    function runSlider() {
+        if ($(window).width() < 768) {
+            $sliders.slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        } else {
+            $sliders.slick('unslick');
+        }
+    }
+    runSlider();
+    var r;
+    $(window).resize(function () {
+        clearTimeout(r);
+        r = setTimeout(runSlider, 500);
     });
 
     if ($('.faq').length) {

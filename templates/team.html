@@ -125,9 +125,9 @@
     <div class="container">
         <h2>{{ team.title }}</h2>
         <p>{{ team.description }}</p>
-        <div class="row">
+        <div class="row members">
             {% for member in team.members %}
-            <div class="col-md-4">
+            <div class="col-12 col-md-4">
                 <div class="photo">
                     <img src="{{ member.photo }}" alt="{{ member.name }}">
                 </div>
