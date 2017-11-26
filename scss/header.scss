@@ -105,3 +105,118 @@ nav.navbar {
         }
     }
 }
+
+
+@include media-breakpoint-down(md) {
+    body { background: $white; }
+    $navheight: 70px;
+    nav.navbar {
+        height: $navheight;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background: transparent;
+        .navbar-brand { 
+            margin: 0; 
+            padding: 0;
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            z-index: 11;
+            transition: all .2s;
+            img { width: 40px; height: 40px; }
+        }
+        .nav-item { margin: 0 0 10px 0 !important; }
+        .profile .nav-link { margin: 5px auto; }
+        &.show {
+            background-color: $white;
+        }
+        > .container {
+            position: relative;
+            width: 100%;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        .social {
+            display: none;
+        }
+        .lang { 
+            position: absolute; left: 20px; top: 5px; 
+            .dropdown-menu {
+                position: absolute;
+                min-width: auto;
+            }
+        }
+    }
+    .navbar-toggler {
+        border: none;
+        outline: none;
+        width: 40px;
+        height: 40px;
+        background-color: $white;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        border-radius: 50%;
+        z-index: 10;
+        cursor: pointer;
+        outline: none !important;
+        &:not(.collapsed) {
+            ~ .container .navbar-brand {
+                left: 50%;
+                margin-left: -20px;
+                margin-top: 10px;
+            }
+        }
+        &:before, &:after {
+            content: '';
+            display: block;
+            width: 18px;
+            position: absolute;
+            top: 20px;
+            left: 11px;
+            border-color: $black;
+            border-top-width: 2px;
+            border-top-style: solid;
+            transform: rotate(45deg);
+            transition: transform .1s;
+        }
+        &:before {
+            transform: rotate(-45deg);
+        }
+        &.collapsed {
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+            &:before, &:after {
+                transform: rotate(0deg);
+            }
+            &:before {
+                border-bottom-style: solid;
+                border-bottom-width: 2px;
+                height: 7px;
+                top: 15px;
+            }
+            &:after {
+                top: 25px;
+                width: 10px;
+            }
+        }
+    }
+    .navbar-collapse {
+        position: relative;
+        background: $white;
+        padding: 70px 15px 15px 15px;
+        border-radius: 4px;
+        background-color: $white;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        text-align: center;
+    }
+    main {
+        padding-top: $navheight;
+    }
+}
