@@ -1,23 +1,36 @@
+{% set ss = { 
+    left_title: 'Are you first 400 000 tokens holder?', 
+    left_btn: '<a href="#" class="btn btn-yellow">Save your spot</a>',
+    right_title: 'Subscribe to receive updates',
+    right_btn: 'Subscribe',
+} %}
+
+{% if lang == 'ru' %}
+    {% set ss = { 
+        left_title: 'Are you first 400 000 tokens holder?', 
+        left_btn: '<a href="#" class="btn btn-yellow">Save your spot</a>',
+        right_title: 'Subscribe to receive updates',
+        right_btn: 'Subscribe',
+    } %}
+{% endif %}
 <div class="subscribe">
     <div class="container">
     <div class="row mt-4 mb-4 justify-content-md-center">
-
             <div class="col-md-10 col-lg-6">
-                <h3 class="mb-4">Are you first 400 000 tokens holder?</h3>
+                <h3 class="mb-4">{{ ss.left_title }}</h3>
                 <div class="buttons">
-                    <a href="#" class="btn btn-yellow">Save your spot</a>
+                    <a href="#" class="btn btn-yellow">{{ ss.left_btn }}</a>
                 </div>
             </div>
-
             <div class="col-md-10 col-lg-6">
-                <h3 class="mb-4">Subscribe to receive updates</h3>
+                <h3 class="mb-4">{{ ss.right_title }}</h3>
                 <form method="POST" action="https://cp.unisender.com/ru/subscribe?hash=6kcn93bw8orctth6roddm7i5ermmxudq3qq1cz3ei9r5cnxcmideo" name="subscribtion_form">
                     <div class="d-flex">
                         <div>
                             <input type="text" name="email" value="" placeholder="E-mail">
                         </div>
                         <div>
-                            <button type="submit" onClick="sendEvent('Lead')" class="btn btn-yellow">Subscribe</button>
+                            <button type="submit" onClick="sendEvent('Lead')" class="btn btn-yellow">{{ ss.right_btn }}</button>
                         </div>
                     </div>
                     <input type="hidden" name="charset" value="UTF-8">
