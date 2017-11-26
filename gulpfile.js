@@ -47,7 +47,7 @@ var structure = {
                 { title: 'Проект', url: '/ru/' },
                 { title: 'Эко плантация', url: '/ru/plantation/' },
                 { title: 'F.A.Q', url: '/ru//faq/' },
-                { title: 'Login', url: '/profile' },
+                { title: 'Профиль', url: '/profile' },
             ],
             socials: [
                 '<a href="https://t.me/bananacoin" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
@@ -63,7 +63,7 @@ var structure = {
             nav: [
                 { title: '项目', url: '/cn/' },
                 { title: '种植园', url: '/cn/plantation/' },
-                { title: 'Login', url: '/profile' },
+                { title: 'Profile', url: '/profile' },
             ],
             socials: [
                 '<a href="https://t.me/bananacoineng" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
@@ -78,7 +78,7 @@ var structure = {
             nav: [
                 { title: '프로젝트', url: '/kr' },
                 { title: '친환경 농장', url: '/kr/plantation/' },
-                { title: 'Login', url: '/profile' },
+                { title: 'Profile', url: '/profile' },
             ],
             socials: [
                 '<a href="https://t.me/bananacoinkorea" target="_blank" onClick="sendEvent(\'ViewContent\')" class="fa fa-telegram"></a>',
