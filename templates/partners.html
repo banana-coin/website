@@ -60,7 +60,7 @@
         <h2>{{ partners.title }}</h2>
         <div class="row justify-content-center align-items-center">
             {% for partner in partners.list %}
-            <div class="col-md-4">
+            <div class="col-6 col-md-4">
                 {% if partner.link %}
                 <a href="{{ partner.link }}" target="_blank">
                     <img src="{{ partner.logo }}" alt="{{ partner.name }}">

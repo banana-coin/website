@@ -31,3 +31,15 @@
         }
     }
 }
+
+@include media-breakpoint-down(sm) { 
+    .partners {
+        h2 { font-size: 30px; margin: 1vh 0; }
+        .col-md-4 {
+            img {
+                max-width: 100px;
+                max-height: 80px;
+            }
+        }
+    }
+}

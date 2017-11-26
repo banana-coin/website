@@ -83,3 +83,30 @@
         }
     }
 }
+
+@include media-breakpoint-down(sm) { 
+    .faq {
+        h2 { font-size: 30px; margin: 1vh 0; }
+        .container {
+            > p {
+                font-size: 14px;
+                line-height: 1.7;
+                margin: 1vh auto 2vh auto;
+            }
+            .questions {
+                .question {
+                    .q { 
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin: 5px 0;
+                    }
+                    &.active .answer {
+                        margin-right: -40px;
+                        font-size: 12px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+    }
+}

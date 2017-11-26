@@ -92,9 +92,10 @@
 }
 @include media-breakpoint-down(sm) { 
     .roadmap {
-        h2 { font-size: 30px; }
+        h2 { font-size: 30px; margin: 1vh 0; }
         ul {
             max-width: 400px;
+            margin: 2vh auto;
             &:before {
                 left: 10%;
             }
