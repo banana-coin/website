@@ -5,4 +5,7 @@ footer {
     line-height: 44px;
     font-size: 16px;
     color: lighten($black, 15%);
+    img {
+        height: 44px;
+    }
 }
