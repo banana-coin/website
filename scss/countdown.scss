@@ -50,7 +50,7 @@
 }
 
 
-@include media-breakpoint-down(lg) { 
+@include media-breakpoint-down(md) { 
     .countdown {
         .starttime { font-size: 14px; }
         .left {

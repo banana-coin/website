@@ -41,17 +41,6 @@
                 border-radius: 50%;
                 top: 15px;
             }
-            &:nth-child(even) {
-                text-align: right;
-                margin-right: 50%;
-                &:before { right: -7px; }
-                p { float: right }
-            }
-            &:nth-child(odd) {
-                margin-left: 50%;
-                &:before { left: -7px; }
-                p { float: left }
-            }
             h4 {
                 font-size: 16px;
                 font-weight: 600;
@@ -77,6 +66,47 @@
             &.completed {
                 p { color: darken($yellow, 35%); }
                 b { font-weight: normal; }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) { 
+    .roadmap {
+        ul {
+            li {
+                &:nth-child(even) {
+                    text-align: right;
+                    margin-right: 50%;
+                    &:before { right: -7px; }
+                    p { float: right }
+                }
+                &:nth-child(odd) {
+                    margin-left: 50%;
+                    &:before { left: -7px; }
+                    p { float: left }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(sm) { 
+    .roadmap {
+        h2 { font-size: 30px; }
+        ul {
+            max-width: 400px;
+            &:before {
+                left: 10%;
+            }
+            li {
+                margin-left: 10%;
+                text-align: left;
+                padding: 10px 20px;
+                max-width: 250px;
+                &:before {
+                    left: -7px;
+                }
+                &:not(.completed) p { display: inline-block }
             }
         }
     }
