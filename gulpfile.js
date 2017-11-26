@@ -30,7 +30,7 @@ var structure = {
                 { title: 'Project', url: '/' },
                 { title: 'Eco plantation', url: '/plantation/' },
                 { title: 'F.A.Q', url: '/faq/' },
-                { title: 'Login', url: '/profile' },
+                { title: 'Profile', url: '/profile' },
             ],
             socials: [
                 '<a href="https://t.me/bananacoineng" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
