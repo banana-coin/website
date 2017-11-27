@@ -38,6 +38,21 @@ echo "Copy built data to the bananacoin rails repo"
 mkdir -p ../$BANANA_RAILS_NAME/public/
 cp -rf build/* ../$BANANA_RAILS_NAME/public/
 
+#!/bin/bash
+public_dir="../$BANANA_RAILS_NAME/public/"
+langs=( "" "ru" "kr" "jp" "cn" )
+for ln in "${langs[@]}"
+do
+  new_dir="$public_dir/$ln"
+  echo "DIR = $new_dir"
+  cd "$new_dir"
+  pwd
+  rm index1.html
+  cp index.html index1.html
+  rm index.html
+  cd -
+done
+
 echo "Add new data to the bananacoin repo git"
 pushd ../$BANANA_RAILS_NAME
 git config user.name "Travis CI"
