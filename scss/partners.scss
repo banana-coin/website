@@ -13,6 +13,7 @@
         background: $ltblue;
         z-index: 0;    
         clip-path: polygon(0 0, 100% 0, 100% 550px, 0 1300px);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 550px, 0 1300px);
     }
     .col-md-4 {
         text-align: center;
@@ -37,6 +38,7 @@
         &:before {
             height: 162px;
             clip-path: polygon(0 0, 100% 0, 100% 2px, 0 100%);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 2px, 0 100%);
         }
         h2 { font-size: 30px; margin: 1vh 0; }
         .col-md-4 {

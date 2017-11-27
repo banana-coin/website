@@ -28,6 +28,7 @@
         background: $yellow;
         z-index: 0;    
         clip-path: polygon(0 0, 100% 0, 100% 2px, 0 752px);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 2px, 0 752px);
     }
     .col-md-4 {
         position: relative;
@@ -106,6 +107,7 @@
         &:before {
             height: 162px;
             clip-path: polygon(0 0, 100% 0, 100% 2px, 0 100%);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 2px, 0 100%);
         }
         .container {
             > p {
