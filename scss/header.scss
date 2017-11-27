@@ -107,6 +107,11 @@ nav.navbar {
 }
 
 
+@include media-breakpoint-down(lg) {
+    nav.navbar {
+        .social { display: none; }
+    }
+}
 @include media-breakpoint-down(md) {
     body { background: $white; }
     $navheight: 70px;
@@ -116,7 +121,7 @@ nav.navbar {
         top: 0;
         left: 0;
         right: 0;
-        z-index: 1;
+        z-index: 10;
         background: transparent;
         .navbar-brand { 
             margin: 0; 

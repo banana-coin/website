@@ -1,6 +1,7 @@
 {% set faq = { 
     title: 'Some frequently asked questions',
     description: 'We advocate full transparency, so if you don’t see your questions answered in our FAQ, please write us and we’ll get back to you.',
+    text_showmore: 'Show more',
     questions: [
     { 
         title: 'What is TGE?', 
@@ -190,8 +191,9 @@
 } %}
 {% if lang == 'ru' %}
     {% set faq = { 
-         title: 'Часто задаваемые вопросы',
-    description: 'Мы поддерживаем прозрачность взаимоотношений между держателями токенов и проектом Bananacoin. Если у Вас есть какие-то вопросы, то мы обязательно на них ответим.',
+        title: 'Часто задаваемые вопросы',
+        description: 'Мы поддерживаем прозрачность взаимоотношений между держателями токенов и проектом Bananacoin. Если у Вас есть какие-то вопросы, то мы обязательно на них ответим.',
+        text_showmore: 'Смотреть ещё',
         questions: [
     { 
         title: 'Что такое TGE?', 
@@ -339,7 +341,7 @@
             {% endfor %}
             {% if limit %}
             <div class="row justify-content-center m-5">
-                <a href="{{ lang != 'en' ? '/'~lang : '' }}/faq/" class="btn btn-black btn-icon icon-plus">Show more</a>
+                <a href="{{ lang != 'en' ? '/'~lang : '' }}/faq/" class="btn btn-black btn-icon icon-plus">{{ faq.text_showmore }}</a>
             </div>
             {% endif %}
         </div>

@@ -134,6 +134,10 @@
 }
 
 
+@include media-breakpoint-up(md) {
+    .info-items > * { display: flex; }
+}
+
 @include media-breakpoint-down(md) { 
     .plantation {
         h2 { font-size: 30px; margin: 1vh 0; }

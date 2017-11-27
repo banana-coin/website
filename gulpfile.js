@@ -13,7 +13,7 @@ var removeHtmlComments = require('gulp-remove-html-comments');
 var gutil = require('gulp-util');
 var ftp = require('vinyl-ftp');
 
-var release = true;
+var release = false;
 
 var structure = {
     langs: {
@@ -30,6 +30,8 @@ var structure = {
                 { title: 'Project', url: '/' },
                 { title: 'Eco plantation', url: '/plantation/' },
                 { title: 'F.A.Q', url: '/faq/' },
+                { title: 'Team', url: '/#team' },
+                { title: 'Partners', url: '/#partners' },
                 { title: 'Profile', url: '/profile' },
             ],
             socials: [
@@ -44,9 +46,11 @@ var structure = {
         ru: {
             description: 'Первый в мире блокчейн-опцион на производство бананов',
             nav: [
-                { title: 'Проект', url: '/ru/' },
+                //{ title: 'Проект', url: '/ru/' },
                 { title: 'Эко плантация', url: '/ru/plantation/' },
-                { title: 'F.A.Q', url: '/ru//faq/' },
+                { title: 'F.A.Q', url: '/ru/faq/' },
+                { title: 'Команда', url: '/ru/#team' },
+                { title: 'Партнёры', url: '/ru/#partners' },
                 { title: 'Профиль', url: '/profile' },
             ],
             socials: [

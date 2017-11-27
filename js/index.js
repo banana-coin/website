@@ -1,4 +1,25 @@
 $(document).ready(function () {
+
+    var $anchors = $('a[name][id]');
+    var anchors = $anchors.map(function () {
+        return $(this).attr('id');
+    }).get();
+    $(document).on('click', '.nav-link', function (e) {
+        var id = false;
+        for (var i = 0; i < anchors.length; i++) {
+            if ($(this).attr('href').indexOf(anchors[i]) !== -1) {
+                id = anchors[i];
+                break;
+            }
+        }
+        if (id) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $('#' + id).offset().top
+            }, 500);
+        }
+    });
+
     if ($('.countdown .days').length) {
         var point = $('.countdown').attr('data-point') ? $('.countdown').attr('data-point') : 1503916273;
         var sec = 0;
