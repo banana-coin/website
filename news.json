@@ -3,9 +3,9 @@
         "title": "News",
         "items": [
             {
-                "title": "test",
-                "thumb": "/img/OD.jpg?1",
-                "link": "#"
+                "title": "Bananacoin Lounge at Block Show Asia. Everyone welcome!",
+                "thumb": "/img/news/lounge_alert.jpg?1",
+                "link": "/files/Lounge_eng.pdf"
             }
         ]
     },
@@ -13,24 +13,9 @@
         "title": "Новости",
         "items": [
             {
-                "title": "test test test test test test test test test",
-                "thumb": "/img/OD.jpg?1",
-                "link": "#"
-            },
-            {
-                "title": "test",
-                "thumb": "/img/OD.jpg?1",
-                "link": "#"
-            },
-            {
-                "title": "test",
-                "thumb": "/img/OD.jpg?1",
-                "link": "#"
-            },
-            {
-                "title": "test",
-                "thumb": "/img/OD.jpg?1",
-                "link": "#"
+                "title": "Встречайте Bananacoin на Block Show Asia",
+                "thumb": "/img/news/lounge_alert.jpg?1",
+                "link": "/files/Lounge_rus.pdf"
             }
         ]
     }
