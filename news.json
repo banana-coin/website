@@ -1,11 +1,11 @@
 {
     "en": {
-        "title": "Новости",
+        "title": "News",
         "items": [
             {
-                "title": "",
-                "thumb": "",
-                "link": ""
+                "title": "test",
+                "thumb": "/img/OD.jpg?1",
+                "link": "#"
             }
         ]
     },
@@ -13,9 +13,24 @@
         "title": "Новости",
         "items": [
             {
-                "title": "",
-                "thumb": "",
-                "link": ""
+                "title": "test test test test test test test test test",
+                "thumb": "/img/OD.jpg?1",
+                "link": "#"
+            },
+            {
+                "title": "test",
+                "thumb": "/img/OD.jpg?1",
+                "link": "#"
+            },
+            {
+                "title": "test",
+                "thumb": "/img/OD.jpg?1",
+                "link": "#"
+            },
+            {
+                "title": "test",
+                "thumb": "/img/OD.jpg?1",
+                "link": "#"
             }
         ]
     }

@@ -13,6 +13,8 @@ var removeHtmlComments = require('gulp-remove-html-comments');
 var gutil = require('gulp-util');
 var ftp = require('vinyl-ftp');
 
+var news = require('./news.json');
+
 var release = false;
 
 var structure = {
@@ -147,6 +149,7 @@ gulp.task('static', function() {
         var data = structure.nav[lang];
         data.langs = structure.langs;
         data.lang = lang;
+        data.news = news[lang];
         var folders = ['plantation/', 'faq/', 'plan/', 'token/'];
         gulp.src([lang + '/index.html'])
             .pipe(twig({ data: data, base: 'templates/' }))

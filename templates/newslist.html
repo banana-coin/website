@@ -1,0 +1,22 @@
+<div class="news">
+    <div class="container">
+        <h2>{{ news.title }}</h2>
+        <div class="row news-items">
+            {% for item in news.items|slice(0, 3)%}
+            <div class="col-12 col-md-4">
+                {% if item.link %}
+                <a href="{{ item.link }}" target="blank" class="news-item">
+                    <div class="thumb"><img src="{{ item.thumb }}"></div>
+                    <h4>{{ item.title }}</h4>
+                </a>
+                {% else %}
+                <div class="news-item">
+                    <div class="thumb"><img src="{{ item.thumb }}"></div>
+                    <h4>{{ item.title }}</h4>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
