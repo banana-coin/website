@@ -3,9 +3,19 @@
         "title": "News",
         "items": [
             {
-                "title": "Bananacoin Lounge at Block Show Asia. Everyone welcome!",
-                "thumb": "/img/news/lounge_alert.jpg?1",
+                "title": "Bananacoin Lounge at Block Show Asia. Chill at a comfortable lounge room.",
+                "thumb": "/img/news/lounge_alert_eng.jpg?1",
                 "link": "/files/Lounge_eng.pdf"
+            },
+            {
+                "title": "We got a serious of freshly made interviews with Telegram   lottery winners. People who won a trip to Asia and travelled   to Laos to see Bananacoin plantations with their own eyes.",
+                "thumb": "/img/news/plantation_alert_eng.jpg?1",
+                "link": "/files/plantation_eng.pdf"
+            },
+            {
+                "title": "Bananacoin.io and boutique creative agency wwca.co have announced a new cooperation.",
+                "thumb": "/img/new/wwca_alert_eng.jpg?1",
+                "link": "/files/wwca_eng.pdf"
             }
         ]
     },
@@ -13,9 +23,19 @@
         "title": "Новости",
         "items": [
             {
-                "title": "Встречайте Bananacoin на Block Show Asia!",
-                "thumb": "/img/news/lounge_alert.jpg?1",
+                "title": "Встречайте Bananacoin на Block Show Asia. С красивой панорамой на Сингапур, вкусными канапе и бокалом вина или виски.",
+                "thumb": "/img/news/lounge_alert_ru.jpg",
                 "link": "/files/Lounge_rus.pdf"
+            },
+            {
+                "title": "Сегодня мы подготовили для вас ряд горячих интервью   с победителями Telegram-лотереи, которые отправились   в азиатское путешествие в Лаос на банановые плантации.",
+                "thumb": "/img/news/plantation_alert_ru.jpg?1",
+                "link": "/files/plantation_rus.pdf"
+            },
+            {
+                "title": "Первая экологически чистая плантация в Лаосе и бутиковое креативное агентство wwca.co объявили о начале сотрудничества",
+                "thumb": "/img/new/wwca_alert_rus.jpg?1",
+                "link": "/files/wwca_rus.pdf"
             }
         ]
     }
