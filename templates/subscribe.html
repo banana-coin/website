@@ -1,9 +1,21 @@
-{% set ss = { left_title: 'Are you among of the first 400 000 tokens holders?', left_btn: '<a href="#" class="btn btn-yellow">Save your spot</a>', right_title: 'Subscribe to receive updates', right_btn: 'Subscribe', } %} {% if lang == 'ru' %} {% set ss
-= { left_title: 'Are you among of the first 400 000 tokens holders?', left_btn: '<a href="https://docs.google.com/forms/d/1tyLzX287v1t9ZjVb8OAmKQmZdBzVmqRvwhU6NSVsh9A/" class="btn btn-yellow">Save your spot</a>', right_title: 'Subscribe to receive updates',
-right_btn: 'Subscribe', } %} {% endif %}
+{% set ss = { 
+    left_title: 'Are you among of the first 400 000 tokens holders?',
+    left_btn: '<a href="https://docs.google.com/forms/d/1tyLzX287v1t9ZjVb8OAmKQmZdBzVmqRvwhU6NSVsh9A/" class="btn btn-yellow">Save your spot</a>',
+    right_title: 'Subscribe to receive updates',
+    right_btn: 'Subscribe',
+} %}
+
+{% if lang == 'ru' %}
+    {% set ss = { 
+        left_title: 'Are you among of the first 400 000 tokens holders?',
+        left_btn: '<a href="https://docs.google.com/forms/d/1tyLzX287v1t9ZjVb8OAmKQmZdBzVmqRvwhU6NSVsh9A/" class="btn btn-yellow">Save your spot</a>',
+        right_title: 'Subscribe to receive updates',
+        right_btn: 'Subscribe',
+    } %}
+{% endif %}
 <div class="subscribe">
     <div class="container">
-        <div class="row mt-4 mb-4 justify-content-md-center">
+    <div class="row mt-4 mb-4 justify-content-md-center">
             <div class="col-md-10 col-lg-6">
                 <h3 class="mb-4">{{ ss.left_title }}</h3>
                 <div class="buttons">
@@ -27,10 +39,14 @@ right_btn: 'Subscribe', } %} {% endif %}
                     <input type="hidden" name="is_v5" value="1">
                 </form>
                 <div class="social mt-4">
-                    {% if socials %} {% for social in socials %} {{ social }} {% endfor %} {% endif %}
+                    {% if socials %}
+                    {% for social in socials %}
+                    {{ social }}
+                    {% endfor %}
+                    {% endif %}
                 </div>
             </div>
-
+            
         </div>
     </div>
 </div>
