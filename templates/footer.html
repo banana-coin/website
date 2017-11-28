@@ -3,8 +3,17 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-sm-12">&copy; {{ "now"|date("Y") }} <a href="http://www.bananacoin.io">bananacoin.io</a> - All Rights Reserved</div>
-            <!--<div class="col-md-6 col-sm-12 text-right"><a href="http://wwca.co/" target="_blank"><img src="/img/cwwwa.svg"></a></div>-->
+            <div class="col-md-8 col-sm-12">
+                &copy; {{ "now"|date("Y") }} <a href="http://www.bananacoin.io">bananacoin.io</a> - All Rights Reserved
+                <p class="mini">
+                    {% if lang == 'en' %}
+                    Russian Agriculture Development Co., Ltd is not the organizer of TGE, does not conduct TGE, does not participate in the profits or losses of TGE and is not liable to buyers of Bananacoin project tokens. TGE organizers used information about the functioning of the company Russian Agriculture Development Co., Ltd solely for informational purposes.
+                    {% elseif lang == 'ru'%}
+                    Компания Russian Agriculture Development Co., Ltd не является организатором TGE, не проводит TGE, не участвует в прибылях либо убытках TGE и не несёт ответственности перед покупателями токенов проекта Bananacoin. Организаторы TGE использовали информацию о функционировании компании Russian Agriculture Development Co., Ltd исключительно в ознакомительных целях.                    
+                    {% endif %}
+                </p>
+            </div>
+            {#<div class="col-md-4 col-sm-12 text-right"><a href="http://wwca.co/" target="_blank"><img src="/img/cwwwa.svg"></a></div>#}
         </div>
     </div>
 </footer>

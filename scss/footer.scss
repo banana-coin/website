@@ -1,12 +1,17 @@
 footer {
     background: $white;
-    height: 120px;
+    min-height: 120px;
     padding: 32px 0;
     line-height: 44px;
     font-size: 16px;
     color: lighten($black, 15%);
     img {
         height: 44px;
+    }
+    .mini {
+        line-height: 1.2;
+        color: lighten($black, 50%);
+        font-size: 12px;
     }
 }
 
@@ -22,6 +27,9 @@ footer {
             height: 36px;
             margin: 10px auto 0 auto;
             display: block;
+        }
+        .mini {
+            font-size: 12px;
         }
     }
 }
