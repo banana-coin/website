@@ -1,0 +1,19 @@
+{% set text_subscribe = 'Subscribe' %}
+{% if lang == 'ru' %}
+    {% set text_subdcribe = 'Подписаться' %}
+{% endif %}
+
+<form method="POST" action="https://cp.unisender.com/ru/subscribe?hash=6kcn93bw8orctth6roddm7i5ermmxudq3qq1cz3ei9r5cnxcmideo" name="subscribtion_form">
+    <div class="d-flex">
+        <div>
+            <input type="text" name="email" value="" placeholder="E-mail">
+        </div>
+        <div>
+            <button type="submit" onClick="sendEvent('Lead')" class="btn btn-yellow">{{ text_subscribe }}</button>
+        </div>
+    </div>
+    <input type="hidden" name="charset" value="UTF-8">
+    <input type="hidden" name="default_list_id" value="10608469">
+    <input type="hidden" name="overwrite" value="2">
+    <input type="hidden" name="is_v5" value="1">
+</form>

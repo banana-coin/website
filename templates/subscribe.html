@@ -2,7 +2,6 @@
     left_title: 'Are you among of the first 400 000 tokens holders?',
     left_btn: '<a href="https://docs.google.com/forms/d/1tyLzX287v1t9ZjVb8OAmKQmZdBzVmqRvwhU6NSVsh9A/" class="btn btn-yellow">Save your spot</a>',
     right_title: 'Subscribe to receive updates',
-    right_btn: 'Subscribe',
 } %}
 
 {% if lang == 'ru' %}
@@ -10,7 +9,6 @@
         left_title: 'Are you among of the first 400 000 tokens holders?',
         left_btn: '<a href="https://docs.google.com/forms/d/1tyLzX287v1t9ZjVb8OAmKQmZdBzVmqRvwhU6NSVsh9A/" class="btn btn-yellow">Save your spot</a>',
         right_title: 'Subscribe to receive updates',
-        right_btn: 'Subscribe',
     } %}
 {% endif %}
 <div class="subscribe">
@@ -24,20 +22,7 @@
             </div>
             <div class="col-md-10 col-lg-6">
                 <h3 class="mb-4">{{ ss.right_title }}</h3>
-                <form method="POST" action="https://cp.unisender.com/ru/subscribe?hash=6kcn93bw8orctth6roddm7i5ermmxudq3qq1cz3ei9r5cnxcmideo" name="subscribtion_form">
-                    <div class="d-flex">
-                        <div>
-                            <input type="text" name="email" value="" placeholder="E-mail">
-                        </div>
-                        <div>
-                            <button type="submit" onClick="sendEvent('Lead')" class="btn btn-yellow">{{ ss.right_btn }}</button>
-                        </div>
-                    </div>
-                    <input type="hidden" name="charset" value="UTF-8">
-                    <input type="hidden" name="default_list_id" value="10608469">
-                    <input type="hidden" name="overwrite" value="2">
-                    <input type="hidden" name="is_v5" value="1">
-                </form>
+                {% include 'subscribe-form.html' %}
                 <div class="social mt-4">
                     {% if socials %}
                     {% for social in socials %}
@@ -45,8 +30,7 @@
                     {% endfor %}
                     {% endif %}
                 </div>
-            </div>
-            
+            </div>            
         </div>
     </div>
 </div>

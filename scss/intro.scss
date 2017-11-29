@@ -55,13 +55,17 @@
             font-size: 16px;
             line-height: 1.6;
         }
-        .buttons {
+        h1 ~ .buttons {
             .btn {
-                margin: 10px auto;
                 &.btn-yellow { 
                     background: $white; 
                     &:before { background-image: url('/img/buttons/sale-yellow.svg') }
                 }
+            }
+        }
+        .buttons {
+            .btn {
+                margin: 10px auto;
             }
         }
         .panel {

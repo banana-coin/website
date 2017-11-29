@@ -1,64 +1,49 @@
-{% set start = '29.11.2017 12:00'|date('U') %}{# время компа #}
+{% set start = '29.11.2017 15:00'|date('U') %}{# время компа #}
 
 {% set countdown = { 
-    title: 'Token sale starts in', 
+    title: 'Token sale status', 
     titleStart: 'Token sale started',
     description: 'The first environmentally friendly plantation in Laos which has released a token based on Ethereum, pegged to the export price of 1 kg of bananas.',
-    time: ['Days', 'Hours', 'Minutes', 'Seconds'],
     starttime: '29th November 12:00 GMT — 28th February 12:00 GMT',
+    text_sold: 'Tokens sold',
+    text_total: 'Total tokens',
+    text_of: 'of',
 } %}
-{% set text_subscribe = 'Subscribe' %}
 {% set text_tg = 'Connect with Telegram' %}
 
 {% if lang == 'ru' %}
     {% set countdown = { 
-        title: 'Старт продаж токенов начнется через', 
+        title: 'Статус продаж токенов', 
         titleStart: 'Старт продаж токенов начался',
         description: countdown.description,
-        time: ['Дней', 'Часов', 'Минут', 'Секунд'],
-        starttime: countdown.starttime
+        starttime: countdown.starttime,
+        text_sold: 'Токенов продано',
+        text_total: 'Всего токенов',
+        text_of: 'из',
     }%}
-    {% set text_subdcribe = 'Подписаться' %}
     {% set text_tg = 'Connect with Telegram' %}
 {% endif %}
 
-<div class="panel countdown" data-point="{{start}}">
-    <div class="title" data-onstart="{{ countdown.titleStart }}">{{ countdown.title }}</div>
-    <div class="row left">
-        <div class="days">
-            <span>00</span>
-            {{ countdown.time[0] }}
+<div class="panel countdown">
+    <div class="title">{{ countdown.title }}</div>
+    <div class="row status justify-content-center">
+        <div class="col-md-12 col-lg-4">
+            <div id="tokens_sold">150 000</div>
+            <span>{{ countdown.text_sold }}<span>
         </div>
-        <div class="hours">
-            <span>00</span>
-            {{ countdown.time[1] }}
-        </div>
-        <div class="minutes">
-            <span>00</span>
-            {{ countdown.time[2] }}
-        </div>
-        <div class="seconds">
-            <span>00</span>
-            {{ countdown.time[3] }}
+        <div class="col-md-12 col-lg-2">{{ countdown.text_of }}</div>
+        <div class="col-md-12 col-lg-4">
+            14.6M
+            <span>{{ countdown.text_total }}<span>
         </div>
     </div>
     <div class="starttime">{{ countdown.starttime }}</div>
     <div class="row mt-4 justify-content-md-center">
-        <div class="col-md-10 col-lg-6 col-xl-5">
-            <form method="POST" action="https://cp.unisender.com/ru/subscribe?hash=6kcn93bw8orctth6roddm7i5ermmxudq3qq1cz3ei9r5cnxcmideo" name="subscribtion_form">
-                <div class="d-flex">
-                    <div>
-                        <input type="text" name="email" value="" placeholder="E-mail">
-                    </div>
-                    <div>
-                        <button type="submit" onClick="sendEvent('Lead')" class="btn btn-yellow">{{ text_subscribe }}</button>
-                    </div>
-                </div>
-                <input type="hidden" name="charset" value="UTF-8">
-                <input type="hidden" name="default_list_id" value="10608469">
-                <input type="hidden" name="overwrite" value="2">
-                <input type="hidden" name="is_v5" value="1">
-            </form>
+        <div class="col-md-10 col-lg-7 col-xl-7">
+            <div class="buttons">
+                <a href="#" class="btn btn-yellow">Register to Invest</a>
+                <a href="#" class="btn btn-yellow">Anonymously Invest</a>
+            </div>
         </div>
         <div class="col-md-10 col-lg-5 col-xl-4"><a href="https://t.me/bananacoin{{ lang != 'ru' ? 'eng' : '' }}" target="_blank" class="btn connect-telegram">{{ text_tg }}</a></div>
     </div>
