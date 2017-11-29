@@ -38,7 +38,6 @@ echo "Copy built data to the bananacoin rails repo"
 mkdir -p ../$BANANA_RAILS_NAME/public/
 cp -rf build/* ../$BANANA_RAILS_NAME/public/
 
-#!/bin/bash
 public_dir="../$BANANA_RAILS_NAME/public/"
 langs=( "" "ru" "kr" "jp" "cn" )
 for ln in "${langs[@]}"

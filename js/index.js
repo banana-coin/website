@@ -118,6 +118,28 @@ $(document).ready(function () {
     $('.fancybox').fancybox({
         padding: 0
     });
+
+    var numberWithCommas = function(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+    var get_contributed_in_progress = false;
+    var $contributed = $("#tokens_sold");
+    var get_contributed = function() {
+        if (get_contributed_in_progress === true) {
+            return;
+        }
+        get_contributed_in_progress = true;
+        $.get("/get_contributed2").done(function(data) {
+                $contributed.html(data);
+                get_contributed_in_progress = false;
+            })
+            .fail(function() {
+                $contributed.html('?');
+                get_contributed_in_progress = false;
+            });
+    };
+    get_contributed();
+    setInterval(get_contributed, 5000);
 });
 
 function seconds_to_data(s) {
