@@ -150,7 +150,7 @@ gulp.task('static', function() {
         data.langs = structure.langs;
         data.lang = lang;
         data.news = news[lang];
-        var folders = ['plantation/', 'faq/', 'plan/'];
+        var folders = ['plantation/', 'faq/', 'plan/', 'token/'];
         gulp.src([lang + '/index.html'])
             .pipe(twig({ data: data, base: 'templates/' }))
             .pipe(removeHtmlComments())
