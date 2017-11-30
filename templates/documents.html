@@ -29,7 +29,6 @@
             </div>
             <div class="col-lg-8">
                 <p>{{ documents.description }}</p>
-               <h4>{% if lang == 'ru' %}Скачать{% else %}Download on your language{% endif %}</h4>
                 <div class="buttons">
                     {% for link in documents.links %} {{ link.html }} {% endfor %}
                 </div>
