@@ -31,7 +31,7 @@ var structure = {
             nav: [
                 { title: 'Project', url: '/' },
                 { title: 'Eco plantation', url: '/plantation/' },
-                { title: 'F.A.Q', url: '/faq/' },
+                { title: 'FAQ', url: '/faq/' },
                 { title: 'Team', url: '/#team' },
                 { title: 'Profile', url: '/profile' },
             ],
@@ -49,7 +49,7 @@ var structure = {
             nav: [
                 { title: 'Проект', url: '/ru/' },
                 { title: 'Эко плантация', url: '/ru/plantation/' },
-                { title: 'F.A.Q', url: '/ru/faq/' },
+                { title: 'FAQ', url: '/ru/faq/' },
                 { title: 'Команда', url: '/ru/#team' },
                 { title: 'Профиль', url: '/profile' },
             ],
