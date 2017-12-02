@@ -46,6 +46,24 @@
             top: -70px;
         }
     }
+    .title {
+        flex: 1;
+    }
+    .coss {
+        text-align: right;
+        display: flex;
+        align-items: center;
+        img {
+            margin-left: 10px;
+            width: 100px; 
+            height: 100px;
+        }
+        h4 { 
+            font-weight: normal;
+            font-size: 16px;
+            flex: 1;
+        }
+    }
 }
 
 @include media-breakpoint-down(md) {
