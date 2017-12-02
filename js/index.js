@@ -20,6 +20,10 @@ $(document).ready(function () {
         }
     });
 
+    $('a.popup').fancybox({
+        maxWidth: 600
+    });
+
     if ($('.countdown .days').length) {
         var point = $('.countdown').attr('data-point') ? $('.countdown').attr('data-point') : 1503916273;
         var sec = 0;

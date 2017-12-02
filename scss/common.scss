@@ -49,30 +49,6 @@ h2 {
     background-size: cover;
 }
 
-.fancybox-close {
-    position: fixed;
-    top: 4vh;
-    right: 4vh;
-    width: 44px;
-    height: 44px;
-    background: transparent;
-    &:before, &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 4px;
-        height: 40px;
-        transform-origin: center center;
-        background: $white;
-        transform: rotate(45deg);
-    }
-    &:after {
-        transform: rotate(-45deg)
-    } 
-}
-
 .slick-dots {
     display: flex;
     padding: 0;
