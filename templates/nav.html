@@ -10,7 +10,10 @@
         console.log("FIRED sendEvent -> " + eventName);
     }
 </script>
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PK986FL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <!-- CarrotQuest BEGIN -->
 <script type="text/javascript">
     (function() {
@@ -120,36 +123,27 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/46346796" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 <nav class="navbar navbar-toggleable-md navbar-fixed-top">
-    <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"></button>   
+    <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"></button>
     <div class="container">
-		<a class="navbar-brand" href="/{{ lang != 'en' ? lang }}">
+        <a class="navbar-brand" href="/{{ lang != 'en' ? lang }}">
             <img alt="Bananacoin" src="/img/logo.svg">
         </a>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                {% for n in nav %}
-                {% if not loop.last %}
+                {% for n in nav %} {% if not loop.last %}
                 <li class="nav-item"><a class="nav-link" href="{{ n.url }}">{{ n.title }}</a></li>
-                {% endif %}                
-                {% endfor %}
+                {% endif %} {% endfor %}
             </ul>
             <ul class="mr-auto hidden-md-down"></ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="social">
-                    {% if socials %}
-                    {% for social in socials %}
-                    {{ social }}
-                    {% endfor %}
-                    {% endif %}
+                    {% if socials %} {% for social in socials %} {{ social }} {% endfor %} {% endif %}
                 </li>
                 <li class="nav-item dropdown lang">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ langs[lang].title }}</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        {% for k, l in langs %}
-                        {% if k != lang %}
-                        <a class="dropdown-item" href="{{ l.link }}">{{ l.title }}</a>
-                        {% endif %}
-                        {% endfor %}
+                        {% for k, l in langs %} {% if k != lang %}
+                        <a class="dropdown-item" href="{{ l.link }}">{{ l.title }}</a> {% endif %} {% endfor %}
                     </div>
                 </li>
                 {% set p = nav|last %}
