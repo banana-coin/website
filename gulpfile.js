@@ -21,6 +21,7 @@ var structure = {
     langs: {
         en: { title: 'En', link: '/' },
         ru: { title: 'Рус', link: '/ru' },
+        es: { title: 'Es', link: '/es' },
         //cn: { title: '中文', link: '/cn' },
         //kr: { title: '한국어', link: '/kr' },
         //jp: { title: '日本', link: '/jp' }
@@ -106,6 +107,24 @@ var structure = {
                 '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
                 '<a href="https://www.facebook.com/groups/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
                 '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
+            ]
+        },
+        es: {
+            description: 'World first blockchain option for banana plantation',
+            nav: [
+                { title: 'Project', url: '/' },
+                { title: 'Eco plantation', url: '/plantation/' },
+                { title: 'FAQ', url: '/faq/' },
+                { title: 'Team', url: '/#team' },
+                { title: 'Profile', url: '/profile' },
+            ],
+            socials: [
+                '<a href="https://t.me/bananacoineng" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
+                '<a href="/img/qrcode_for_bananacoin_wechat.jpg" target="_blank" class="fa fa-wechat"></a>',
+                '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
+                '<a href="https://www.facebook.com/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
+                '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
+                '<a href="https://www.instagram.com/eng_bananacoin.io/" target="_blank" class="fa fa-instagram"></a>'
             ]
         }
     }
