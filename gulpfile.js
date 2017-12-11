@@ -112,14 +112,14 @@ var structure = {
         es: {
             description: 'World first blockchain option for banana plantation',
             nav: [
-                { title: 'Project', url: '/' },
-                { title: 'Eco plantation', url: '/plantation/' },
-                { title: 'FAQ', url: '/faq/' },
-                { title: 'Team', url: '/#team' },
-                { title: 'Profile', url: '/profile' },
+                { title: 'Proyecto', url: '/es/' },
+                { title: 'Eco Plantación', url: '/es/plantation/' },
+                { title: 'Preguntas', url: '/es/faq/' },
+                { title: 'Equipo', url: '/#team' },
+                { title: 'Acceso', url: '/profile' },
             ],
             socials: [
-                '<a href="https://t.me/bananacoineng" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
+                '<a href="https://t.me/bananacoin_sp" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
                 '<a href="/img/qrcode_for_bananacoin_wechat.jpg" target="_blank" class="fa fa-wechat"></a>',
                 '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
                 '<a href="https://www.facebook.com/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
