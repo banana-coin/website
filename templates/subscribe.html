@@ -6,9 +6,16 @@
 
 {% if lang == 'ru' %}
     {% set ss = { 
-        left_title: 'Принять участи в проекте',
+        left_title: 'Принять участие в проекте',
         left_btn: '<a href="/token/" class="btn popup fancybox.ajax btn-yellow">Я хочу!</a>',
         right_title: 'Подпишитесь, чтобы получать новости',
+    } %}
+{% endif %}
+{% if lang == 'es' %}
+    {% set ss = { 
+        left_title: 'Participa en la venta de tokens ( fichas)',
+        left_btn: '<a href="/token/" class="btn popup fancybox.ajax btn-yellow">Unase</a>',
+        right_title: 'Suscríbete para recibir actualizaciones',
     } %}
 {% endif %}
 <div class="subscribe">

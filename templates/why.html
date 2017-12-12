@@ -12,17 +12,31 @@
 } %}
 {% if lang == 'ru' %}
     {% set why = { 
-        title: 'Зачем инвестировать в Bananacoin', 
+        title: 'Зачем участвовать в Bananacoin', 
         description: 'Bananacoin - это первый в мире блокчейн-опцион для инвестирования в производство экологически чистых бананов на территории провинции Вьентьян, Лаоская НДР.',
     adv: [
         'Дефицит экспорта бананов в Китай оценивается в 30.000 гектар, рост потребления растет, а все больше китайских плантаций закрывают за применение химии',
         'Цена токена Bananacoin защищена стоимостью килограмма бананов',
-        'В среднесрочном промежутке мы планируем увеличить территорию плантации до 1,000 гектар',
+        'В среднесрочном промежутке мы планируем увеличить территорию плантации до 1,000 гектаров',
         'Наш бизнес полностью прозрачен, мы уже прошли все этапы его развития и считаем себя профессионалами своего дела',
         'Каждый участник имеет право лично посетить наши плантации, в провинции Вьентьян, Лаосская НДР',
         'Наш бизнес легко масштабируется и вырастет в серьезного игрока на азиатском рынке фруктов'
     ]
-    } %} <!-- пример наследования англ варианта -->
+    } %} 
+{% endif %}
+{% if lang == 'es' %}
+    {% set why = { 
+        title: 'Por qué participar en Bananacoin', 
+        description: 'Bananacoin es la primera opción de blockchain del mundo para participar en la producción de plátanos orgánicos en la provincia de Vientiane, Laos.',
+    adv: [
+        'El déficit de exportación de banana a China se estima en 30,000 hectáreas, y el consumo está aumentando',
+        'El precio de la ficha de Bananacoin está respaldado por el costo de un kilogramo de plátanos',
+        'En el mediano plazo, nuestro equipo está planeando aumentar el área de producción a 1,000 hectáreas ',
+        'La variedad cultivada de plátanos Lady Finger es la más cara y la más popular en el mercado chino',
+        'Todos los participantes tienen derecho a visitar personalmente nuestras plantaciones en la provincia de Vientiane, la RDP Lao',
+        'Nuestro negocio es fácil de escalar y se está convirtiendo en un participante serio en el mercado asiático de frutas'
+    ]
+    } %} 
 {% endif %}
 <div class="why">
     <div class="container">

@@ -28,6 +28,22 @@
     ]
     } %} 
 {% endif %}
+{% if lang == 'es' %}
+    {% set roadmap = { 
+        title: 'Hoja de Ruta', 
+        steps: [
+        { completed: true, title: 'Marzo del 2015', description: 'Convenio de Cooperación con especialistas chinos en una plantación arrendada. Alquilamos una plantación' },
+        { completed: true, title: 'Junio del 2016', description: 'Comenzamos nuestra propia plantación' },
+        { completed: true, title: 'Dicimbre del 216', description: 'Primera cosecha' },
+        { completed: true, title: 'Septiembre del 2017', description: '<b>1ra etapa</b><br> Pre-Venta' },
+        { completed: false, title: 'Octubre a Noviembre del 2017', description: '<b>2da etapa</b><br>Venta Privada de tokens' },
+        { completed: false, title: '29 de Noviembre al 30 de Febrero del 2018', description: '<b>3ra etapa</b><br>TGE' },
+        { completed: false, title: 'Desde Diciembre del 2017 hasta Marzo del 2018', description: '<b>4ta etapa</b><br>Preparación del suelo' },
+        { completed: false, title: 'Desde Abril hasta Diciembre del 2018', description: '<b>5ta etapa</b><br>Cultivo de platanos en una nueva plantación' },
+        { completed: false, title: 'Diciembre del 2018', description: '<b>6ta etapa</b><br>Token' },
+    ]
+    } %} 
+{% endif %}
 <div class="roadmap">
     <h2>{{ roadmap.title }}</h2>
     <ul>

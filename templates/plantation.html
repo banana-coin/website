@@ -33,14 +33,14 @@
 
 {% if lang == 'ru' %}
     {% set plantation = { 
-        title: 'Эко плантация', 
+        title: 'Эко-плантация', 
         status: 'Запуск первого органического токена был успешным. <b id="contributed">?</b> токенов было продано во время Pre-sale.',
         description: 'Bananacoin - это токен на блокчейне Ethereum, привязанная к экспортной цене 1-го килограмма бананов.',
         videos: [
             {
             image: 'https://img.youtube.com/vi/IpAS0sgiy94/hqdefault.jpg',
             href: 'https://www.youtube.com/embed/IpAS0sgiy94?autoplay=1',
-            description: 'Banancoin это первый в мире блокчейн-опцион для инвестирования в производство экологически чистых бананов на территории провинции Вьентьян, Лаоская НДР.'
+            description: 'Banancoin - это первый в мире блокчейн-опцион для инвестирования в производство экологически чистых бананов на территории провинции Вьентьян, Лаоская НДР.'
         },
             {
                 image: plantation.videos[0].image,
@@ -58,6 +58,41 @@
                 description: 'Shooting of a new plot of 360 hectares'                
             }
         ]
+    } %}
+{% endif %}
+
+{% if lang == 'es' %}
+    {% set plantation = { 
+        title: 'Eco Plantación', 
+        status: '',
+        description: '',
+        videos: [
+            {
+            image: 'https://img.youtube.com/vi/wOgn7KnR4p0/hqdefault.jpg',
+            href: 'https://www.youtube.com/embed/wOgn7KnR4p0?autoplay=1',
+            description: 'Oleg ha vivido en Vietnam por más de 10 años, invirtiendo en bienes raíces y exportando fruta. Invirtió 50 USD en banancoin, pero su esposa 500 USD. Tuvo más suerte: ganó un viaje a la plantación de Bananacoin. Escucha sus palabras durante su viaje a Vientiane, Laos.'
+        },
+        {
+            image: 'https://img.youtube.com/vi/zsingDPrHZY/hqdefault.jpg',
+            href: 'https://www.youtube.com/embed/zsingDPrHZY?autoplay=1',
+            description: 'Banancoin. Los primeros inversores de Japón llegaron a conocer la experiencia de los equipos.'
+        },
+        {
+            image: 'https://img.youtube.com/vi/SYd4m6IRfCM/hqdefault.jpg',
+            href: 'https://www.youtube.com/embed/SYd4m6IRfCM?autoplay=1',
+            description: 'Recientemente, las autoridades de la provincia septentrional de Lao Bokeo han suspendido las actividades de 18 plantaciones de plátanos respaldadas por China tras descubrir violaciones de las normas sobre el uso de productos químicos agrícolas.'
+        },
+        {
+            image: 'https://img.youtube.com/vi/dT6dMY-7NlU/hqdefault.jpg',
+            href: 'https://www.youtube.com/embed/dT6dMY-7NlU?autoplay=1',
+            description: 'Sin pesticidas'
+        },
+        {
+            image: 'https://img.youtube.com/vi/tzoRWZAX-CA/hqdefault.jpg',
+            href: 'https://www.youtube.com/embed/tzoRWZAX-CA?autoplay=1',
+            description: 'Shooting of a new plot of 360 hectares'
+        }
+    ]
     } %}
 {% endif %}
 
@@ -82,7 +117,50 @@
             </div>
         </div>
         <div class="row info-items">
-            {% if lang == 'ru' %}
+            {% if lang == 'es' %}
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon1.png"></div>
+                        <p class="title">Sin pesticidas</p>
+                        <p>No utilizamos ningún pesticida en producción. El ciclo de producción cumple en su totalidad con las Regulaciones de Laos para el Uso de Productos Químicos Agrícolas.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon2.svg"></div>
+                        <p class="title">Eco-amigable</p>
+                        <p>Estamos planeando crear una "granja orgánica", una plantación de banano que está aislada de otras granjas para proteger el medioambiente ecológico.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon3.svg"></div>
+                        <p class="title">3 años atras</p>
+                        <p>Hemos estado haciendo negocios en Laos durante 15 años. Hace 3 años, comenzamos un negocio agroindustrial, a saber, el cultivo y la exportación de plátanos.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon4.svg"></div>
+                        <p class="title">Negocio rentable</p>
+                        <p>Comenzamos con el arrendamiento de una plantación. Es un negocio rentable. El año pasado lo compramos. Nuestro siguiente paso es la expansión comercial. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon5.png"></div>
+                        <p class="title">Apoyo del gobierno</p>
+                        <p>Tenemos una fuerte conexión con el gobernador de la provincia de Vientiane, donde se encuentran nuestras plantaciones. Él está encantado por la plantaicón.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon6.svg"></div>
+                        <p class="title">Activo a prueba real</p>
+                        <p>La plantación de plátanos es un activo real protegido mediante la blockchain. Es una nueva tecnología del sector agrícola.</p>
+                    </div>
+                </div>
+               {% elseif lang == 'ru' %}
                 <div class="col-lg-4">
                     <div class="info-item">
                         <div class="icon icon-green"><img src="/img/plantation_icon1.png"></div>
@@ -101,14 +179,14 @@
                     <div class="info-item">
                         <div class="icon icon-green"><img src="/img/plantation_icon3.svg"></div>
                         <p class="title">Опыт</p>
-                        <p>Мы ведем бизнес в Лаосе 15 лет и последние 3 года занимаемся успешно выращиванием бананов.</p>
+                        <p>Мы ведем бизнес в Лаосе 15 лет и последние 3 года успешно занимаемся выращиванием бананов.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="info-item">
                         <div class="icon icon-yellow"><img src="/img/plantation_icon4.svg"></div>
                         <p class="title">Выгодный бизнес</p>
-                        <p>За 3 года мы выкупили полностью плантацию и сейчас думаем о расширении бизнеса. </p>
+                        <p>За 3 года мы полностью выкупили плантацию и сейчас думаем о расширении бизнеса. </p>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -122,10 +200,10 @@
                     <div class="info-item">
                         <div class="icon icon-yellow"><img src="/img/plantation_icon6.svg"></div>
                         <p class="title">Прозрачность</p>
-                        <p>Плантация это агрикультурный бизнес. На нее можно приехать, и посмотреть как все работает.</p>
+                        <p>Плантация - это агрокультурный бизнес. На нее можно приехать, и посмотреть как все работает.</p>
                     </div>
                 </div>
-            {% else %}{# english и остальные #}
+            {% else %}
                 <div class="col-lg-4">
                     <div class="info-item">
                         <div class="icon icon-green"><img src="/img/plantation_icon1.png"></div>

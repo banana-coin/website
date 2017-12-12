@@ -11,11 +11,22 @@
 {% if lang == 'ru' %}
     {% set intro = { 
         title: 'Bananacoin', 
-        status: 'Bananacoin - это utility токен на блокчейне Ethereum, привязанный к экспортной цене 1-го килограмма бананов.',
-        description: 'Наша цель - выращивать органический и полезный сорт бананов "Lady Finger" на плантации в Лаосе и экспортировать в Китай, где спрос на этот сорт превышает предложение.',
+        status: 'Bananacoin - это utility токен на блокчейне Ethereum, привязанный к экспортной цене одного килограмма бананов.',
+        description: 'Наша цель - выращивать органический и полезный сорт бананов Lady Finger на плантации в Лаосе и экспортировать в Китай, где спрос на этот сорт превышает предложение.',
         buttons: [
         '<a href="/files/Utility_token_rus.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-white">Природа токена</a>',
         '<a href="/files/White_Paper_Bananacoin_ru.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-white">Скачать White Paper</a>',
+    ]
+} %}
+{% endif %}
+{% if lang == 'es' %}
+    {% set intro = { 
+        title: 'Bananacoin', 
+        status: 'Bananacoin - Es la primera plantación ecológica en Laos ha lanzado un token de utilidad en Ethereum, basado en el  precio de exportación de 1 kg de bananas.',
+        description: 'Nuestra misión es cultivar una variedad orgánica y saludable de bananas conocidas como "Lady Finger" en nuestras plantaciones en Laos y exportarlas a China donde la demanda es mayor que la oferta.',
+        buttons: [
+        '<a href="/files/Utility_token_es.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-white">Naturaleza legal del token</a>',
+        '<a href="/files/White_Paper_Bananacoin_es.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-white">Bajese el Libro Blanco</a>',
     ]
 } %}
 {% endif %}

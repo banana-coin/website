@@ -54,7 +54,9 @@
 {% if lang == 'ru' %}
 {% set partners = partners|merge({title: 'Партнёры'}) %}
 {% endif %}
-
+{% if lang == 'es' %}
+{% set partners = partners|merge({title: 'Asociados '}) %}
+{% endif %}
 <div class="partners">
     <div class="container">
         <h2>{{ partners.title }}</h2>

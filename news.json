@@ -38,5 +38,25 @@
                 "link": "/files/wwca_rus.pdf"
             }
         ]
+    },
+    "es": {
+        "title": "Noticias",
+        "items": [
+            {
+                "title": "Bananacoin Lounge en Block Show Asia. Relájate en una cómoda sala de estar.",
+                "thumb": "/img/news/lounge_alert_eng.jpg",
+                "link": "/files/Lounge_eng.pdf"
+            },
+            {
+                "title": "Tenemos una serie de entrevistas recién hechas con los ganadores de lotería de Telegram. Gente que ganó un viaje a Asia y viajó a Laos para ver las plantaciones de Bananacoin con sus propios ojos.",
+                "thumb": "/img/news/plantation_alert_eng.jpg?1",
+                "link": "/files/plantation_eng.pdf"
+            },
+            {
+                "title": "Bananacoin.io y la agencia creativa boutique wwca.co anunciaron una nueva cooperación.",
+                "thumb": "/img/news/wwca_alert_eng.jpg?1",
+                "link": "/files/wwca_eng.pdf"
+            }
+        ]
     }
 }
