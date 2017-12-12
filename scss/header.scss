@@ -83,6 +83,10 @@ nav.navbar {
                 font-size: 32px;
                 text-indent: -1px;
             }
+            &.kakao {
+                background-image: url(/img/kakaotalk.svg);
+                background-size: cover;
+            }
         }
     }
 }
@@ -148,7 +152,8 @@ nav.navbar {
             right: 0;
         }
         .social {
-            display: none;
+            display: flex;
+            margin-bottom: 15px;
         }
         .lang { 
             position: absolute; left: 20px; top: 5px; 
