@@ -177,7 +177,7 @@ gulp.task('static', function() {
         data.langs = structure.langs;
         data.lang = lang;
         data.news = news[lang];
-        var folders = ['plantation/', 'faq/', 'plan/', 'token/'];
+        var folders = ['plantation/', 'faq/', 'plan/', 'token/', 'bank/'];
         gulp.src([lang + '/index.html'])
             .pipe(twig({ data: data, base: 'templates/' }))
             .pipe(removeHtmlComments())

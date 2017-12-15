@@ -66,7 +66,8 @@
         <div class="col-md-10 col-lg-7 col-xl-7">
             <div class="buttons">
                </h4> <a href="https://bananacoin.io/users/sign_up" class="btn btn-yellow">{% if lang == 'ru' %}Купить за Биткоины{% elseif lang == 'es' %}Compre con Bitcoins{% else %}Buy with Bitcoins{% endif %}</a>
-                <a href="{{ lang != 'en' ? '/'~lang : '' }}/token" class="btn btn-yellow popup fancybox.ajax">{% if lang == 'ru' %}Купить за Эфириум{% elseif lang == 'es' %}Compre con Ethereum{% else %}Buy with Ethereum{% endif %}</a>
+                 <a href="{{ lang != 'en' ? '/'~lang : '' }}/token" class="btn btn-yellow popup fancybox.ajax">{% if lang == 'ru' %}Купить за Эфириум{% elseif lang == 'es' %}Compre con Ethereum{% else %}Buy with Ethereum{% endif %}</a>
+               <a href="{{ lang != 'en' ? '/'~lang : '' }}/bank" class="btn btn-yellow popup fancybox.ajax">{% if lang == 'ru' %}Банковский перевод{% elseif lang == 'es' %}Compre con bank{% else %}Buy with bank transfer{% endif %}</a>
                 <a href="{% if lang == 'ru' %}https://docs.google.com/document/d/1nfRPSSmEcDl2NvPrrxDzwzLimZAjOv1ousdNRfAfzGA{% elseif lang == 'es' %}https://docs.google.com/document/d/1Cd4YBrDxcAZMxsFoSVXpXEJElR0TUMLYmtDU3GqoybY/edit?ts=5a2d35b3#heading=h.ni8ejystzdom{% else %}https://docs.google.com/document/d/1NmuebOT6Jvt7lMcBIwLsO_pMlspWXETswFi9FL3zwDI{% endif %}" class="btn btn-yellow" target="_blank">{% if lang == 'ru' %}Как купить Bananacoin{% elseif lang == 'es' %}Como Comprar Bananacoin{% else %}How to buy Bananacoin{% endif %}</a>
             </div>
         </div>
