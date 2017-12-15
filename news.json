@@ -1,7 +1,11 @@
 {
     "en": {
         "title": "News",
-        "items": [
+        "items": [{
+                "title": "ICO Clap listing is a good way to promote your crowdfunding project.",
+                "thumb": "/img/news/icoclap.jpg",
+                "link": "http://icoclap.com/bananacoin"
+            },
             {
                 "title": "Bananacoin Lounge at Block Show Asia. Chill at a comfortable lounge room.",
                 "thumb": "/img/news/lounge_alert_eng.jpg?1",
@@ -21,7 +25,11 @@
     },
     "ru": {
         "title": "Новости",
-        "items": [
+        "items": [{
+                "title": "Листинг ICO Clap отлично рассказал про наш проект.",
+                "thumb": "/img/news/icoclap.jpg",
+                "link": "http://icoclap.com/bananacoin"
+            },
             {
                 "title": "Встречайте Bananacoin на Block Show Asia. С красивой панорамой на Сингапур, вкусными канапе и бокалом вина или виски.",
                 "thumb": "/img/news/lounge_alert_ru.jpg",
@@ -41,8 +49,7 @@
     },
     "es": {
         "title": "Noticias",
-        "items": [
-            {
+        "items": [{
                 "title": "Bananacoin Lounge en Block Show Asia. Relájate en una cómoda sala de estar.",
                 "thumb": "/img/news/lounge_alert_eng.jpg",
                 "link": "/files/Lounge_eng.pdf"
