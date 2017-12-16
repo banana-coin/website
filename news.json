@@ -26,6 +26,11 @@
     "ru": {
         "title": "Новости",
         "items": [{
+                "title": "Недавно команда BananaCoin, первого в мире блокчейн-опциона по производству экологически чистых бананов, совершила важную деловую поездку, посетив Тайланд, Сингапур, Монголию и США.",
+                "thumb": "/img/news/happy_coin1.jpg",
+                "link": "https://happycoin.club/novyie-dostizheniya-bananacoin/"
+            },
+            {
                 "title": "Листинг ICO Clap отлично рассказал про наш проект.",
                 "thumb": "/img/news/icoclap.jpg",
                 "link": "http://icoclap.com/bananacoin"
