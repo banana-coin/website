@@ -47,6 +47,30 @@
     }%}
     {% set text_tg = 'Telegramに接続します。' %}
 {% endif %}
+{% if lang == 'cn' %}
+    {% set countdown = { 
+        title: '代币销售状态<br>1代币 (BCO) = 0.5 美元', 
+        titleStart: 'Старт продаж токенов начался',
+        description: countdown.description,
+        starttime: countdown.starttime,
+        text_sold: '代币已售出',
+        text_total: '代币总数',
+        text_of: '的',
+    }%}
+    {% set text_tg = '连接到Telegram' %}
+{% endif %}
+{% if lang == 'fra' %}
+    {% set countdown = { 
+        title: 'Statut de la vente de Tokens<br>1 token (BCO) = 0.5 USD', 
+        titleStart: 'Старт продаж токенов начался',
+        description: countdown.description,
+        starttime: countdown.starttime,
+        text_sold: 'TOKENS VENDUS',
+        text_total: 'TOTAL DE TOKENS',
+        text_of: 'из',
+    }%}
+    {% set text_tg = 'Se connecter sur Telegram' %}
+{% endif %}
 
 <div class="panel countdown">
     <div class="row">
@@ -80,12 +104,47 @@
     <div class="row mt-4 justify-content-md-center">
         <div class="col-md-10 col-lg-7 col-xl-7">
             <div class="buttons">
-               </h4> <a href="https://bananacoin.io/users/sign_up" class="btn btn-yellow">{% if lang == 'ru' %}Купить за Биткоины{% elseif lang == 'es' %}Compre con Bitcoins{% else %}Buy with Bitcoins{% endif %}</a>
-                 <a href="{{ lang != 'en' ? '/'~lang : '' }}/token" class="btn btn-yellow popup fancybox.ajax">{% if lang == 'ru' %}Купить за Эфириум{% elseif lang == 'es' %}Compre con Ethereum{% else %}Buy with Ethereum{% endif %}</a>
-               <a href="{% if lang == 'ru' %}https://docs.google.com/document/d/1sDiGb4ugLtNwHL37gc1ABl-F0SDnHC4-TltH_GXzAT8/edit?usp=sharing{% elseif lang == 'es' %}https://docs.google.com/document/d/1ZZMKDZgUzTFKA-X5YbI4m3Sy0-qKWvXiQ2JZjDPXVoU/edit?usp=sharing{% else %}https://docs.google.com/document/d/1ZZMKDZgUzTFKA-X5YbI4m3Sy0-qKWvXiQ2JZjDPXVoU/edit?usp=sharing{% endif %}" class="btn btn-yellow" target="_blank">{% if lang == 'ru' %}Банковский перевод{% elseif lang == 'es' %}Como Comprar Bank{% else %}Bank transfer{% endif %}</a>
-                <a href="{% if lang == 'ru' %}https://docs.google.com/document/d/1nfRPSSmEcDl2NvPrrxDzwzLimZAjOv1ousdNRfAfzGA{% elseif lang == 'es' %}https://docs.google.com/document/d/1Cd4YBrDxcAZMxsFoSVXpXEJElR0TUMLYmtDU3GqoybY/edit?ts=5a2d35b3#heading=h.ni8ejystzdom{% else %}https://docs.google.com/document/d/1NmuebOT6Jvt7lMcBIwLsO_pMlspWXETswFi9FL3zwDI{% endif %}" class="btn btn-yellow" target="_blank">{% if lang == 'ru' %}Как купить Bananacoin{% elseif lang == 'es' %}Como Comprar Bananacoin{% else %}How to buy Bananacoin{% endif %}</a>
+               </h4> <a href="https://bananacoin.io/users/sign_up" class="btn btn-yellow">
+               {% if lang == 'ru' %}Купить за Биткоины
+               {% elseif lang == 'es' %}Compre con Bitcoins
+               {% elseif lang == 'cn' %}购买Bitcoins
+               {% elseif lang == 'jp' %}Bitcoinsを購入します。
+               {% elseif lang == 'fra' %}Acheter avec des Bitcoins
+               {% else %}Buy with Bitcoins{% endif %}</a>
+                 <a href="{{ lang != 'en' ? '/'~lang : '' }}/token" class="btn btn-yellow popup fancybox.ajax">
+                 {% if lang == 'ru' %}Купить за Эфириум
+                 {% elseif lang == 'es' %}Compre con Ethereum
+                 {% elseif lang == 'jp' %}Ethereumを購入します。
+                 {% elseif lang == 'cn' %}购买Ethereum
+                 {% elseif lang == 'fra' %}Acheter avec des Ethereums
+                 {% else %}Buy with Ethereum{% endif %}</a>
+               <a href="
+               {% if lang == 'ru' %}https://docs.google.com/document/d/1sDiGb4ugLtNwHL37gc1ABl-F0SDnHC4-TltH_GXzAT8/edit?usp=sharing
+               {% elseif lang == 'es' %}https://docs.google.com/document/d/1ZZMKDZgUzTFKA-X5YbI4m3Sy0-qKWvXiQ2JZjDPXVoU/edit?usp=sharing
+               {% else %}https://docs.google.com/document/d/1ZZMKDZgUzTFKA-X5YbI4m3Sy0-qKWvXiQ2JZjDPXVoU/edit?usp=sharing
+               {% endif %}" class="btn btn-yellow" target="_blank">{% if lang == 'ru' %}Банковский перевод
+               {% elseif lang == 'es' %}Como Comprar Bank
+               {% elseif lang == 'fra' %}Virement
+               {% elseif lang == 'cn' %}銀行轉帳
+               {% elseif lang == 'jp' %}銀行振込
+               {% else %}Bank transfer{% endif %}</a>
+                <a href="{% if lang == 'ru' %}https://docs.google.com/document/d/1nfRPSSmEcDl2NvPrrxDzwzLimZAjOv1ousdNRfAfzGA
+                {% elseif lang == 'es' %}https://docs.google.com/document/d/1Cd4YBrDxcAZMxsFoSVXpXEJElR0TUMLYmtDU3GqoybY/edit?ts=5a2d35b3#heading=h.ni8ejystzdom
+                {% elseif lang == 'jp' %}/files/How_to_buy_Bananacoin_jp.pdf
+                {% elseif lang == 'fra' %}/files/How_to_buy_Bananacoin_fra.pdf
+                {% elseif lang == 'cn' %}/files/How_to_buy_Bananacoin_cn.pdf
+                {% else %}https://docs.google.com/document/d/1NmuebOT6Jvt7lMcBIwLsO_pMlspWXETswFi9FL3zwDI
+                {% endif %}" class="btn btn-yellow" target="_blank">
+                {% if lang == 'ru' %}Как купить Bananacoin
+                {% elseif lang == 'es' %}Como Comprar Bananacoin
+                {% elseif lang == 'fra' %}Comment acheter des Bananacoin
+                {% elseif lang == 'cn' %}如何购买Bananacoin
+                {% elseif lang == 'jp' %}Bananacoinの購入方法
+                {% else %}How to buy Bananacoin{% endif %}</a>
             </div>
         </div>
-        <div class="col-md-10 col-lg-5 col-xl-4"><a href="https://t.me/bananacoin{{ lang != 'ru' ? 'eng' : '' }}" target="_blank" class="btn connect-telegram">{{ text_tg }}</a></div>
+        <div class="col-md-10 col-lg-5 col-xl-4">
+            <a href="https://t.me/bananacoin{{ lang != 'ru' ? 'eng' : '' }}" target="_blank" class="btn connect-telegram">
+            {{ text_tg }}</a></div>
     </div>
 </div>

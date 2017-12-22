@@ -23,7 +23,7 @@ var structure = {
         ru: { title: 'Рус', link: '/ru' },
         es: { title: 'Es', link: '/es' },
         cn: { title: '中文', link: '/cn' },
-        fr: { title: 'Fra', link: '/fra' },
+        fra: { title: 'Fra', link: '/fra' },
         //kr: { title: '한국어', link: '/kr' },
         jp: { title: '日本', link: '/jp' }
     },
@@ -51,10 +51,10 @@ var structure = {
         jp: {
             description: 'ラオス初の環境保全型プランテーションはすでにEthereumで実用トークンを発行しました。1キログラムのバナナの輸出価格と関連付けています。',
             nav: [
-                { title: 'プロジェクト', url: '/' },
-                { title: 'エゴプランテーション', url: '/plantation/' },
-                { title: 'よくある問題', url: '/faq/' },
-                { title: 'チーム', url: '/#team' },
+                { title: 'Project', url: '/' },
+                { title: 'Eco plantation', url: '/plantation/' },
+                { title: 'FAQ', url: '/faq/' },
+                { title: 'Team', url: '/#team' },
                 { title: '個人情報', url: '/profile' },
             ],
             socials: [
@@ -88,7 +88,7 @@ var structure = {
                 '<a href="https://open.kakao.com/o/gRtuHrz" target="_blank" onClick="sendEvent(\'ViewContent\')" class="kakao"></a>'
             ]
         },
-        fr: {
+        fra: {
             description: 'La première plantation respectueuse de lenvironnement au Laos a lancé un token basé sur Ethereum, corrélé au prix à lexportation d un 1 kg de bananes.',
             nav: [
                 { title: 'Projet', url: '/' },
