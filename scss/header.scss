@@ -91,6 +91,39 @@ nav.navbar {
     }
 }
 
+/* NY */
+.navbar-brand {
+    &:after {
+        content: '';
+        display: block;
+        background: url(/img/ny.png) no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        top: -18px;
+        left: 20px;
+    }
+}
+
+@media all and (min-width: 1480px) {
+    .navbar-brand {
+        &:after {
+            top: -22px;
+            left: 10px;        
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .navbar-brand {
+        &:after {
+            display: none;     
+        }
+    }
+}
+/* NY end */
+
 @media all and (min-width: 1480px) {
     nav.navbar {
         .nav-link {
