@@ -22,9 +22,10 @@ var structure = {
         en: { title: 'En', link: '/' },
         ru: { title: 'Рус', link: '/ru' },
         es: { title: 'Es', link: '/es' },
-        //cn: { title: '中文', link: '/cn' },
+        cn: { title: '中文', link: '/cn' },
+        fr: { title: 'Fra', link: '/fra' },
         //kr: { title: '한국어', link: '/kr' },
-        //jp: { title: '日本', link: '/jp' }
+        jp: { title: '日本', link: '/jp' }
     },
     nav: {
         en: {
@@ -38,6 +39,66 @@ var structure = {
             ],
             socials: [
                 '<a href="https://t.me/bananacoineng" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
+                '<a href="https://bitcointalk.org/index.php?topic=2112748" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-btc"></a>',
+                '<a href="/img/qrcode_for_bananacoin_wechat.jpg" target="_blank" class="fa fa-wechat"></a>',
+                '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
+                '<a href="https://www.facebook.com/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
+                '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
+                '<a href="https://www.instagram.com/eng_bananacoin.io/" target="_blank" class="fa fa-instagram"></a>',
+                '<a href="https://open.kakao.com/o/gRtuHrz" target="_blank" onClick="sendEvent(\'ViewContent\')" class="kakao"></a>'
+            ]
+        },
+        jp: {
+            description: 'ラオス初の環境保全型プランテーションはすでにEthereumで実用トークンを発行しました。1キログラムのバナナの輸出価格と関連付けています。',
+            nav: [
+                { title: 'プロジェクト', url: '/' },
+                { title: 'エゴプランテーション', url: '/plantation/' },
+                { title: 'よくある問題', url: '/faq/' },
+                { title: 'チーム', url: '/#team' },
+                { title: '個人情報', url: '/profile' },
+            ],
+            socials: [
+                '<a href="https://t.me/bananacoinjapan" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
+                '<a href="https://bitcointalk.org/index.php?topic=2112748" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-btc"></a>',
+                '<a href="/img/qrcode_for_bananacoin_wechat.jpg" target="_blank" class="fa fa-wechat"></a>',
+                '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
+                '<a href="https://www.facebook.com/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
+                '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
+                '<a href="https://www.instagram.com/eng_bananacoin.io/" target="_blank" class="fa fa-instagram"></a>',
+                '<a href="https://open.kakao.com/o/gRtuHrz" target="_blank" onClick="sendEvent(\'ViewContent\')" class="kakao"></a>'
+            ]
+        },
+        cn: {
+            description: '老挝首个环保种植园已经在Ethereum发行了实用代币，与1公斤香蕉的出口价格挂钩。',
+            nav: [
+                { title: '项目', url: '/' },
+                { title: '生态种植园', url: '/plantation/' },
+                { title: '常问问题', url: '/faq/' },
+                { title: '团队', url: '/#team' },
+                { title: '简介', url: '/profile' },
+            ],
+            socials: [
+                '<a href="https://t.me/bananacoin_ch" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
+                '<a href="https://bitcointalk.org/index.php?topic=2112748" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-btc"></a>',
+                '<a href="/img/qrcode_for_bananacoin_wechat.jpg" target="_blank" class="fa fa-wechat"></a>',
+                '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
+                '<a href="https://www.facebook.com/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
+                '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
+                '<a href="https://www.instagram.com/eng_bananacoin.io/" target="_blank" class="fa fa-instagram"></a>',
+                '<a href="https://open.kakao.com/o/gRtuHrz" target="_blank" onClick="sendEvent(\'ViewContent\')" class="kakao"></a>'
+            ]
+        },
+        fr: {
+            description: 'La première plantation respectueuse de lenvironnement au Laos a lancé un token basé sur Ethereum, corrélé au prix à lexportation d un 1 kg de bananes.',
+            nav: [
+                { title: 'Projet', url: '/' },
+                { title: 'Eco Plantation', url: '/plantation/' },
+                { title: 'FAQ', url: '/faq/' },
+                { title: 'Equipe', url: '/#team' },
+                { title: 'Profil', url: '/profile' },
+            ],
+            socials: [
+                '<a href="https://t.me/bananacoin_fr" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
                 '<a href="https://bitcointalk.org/index.php?topic=2112748" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-btc"></a>',
                 '<a href="/img/qrcode_for_bananacoin_wechat.jpg" target="_blank" class="fa fa-wechat"></a>',
                 '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
@@ -66,22 +127,6 @@ var structure = {
                 '<a href="https://www.instagram.com/eng_bananacoin.io/" target="_blank" class="fa fa-instagram"></a>'
             ]
         },
-        cn: {
-            description: '在世界上生产香蕉的第一个区块链期权',
-            nav: [
-                { title: '项目', url: '/cn/' },
-                { title: '种植园', url: '/cn/plantation/' },
-                { title: 'Profile', url: '/profile' },
-            ],
-            socials: [
-                '<a href="https://t.me/bananacoineng" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
-                '<a href="https://bitcointalk.org/index.php?topic=2112748" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-btc"></a>',
-                '<a href="/img/qrcode_for_bananacoin_wechat.jpg" target="_blank" class="fa fa-wechat"></a>',
-                '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
-                '<a href="https://www.facebook.com/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
-                '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
-            ]
-        },
         kr: {
             description: '세계 최초 바나나 농장 블락체인 옵션',
             nav: [
@@ -98,22 +143,6 @@ var structure = {
                 '<a href="https://www.facebook.com/groups/bananacoinkorea/" target="_blank" class="fa fa-facebook-f"></a>',
                 '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
                 '<a href="https://www.instagram.com/bananacoin.korea/" target="_blank" class="fa fa-instagram"></a>'
-            ]
-        },
-        jp: {
-            description: 'Bananaсoin: クラウドファンディングによる ラオス(ヴィエンチャン都)のバナナ製造拡大',
-            nav: [
-                { title: 'プロジェクト', url: '/jp/' },
-                { title: 'エコ農園', url: '/jp/plantation/' },
-                { title: '個人アカウント', url: '/profile' },
-            ],
-            socials: [
-                '<a href="https://t.me/bananacoinjapan" target="_blank" onClick="sendEvent(\'ViewContent\')" class="fa fa-telegram"></a>',
-                '<a href="https://bitcointalk.org/index.php?topic=2112748" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-btc"></a>',
-                '<a href="/img/qrcode_for_bananacoin_wechat.jpg" target="_blank" class="fa fa-wechat"></a>',
-                '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
-                '<a href="https://www.facebook.com/groups/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
-                '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
             ]
         },
         es: {

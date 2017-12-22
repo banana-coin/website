@@ -2,55 +2,56 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>BananaCoin : エコ農園</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="/styles.css" />
-    <link href="/img/favicon.ico" rel="icon">
+    <title>BananaCoin : Экологически чистая плантация</title>
+    {% include 'head.html' %}
 </head>
 
 <body class="{{ lang }}">
-    @import "nav.html"
+    {% include 'nav.html' %}
     <main>
+        {% set fullView = true %}
+        {% include 'plantation.html' %}
         <div class="heading">
             <div class="container">
-                <h2>BananaCoinは地域での初めてのオーガニック農園 </h2>
+                <h2>BananaCoin - первая экологически чистая плантация в регионе</h2>
             </div>
         </div>
         <div class="about">
             <div class="container plantation">
                 <img src="/img/plan1.jpg" class="main">
-                <p><a href="http://www.asianews.it/news-en/Chinese-banana-plantations-banned-for-endangering-the-environment-and-farm-workers-39818.html">現在</a>，ラオスの北部にあるボケオ県では農薬使用に関する違反により18の中国資本のバナナ園の操業を停止している。</p>
-                <p>この状態は維持される見通し。</p>
-                <p>化学肥料の自然と人への影響は完全に判断できません。栽培するとき殺虫剤を使用すると、バナナも、土地は有毒になります。
+                <h3><a href="bokeo.html">В настоящее время, власти северной Лаоской провинции Бокео, приостановили деятельности 18 поддерживаемых китайцами банановых плантаций после того</a>, как они обнаружили нарушения правил использования сельскохозяйственных
+                    химикатов. </h3>
+                <p>Указанная тенденция будет сохраняться, так как количество подобных случаев растет.</p>
+                <p>Невозможно до конца оценить негативное влияние использования химических удобрений на природу и человеческую жизнь. Использование пестицидов делают бананы непригодными к употреблению, а возделываемые земли зараженными.
                 </p>
-                <p>有機肥料の代わりに化学肥料が使われている農園で働いている作業者の63%は、最近の6ヶ月で病気になった。主な症状は頭痛と目眩。</p>
-                <p>弊社の園で有機で環境にやさしくて、微量元素のバランスがいいグアノ、またはバットの厩肥使用する。新しい根の発生を速めて、発生した後も維持します。それに開花期にも微量元素のバランスを維持し、黴菌に対する耐性をあげます。バナナの質と味を良くします。</p>
+                <p>63% рабочих, вовлеченных в работу на плантациях, использующих химию, вместо органики, болели за последние 6 месяцев. Основные симптомы: головная боль и головокружение.
+                </p>
+                <p>Мы используем гуано или навоз летучих мышей, которое является органическим и экологически чистым и сбалансированным удобрением. Оно поддерживает и значительно ускоряет образование новых корней, обогащает растения в период цветения и повышает
+                    его устойчивость к бактериям. Улучшает качество и вкус бананов.</p>
                 <div class="team">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4">
                                 <a class="various fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/pEW-UNKnw1Q?autoplay=1">
-                                    <img src="/img/vid4.jpg">
+                                    <img src="/img/vid4.jpg" alt="BananaCoin использует только органические удобрения">
                                 </a>
-                                <p>BananaCoinは有機の肥料だけを使っています。</p>
+                                <p>BananaCoin использует только органические удобрения</p>
                             </div>
                             <div class="col-md-4">
                                 <a class="various fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/8-vPnUJ0kws?autoplay=1">
                                     <img src="/img/vid5.jpg" alt="Первые шаги для открытия плантации">
                                 </a>
-                                <p>農園の立ち上げるスタート</p>
+                                <p>Первые шаги для открытия плантации</p>
                             </div>
                             <div class="col-md-4">
                                 <a class="various fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/saxRqUOIOvs?autoplay=1">
                                     <img src="/img/vid6.jpg" alt="Очень важные документы">
                                 </a>
-                                <p>重要な書類</p>
+                                <p>Очень важные документы</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
 
 
                 <div class="gallery">
@@ -67,8 +68,8 @@
                         <a href="/img/gal8.jpg" class="thumbnail fancybox" rel="gallery"><img src="/img/gal8-t.jpg" /></a>
                     </div>
                 </div>
-
+                <p>Расширенный набор документов вы сможете найти в Личном Кабинете</p>
             </div>
         </div>
-        
+
         {% include 'footer.html' %}
