@@ -38,6 +38,48 @@
     ]
     } %} 
 {% endif %}
+{% if lang == 'fra' %}
+    {% set why = { 
+        title: 'Pourquoi participer à Bananacoin', 
+        description: 'Bananacoin est la première solution blockchain au monde qui permet de participer à la production de bananes biologiques dans la province de Vientiane, au Laos.',
+    adv: [
+        'Le déficit d exportations de bananes en Chine est estimé à 30 000 hectares, la consommation est en constante augmentation',
+        'Le prix du token Bananacoin est protégé par le coût d un kilogramme de bananes',
+        'A moyen terme, notre équipe prévoit d augmenter la superficie de production de 1000 hectares ',
+        'La variété de bananes cultivées, Finger Lady, est la plus chère et la plus populaire sur le marché Chinois',
+        'Chaque investisseur a le droit de venir en personne visiter nos plantations dans la province de Vientiane, au Laos',
+        'Notre business est facile à faire évoluer et il est en train de devenir un acteur important dans le marché du fruit en Asie '
+    ]
+    } %} 
+{% endif %}
+{% if lang == 'jp' %}
+    {% set why = { 
+        title: 'Bananacoinに参加する理由', 
+        description: 'Bananacoinは世界初のラオスビエンチャンプロヴィンスの有機バナナ生産に参加するブロックチェーンオプションであります。',
+    adv: [
+        '中国に輸出するバナナの不足量は3万ヘクタールである見込みであり、その消費量は増えています。',
+        'Bananacoinトークンの価格は1キログラムバナナの価格に保護されています。',
+        '中期間から見れば、私達のチームは生産面積を1000ヘクタールに増やすと計画しています。 ',
+        '栽培するバナナ品種Lady Fingerは中国市場で最も高くて人気のあるものであります。',
+        '参加者はいずれも私達のラオスビエンチャンプロヴィンスにあるプランテーションを訪問する権利があります。',
+        '私達の業務規模は非常に拡張し易く、また、アジア果物市場でますます重要になってきています。 '
+    ]
+    } %} 
+{% endif %}
+{% if lang == 'cn' %}
+    {% set why = { 
+        title: '为什么要参加Bananacoin', 
+        description: 'Bananacoin是世界上第一个参与老挝万象省有机香蕉生产的区块链期权。',
+    adv: [
+        '出口到中国的香蕉缺口估计为3万公顷，消费量正在增加',
+        'Bananacoin代币的价格受到一公斤香蕉价格的保护',
+        '从中期来看，我们的团队计划将生产面积增加到1000公顷 ',
+        '种植的香蕉品种Lady Finger是中国市场上最昂贵和最受欢迎的',
+        '种植的香蕉品种Lady Finger是中国市场上最昂贵和最受欢迎的',
+        '我们的业务规模很容易扩大，而且在亚洲水果市场上正变得越来越重要 '
+    ]
+    } %} 
+{% endif %}
 <div class="why">
     <div class="container">
         <h2>{{ why.title }}</h2>
