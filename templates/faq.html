@@ -448,7 +448,162 @@
     } %} 
 {% endif %}
 
-
+{% if lang == 'jp' %}
+    {% set faq = { 
+        title: 'よくある問題',
+    description: '私達は完全に公開すると主張しているため、よくある問題の中でご質問を見付けなかった場合、私達に送信してください。私達はできるだけ早く連絡いたします。',
+    text_showmore: 'もっと多い表示します。',
+    questions: [
+    { 
+        title: 'TGEとは？', 
+        answer: 'TGE（トークン生成事件）はクラウドファンディングの1種であります。それによって私達はデジタルトークンを発行して投資を引き換えることができます。いかなるトークンはその所有者に声明された条件による収益を獲得する権利を与えます。' 
+    },
+    { 
+        title: '貴方達は誰ですか？', 
+        answer: '私達は本当のバナナプランテーションの所有者です。貴方はウェブサイトのホームページから私達のチームと開発者を了解してください。また、直接にhttps://t.me/bananacoineng の Telegram チャートルームを利用して私達と交流を交わすことができます。' 
+    },
+    { 
+        title: 'Bananacoin農場のアドレスはどこですか？', 
+        answer: 'Ban. NAPHONG. Distric HINHEAP.pr.VIENTIANE. gps - 18.5585025 102.19301210。Googleマップでこれを見付けることができます：https：//goo.gl/maps/542XdhqpETP2' 
+    },
+    { 
+        title: '農業産業はブロックチェーンとどう関連しますか？', 
+        answer: '私達は農業産業とブロックチェーンを一緒にバンドルするのではなく、私達はブロックチェーンの機能を利用して投資を募集（クラウドファンディング）し、また、将来の投資者に透明の支払いを按配します。' 
+    },
+    { 
+        title: 'ボーナス計画がありますか？', 
+        answer: 'ボーナス計画はすでに終わりました。もっと多い情報は次のサイトにアクセスください：https://bitcointalk.org/index.php?topic=2164386.0。' 
+    },
+    { 
+        title: 'なぜラオスですか？なぜべトラムまたは中国ではないですか？', 
+        answer: '現在、私達はラオスで農業生産に従事しているため、現地政府の認可と広汎の税収優遇を持っています。
+中国であれば、生産コストは高過ぎます。べトラムの土地は農業生態に対し、不利な影響（戦後の化学汚染）があります。' 
+    },
+    { 
+        title: '¿ Why bananas, why not rice or apples?', 
+        answer: 'We are professionals of the banana industry, and we are making money on this right now. So now its bananas. Moreover, bananas occupy the first place in terms of consumption in the world, making it an excellent business.' 
+    },
+    { 
+        title: 'What is the cost of one token?', 
+        answer: 'The cost of the first million BCO is 0.25 US dollars per one token. The cost of one token on the main event
+        is 0.5 US dollars.' 
+    },
+    { 
+        title: 'Do you use pesticides ?', 
+        answer: 'No, our plantations are completely ecological.' 
+    },
+    { 
+        title: 'What insurance do you offer the investors against the volatility of the crypto currency? Right now, it is more profitable to buy bitcoins.', 
+        answer: 'We conduct business in the real sector and therefore price binding will be to the market value of bananas in dollars. At the expense of investment prospects, the personal choice and strategy, we are ready to share our business model.' 
+    },
+    { 
+        title: 'Do farmers have good working conditions?', 
+        answer: 'When we started out, it was only villagers and rice fields. Nothing more, just that. We installed electricity, organized access to freshwater and built the infrastructure. Conditions have become much better. Now we are working on installing high-speed Internet.
+        <br>At the pre-session stage, we organized a lottery among investors, three of whom could personally communicate with farmers in Laos.' 
+    },
+    { 
+        title: 'Total number of tokens - who issues them?', 
+        answer: 'Tokens are issued once by our developers, equal to the amount covering an investment of $ 7,340,000. After the redemption process, the tokens will be publicly destroyed.' 
+    },
+    { 
+        title: 'What is the position of the government of Laos regarding the TGE, and what will happen if they follow the path of China?', 
+        answer: 'At the moment, this issue is not regulated by the government of Laos. But even now our business is not tied to the crypto industry, therefore they will not be able to influence us in the future.' 
+    },
+    { 
+        title: 'And what if the demand for bananas disappears and the price falls below $ 1?', 
+        answer: 'As practice shows, the price of bananas and demand is always high, primarily due to worldwide popularity.' 
+    },
+    { 
+        title: 'Why sell to China, and not to Europe or Japan?', 
+        answer: 'China at this stage buys out all batches of bananas without a trace and it\'s a close neighbor, maybe in 3-4 years
+        we will additionally enter the Japanese market.' 
+    },
+    { 
+        title: 'In which country is the jurisdiction of the campaign?', 
+        answer: 'The company and the plantations are in Laos.' 
+    },
+    { 
+        title: 'How can I invest?', 
+        answer: 'You may find detailed instructions on the main page of the site; you may also contact the support in Telegram chats, if necessary. The easiest way is to transfer the etherium to a smart contract from your personal wallet with the erc20 standard. The tokens return to your wallet automatically after confirmation of network' 
+    },
+    { 
+        title: 'Is the number of tokens limited?', 
+        answer: 'Yes.' 
+    },
+    { 
+        title: 'What if the minimum amount of investment is not achieved?', 
+        answer: 'Preliminarily the minimum amount of investments will be closed by few real investors.' 
+    },
+    { 
+        title: 'The ERC223 standard of the token, what is it?', 
+        answer: 'This is the most modern standard for a token based on the Etherium network. It will support the transparency of transactions
+        with investors. Important: your etherium wallet must support this standard to obtain tokens.' 
+    },
+    { 
+        title: 'Will you conduct other TGE in the field of agro-industry?', 
+        answer: 'We certainly do not plan to conduct animal breeding fees, but after the success of the BananaCoin project, we consider
+        such areas as mango, avocado and coffee.' 
+    },
+    { 
+        title: 'What if the following year is poor in harvest or natural disasters occur?', 
+        answer: 'Laos is not exposed to open waters (oceans), so natural disasters are rare. Most of the plantations are on highlands and hills where there are no strong winds, but it rains regularly, therefore, good harvest yields are typical for this region.' 
+    },
+    { 
+        title: 'Why dont you appeal to classical investors', 
+        answer: 'In the course of the project, we have received many proposals from potential investors that are not from the crypto sector, but all participants of the investment will be subject to equal conditions.' 
+    },
+    { 
+        title: 'How to find the cost of one token relative to Etherium or Bitcoin?', 
+        answer: 'The cost is calculated automatically at the time of confirmation of the transaction by the network based on the average
+        value of the price on the exchanges.' 
+    },
+    { 
+        title: 'I want to make payment in dollars, how do I do it?', 
+        answer: 'For beginners in the field of crypto currencies, there is a detailed instruction on the initial page. If it is a large investment (from $ 100,000), the organizers are willing to organize a personal meeting.' 
+    },
+    { 
+        title: 'I see various addresses of directions to the etherium on the main page of the site and in my personal account, where do I pay?', 
+        answer: 'If you pay from a personal wallet, with the erc20 standard, you can pay directly to the address of the smart contract (address on the main page); the tokens will return automatically. If the exchange is with a stock exchange, exchanger, etc., then it is necessary to use a personal cabinet, and your tokens will be credited to it.' 
+    },
+    { 
+        title: 'On which exchanges will the tokens be traded?', 
+        answer: 'This information will be published soon.' 
+    },
+    { 
+        title: 'How will the tokens be redeemed?', 
+        answer: 'We are developing a transparent algorithm for open redemption. Initially, this will be redemption of tokens from exchanges. Eventually, we are considering connecting the capabilities of our site for this purpose.' 
+    },
+    { 
+        title: 'Are there any restrictions for participation in TGE?', 
+        answer: 'No. Our token is utility token, so no restrictions.' 
+    },
+    { 
+        title: 'I want to exchange tokens for bananas, will you send them to me?', 
+        answer: 'The most profitable business model for us is the sale and transportation our products to the nearest neighbours. If you are in China and ready to buy large quantities - contact us. In other cases, you will have to arrange the transport yourself independently.' 
+    },
+    { 
+        title: 'Why do bananas cost 1 USD at the store near me, but you say in your business plan that the minimum export price is 1 USD?', 
+        answer: 'Bananas that are sold in stores are Cavendish and Williams, the export price of which is no higher than 0.25 USD. The banana variety that we grow, Lady Finger, is the most expensive and popular in the market of China. The export price reaches 3.5 USD per kg.' 
+    },
+    { 
+        title: 'Why dont you use only classical methods of attracting investments?', 
+        answer: 'Good question. First, attracting private investors can lead to the consequences of Krylovs fable "Swan, Cancer and the Pike." We are professionals in our business and we know how to make a successful banana business. Secondly, attracting money through the TGE does not give investors a share in business - it is a financial instrument, after fulfilling obligations on which the business will remain in the hands of the team. Third, the BananaCoin project for us is the start of a future large-scale project, and we want to go through the business that we understand to pass the "fire of water and copper pipes" TGE in order to approach the new project in Lao PDR with the already successful case.' 
+    },
+    { 
+        title: 'Are those people on the front page, the project leaders, actually real? Have they been verified in some way?', 
+        answer: 'We are real. You can come to our plantation in Laos anytime; we are organizated a lottery between pre-sale investors - a random winner from the pre-sale came to our plantation and saw that we are real!' 
+    },
+    { 
+        title: 'How does the current plantation work? Who owns the land? Who works on the plantation?', 
+        answer: 'Our company rents the land of the plantation from local peasants, which, in turn, also work on that plot, receiving salary for their work.' 
+    },
+    { 
+        title: 'I still have questions …', 
+        answer: 'The best way to learn more about the project is to contact us directly. You can find a list of all channels of communication at the bottom of the page.' 
+    },
+    ]
+    } %} 
+{% endif %}
 <div class="faq{{ not limit ? ' nobg' }}">
     <div class="container">
         <h2>{{ faq.title }}</h2>

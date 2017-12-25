@@ -57,6 +57,15 @@
 {% if lang == 'es' %}
 {% set partners = partners|merge({title: 'Asociados '}) %}
 {% endif %}
+{% if lang == 'jp' %}
+{% set partners = partners|merge({title: 'パートナー '}) %}
+{% endif %}
+{% if lang == 'cn' %}
+{% set partners = partners|merge({title: '伙伴 '}) %}
+{% endif %}
+{% if lang == 'fra' %}
+{% set partners = partners|merge({title: 'Partenaires '}) %}
+{% endif %}
 <div class="partners">
     <div class="container">
         <h2>{{ partners.title }}</h2>
