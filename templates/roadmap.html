@@ -34,13 +34,61 @@
         steps: [
         { completed: true, title: 'Marzo del 2015', description: 'Convenio de Cooperación con especialistas chinos en una plantación arrendada. Alquilamos una plantación' },
         { completed: true, title: 'Junio del 2016', description: 'Comenzamos nuestra propia plantación' },
-        { completed: true, title: 'Dicimbre del 216', description: 'Primera cosecha' },
+        { completed: true, title: 'Dicimbre del 2016', description: 'Primera cosecha' },
         { completed: true, title: 'Septiembre del 2017', description: '<b>1ra etapa</b><br> Pre-Venta' },
         { completed: false, title: 'Octubre a Noviembre del 2017', description: '<b>2da etapa</b><br>Venta Privada de tokens' },
         { completed: false, title: '29 de Noviembre al 30 de Febrero del 2018', description: '<b>3ra etapa</b><br>TGE' },
         { completed: false, title: 'Desde Diciembre del 2017 hasta Marzo del 2018', description: '<b>4ta etapa</b><br>Preparación del suelo' },
         { completed: false, title: 'Desde Abril hasta Diciembre del 2018', description: '<b>5ta etapa</b><br>Cultivo de platanos en una nueva plantación' },
         { completed: false, title: 'Diciembre del 2018', description: '<b>6ta etapa</b><br>Token' },
+    ]
+    } %} 
+{% endif %}
+{% if lang == 'jp' %}
+    {% set roadmap = { 
+        title: 'ロードマップ', 
+        steps: [
+        { completed: true, title: '01.03.2015 ', description: 'リースされたプランテーションについて、中国の専門家と協力します。' },
+        { completed: true, title: '2016年6月', description: '私達自分のプランテーションがスタートします。' },
+        { completed: true, title: '2016年12月', description: '一回目の収穫' },
+        { completed: true, title: '2017年9月', description: '<b>第一段階</b><br> 予備販売' },
+        { completed: false, title: '2017年10月～11月 29日', description: '<b>第二段階</b><br>非公開販売' },
+        { completed: false, title: '2017年11月29日～2018年2月30日', description: '<b>第三段階</b><br>TGE' },
+        { completed: false, title: '2017年12月～2018年3月', description: '<b>第四段階</b><br>土地の整備' },
+        { completed: false, title: '2018年4月～12月', description: '<b>第五段階</b><br>新しいプランテーションでバナナを栽培します。' },
+        { completed: false, title: '2018年12月', description: '<b>第六段階</b><br>トークン' },
+    ]
+    } %} 
+{% endif %}
+{% if lang == 'cn' %}
+    {% set roadmap = { 
+        title: '路线图', 
+        steps: [
+        { completed: true, title: '2015年3月 ', description: '在租用的种植园方面与中国专家合作' },
+        { completed: true, title: '2016年6月', description: '在们自己的种植园开始启动' },
+        { completed: true, title: '2016年12月', description: '第一次收获' },
+        { completed: true, title: '2017年9月', description: '<b>第一阶段</b><br> 预售' },
+        { completed: false, title: '2017年10月 -11月 29日', description: '<b>第二阶段</b><br>不公开销售' },
+        { completed: false, title: '2017年11月29日至2018年2月30日', description: '<b>第三阶段</b><br>TGE' },
+        { completed: false, title: '2017年12月 - 2018年3月', description: '<b>第四阶段</b><br>土地整备' },
+        { completed: false, title: '2018年4月 - 12月', description: '<b>第五阶段</b><br>在新的种植园里种植香蕉' },
+        { completed: false, title: '2018年12月', description: '<b>第六阶段</b><br>代币' },
+    ]
+    } %} 
+{% endif %}
+{% if lang == 'fra' %}
+    {% set roadmap = { 
+        title: 'Feuille de route', 
+        steps: [
+        { completed: true, title: 'Mars 2015', description: 'Coopération avec des spécialistes chinois pour la location d une plantation' },
+        { completed: true, title: 'Juin 2016', description: 'Lancement de notre propre plantation' },
+        { completed: true, title: 'Décembre 2016', description: 'Première récole' },
+        { completed: true, title: 'Septembre 2017', description: '<b>1ère étape</b><br> Pré-vente' },
+        { completed: false, title: 'Octobre-Novembre 2017', description: '<b>2ème étape</b><br>Vente privée' },
+        { completed: false, title: '29 Novembre - 30 Février 2018', description: '<b>3ème étape</b><br>TGE' },
+        { completed: false, title: 'Décembre 2017 - Mars 2018', description: '<b>4ème étape</b><br>Préparation du sol' },
+        { completed: false, title: 'Avril - Décembre 2018', description: '<b>5ème étape</b><br>Culture de bananes dans une nouvelle plantation' },
+        { completed: false, title: 'Décembre 2018', description: '<b>6ème étape</b><br>Token' },
     ]
     } %} 
 {% endif %}
@@ -55,3 +103,6 @@
         {% endfor %}
     </ul>
 </div>
+
+
+ 
