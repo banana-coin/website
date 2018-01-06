@@ -2,6 +2,11 @@
     "en": {
         "title": "News",
         "items": [{
+                "title": "Forbes magazine speak about Bananacoin.io project",
+                "thumb": "/img/news/forbes_article.jpg",
+                "link": "https://www.forbes.com/sites/haroldstark/2017/12/31/a-few-startups-embodying-technologys-vision-for-a-greener-tomorrow/#6fb92f307afd"
+            },
+            {
                 "title": "ICO Clap listing is a good way to promote your crowdfunding project.",
                 "thumb": "/img/news/icoclap.jpg",
                 "link": "http://icoclap.com/bananacoin"
@@ -26,6 +31,11 @@
     "ru": {
         "title": "Новости",
         "items": [{
+                "title": "Журнал Forbes говорит о проекте Bananacoin.io",
+                "thumb": "/img/news/forbes_article.jpg",
+                "link": "https://www.forbes.com/sites/haroldstark/2017/12/31/a-few-startups-embodying-technologys-vision-for-a-greener-tomorrow/#6fb92f307afd"
+            },
+            {
                 "title": "Недавно команда BananaCoin совершила важную деловую поездку, посетив Тайланд, Сингапур, Монголию и США.",
                 "thumb": "/img/news/happy_coin1.jpg",
                 "link": "https://happycoin.club/novyie-dostizheniya-bananacoin/"
@@ -54,7 +64,13 @@
     },
     "es": {
         "title": "Noticias",
-        "items": [{
+        "items": [
+            {
+                "title": "Forbes magazine speak about Bananacoin.io project",
+                "thumb": "/img/news/forbes_article.jpg",
+                "link": "https://www.forbes.com/sites/haroldstark/2017/12/31/a-few-startups-embodying-technologys-vision-for-a-greener-tomorrow/#6fb92f307afd"
+            },
+            {
                 "title": "Bananacoin Lounge en Block Show Asia. Relájate en una cómoda sala de estar.",
                 "thumb": "/img/news/lounge_alert_eng.jpg",
                 "link": "/files/Lounge_eng.pdf"
