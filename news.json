@@ -1,7 +1,13 @@
 {
     "en": {
         "title": "News",
-        "items": [{
+        "items": [
+            {
+                "title": "Huffington Post x Bananacoin",
+                "thumb": "/img/news/huff.jpg",
+                "link": "https://www.huffingtonpost.com/entry/environmental-friendly-banana-plantation-firm-is-using_us_5a526c6ce4b0ee59d41c0bdb"
+            },
+            {
                 "title": "Forbes magazine speak about Bananacoin.io project",
                 "thumb": "/img/news/forbes_article.jpg",
                 "link": "https://www.forbes.com/sites/haroldstark/2017/12/31/a-few-startups-embodying-technologys-vision-for-a-greener-tomorrow/#6fb92f307afd"
@@ -30,7 +36,13 @@
     },
     "ru": {
         "title": "Новости",
-        "items": [{
+        "items": [
+                        {
+                "title": "Huffington Post x Bananacoin",
+                "thumb": "/img/news/huff.jpg",
+                "link": "https://www.huffingtonpost.com/entry/environmental-friendly-banana-plantation-firm-is-using_us_5a526c6ce4b0ee59d41c0bdb"
+            },
+            {
                 "title": "Журнал Forbes говорит о проекте Bananacoin.io",
                 "thumb": "/img/news/forbes_article.jpg",
                 "link": "https://www.forbes.com/sites/haroldstark/2017/12/31/a-few-startups-embodying-technologys-vision-for-a-greener-tomorrow/#6fb92f307afd"
@@ -65,6 +77,11 @@
     "es": {
         "title": "Noticias",
         "items": [
+                        {
+                "title": "Huffington Post x Bananacoin",
+                "thumb": "/img/news/huff.jpg",
+                "link": "https://www.huffingtonpost.com/entry/environmental-friendly-banana-plantation-firm-is-using_us_5a526c6ce4b0ee59d41c0bdb"
+            },
             {
                 "title": "Forbes magazine speak about Bananacoin.io project",
                 "thumb": "/img/news/forbes_article.jpg",
