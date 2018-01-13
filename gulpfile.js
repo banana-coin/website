@@ -44,7 +44,7 @@ var structure = {
                 '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
                 '<a href="https://www.facebook.com/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
                 '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
-                '<a href="https://www.instagram.com/eng_bananacoin.io/" target="_blank" class="fa fa-instagram"></a>',
+                '<a href="https://www.instagram.com/bananacoin_io/" target="_blank" class="fa fa-instagram"></a>',
                 '<a href="https://open.kakao.com/o/gRtuHrz" target="_blank" onClick="sendEvent(\'ViewContent\')" class="kakao"></a>'
             ]
         },
@@ -84,7 +84,7 @@ var structure = {
                 '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
                 '<a href="https://www.facebook.com/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
                 '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
-                '<a href="https://www.instagram.com/eng_bananacoin.io/" target="_blank" class="fa fa-instagram"></a>',
+                '<a href="https://www.instagram.com/bananacoin_io/" target="_blank" class="fa fa-instagram"></a>',
                 '<a href="https://open.kakao.com/o/gRtuHrz" target="_blank" onClick="sendEvent(\'ViewContent\')" class="kakao"></a>'
             ]
         },
@@ -104,7 +104,7 @@ var structure = {
                 '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
                 '<a href="https://www.facebook.com/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
                 '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
-                '<a href="https://www.instagram.com/eng_bananacoin.io/" target="_blank" class="fa fa-instagram"></a>',
+                '<a href="https://www.instagram.com/bananacoin_io/" target="_blank" class="fa fa-instagram"></a>',
                 '<a href="https://open.kakao.com/o/gRtuHrz" target="_blank" onClick="sendEvent(\'ViewContent\')" class="kakao"></a>'
             ]
         },
@@ -124,7 +124,7 @@ var structure = {
                 '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
                 '<a href="https://www.facebook.com/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
                 '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
-                '<a href="https://www.instagram.com/eng_bananacoin.io/" target="_blank" class="fa fa-instagram"></a>'
+                '<a href="https://www.instagram.com/bananacoin_rus/" target="_blank" class="fa fa-instagram"></a>'
             ]
         },
         kr: {
@@ -142,7 +142,7 @@ var structure = {
                 '<a href="https://twitter.com/BananaCoinKorea" target="_blank" class="fa fa-twitter"></a>',
                 '<a href="https://www.facebook.com/groups/bananacoinkorea/" target="_blank" class="fa fa-facebook-f"></a>',
                 '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
-                '<a href="https://www.instagram.com/bananacoin.korea/" target="_blank" class="fa fa-instagram"></a>'
+                '<a href="https://www.instagram.com/bananacoin_io/" target="_blank" class="fa fa-instagram"></a>'
             ]
         },
         es: {
@@ -161,7 +161,7 @@ var structure = {
                 '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
                 '<a href="https://www.facebook.com/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
                 '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
-                '<a href="https://www.instagram.com/eng_bananacoin.io/" target="_blank" class="fa fa-instagram"></a>'
+                '<a href="https://www.instagram.com/bananacoin_io/" target="_blank" class="fa fa-instagram"></a>'
             ]
         }
     }
