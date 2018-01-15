@@ -60,6 +60,40 @@
         ]
     } %}
 {% endif %}
+{% if lang == 'turk' %}
+    {% set plantation = { 
+         title: 'Ekolojik Plantasyon',
+        status: 'Öncelikli token satışı başarıyla tamamlandı <br><b id="contributed">?</b> token satıldı.',
+    description: 'Laos un ilk çevre dostu plantasyonu, 1kg muzun ihracat fiyatına denk gelen, Etherum tabanlı kripto parayı ortaya çıkardı.',
+    videos: [
+        {
+            image: 'https://img.youtube.com/vi/wOgn7KnR4p0/hqdefault.jpg',
+            href: 'https://www.youtube.com/embed/wOgn7KnR4p0?autoplay=1',
+            description: 'Oleg, 10 yılı aşkın süredir Vietnam da yaşıyor, emlak yatırımları yapıyor ve meyve ihracatı ile uğraşıyor. Eşi Bananacoin e 500 USD yatırırken kendisi 50 USD yatırdı. Fakat şanslı olan kendisi oldu ve Banancoin tarım arazisini ziyaret etmek için bir seyahat hakkı kazandı. Şimdi, onun Vientiane ye yapmış olduğu seyahat hakkındaki sözlerine kulak verelim'
+        },
+        {
+            image: 'https://img.youtube.com/vi/zsingDPrHZY/hqdefault.jpg',
+            href: 'https://www.youtube.com/embed/zsingDPrHZY?autoplay=1',
+            description: 'Ekibin deneyimlerini öğrenmek için Japonya dan gelen ilk yatırımcılarımızdan biri'
+        },
+        {
+            image: 'https://img.youtube.com/vi/SYd4m6IRfCM/hqdefault.jpg',
+            href: 'https://www.youtube.com/embed/SYd4m6IRfCM?autoplay=1',
+            description: 'Kuzey Bokeo eyaleti yetkilileri, yakın zamanda, Çinli yatırımcıların desteklediği 18 muz üretim arazisinin faaliyetlerine, uygulamalara aykırı şekilde tarımsal kimyasallar kullandıkları gerekçesiyle son verdi.'
+        },
+        {
+            image: 'https://img.youtube.com/vi/_nwWJzXZYVs/hqdefault.jpg',
+            href: 'https://www.youtube.com/embed/_nwWJzXZYVs?autoplay=1',
+            description: 'The worlds first blockchain option for the organic bananas production in Laos.'
+        },
+        {
+            image: 'https://img.youtube.com/vi/tzoRWZAX-CA/hqdefault.jpg',
+            href: 'https://www.youtube.com/embed/tzoRWZAX-CA?autoplay=1',
+            description: 'Shooting of a new plot of 360 hectares. This is actual place we want Bananacoin plantation.'
+        }
+    ]
+    } %}
+{% endif %}
 
 {% if lang == 'es' %}
     {% set plantation = { 
@@ -234,6 +268,51 @@
                         <p>バナナプランテーションはブロックチェーンで実際に検証された資産であります。これは農業に関するニューテクであります。</p>
                     </div>
                 </div>
+
+                {% elseif lang == 'turk' %}
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon1.png"></div>
+                        <p class="title">Böcek ilacı içermez</p>
+                        <p>Üretimde hiçbir böcek ilacı kullanmıyoruz. Üretim sürecimiz, Laos Tarım Kimyasalları Kullanımına İlişkin Yönetmeliklerle tamamen uyumludur.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon2.svg"></div>
+                        <p class="title">Çevreye Duyarlı</p>
+                        <p>Ekolojik çevreyi korumak adına diğer çiftliklerden ayrı bir muz üretim arazisi, bir "organik çiftlik" yaratmayı planlıyoruz.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon3.svg"></div>
+                        <p class="title">3 Yaşında</p>
+                        <p>15 Yıldır Laos'da ticaret ile uğraşıyoruz, 3 yıl önce de muz üretimi ve ihracatı ile ilgilnmek üzere endüstriyel tarıma başladık.  </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon4.svg"></div>
+                        <p class="title">Karlı İş</p>
+                        <p>İşe bir tarım arazisi kiralayarak başladık. Karlı bir dönem sonrası geçtiğimiz yıl araziyi satın aldık. Bir sonraki adımımız ise işimizi büyütmek.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon5.png"></div>
+                        <p class="title">Devlet Desteği</p>
+                        <p>Tarım arazilerimizin bulunduğu Vientiane eyaleti yetkilileri ile yakın ilişkilerimiz bulunmakta ve girişimimiz hakkında gayet olumlu görüşlere sahipler</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon6.svg"></div>
+                        <p class="title">Gerçek katma değer</p>
+                        <p>Muz yetiştiriciliği, blok zinciri içinde bir katma değer ve tarım sektörü için yeni bir teknolojidir.</p>
+                    </div>
+                </div>
+                
                 {% elseif lang == 'cn' %}
                 <div class="col-lg-4">
                     <div class="info-item">

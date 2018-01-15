@@ -19,6 +19,17 @@
     ]
 } %}
 {% endif %}
+{% if lang == 'turk' %}
+    {% set intro = { 
+        title: 'Bananacoin', 
+    status: 'Laos un ilk çevre dostu plantasyonu, 1kg muzun ihracat fiyatına denk gelen, Etherum tabanlı kripto parayı ortaya çıkardı.',
+    description: 'Misyonumuz, Laos da bulunan ekim arazilermizde Lady Finger olarak bilinen organik ve sağlıklı muz türünü yetiştirmek ve bunları arza kıyasla çok daha fazla talebin olduğu Çin e ihraç etmektir.',
+    buttons: [
+        '<a href="/files/Utility_token_turk.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-white">Dijital Paranın Hukuki Niteliği</a>',
+        '<a href="/files/White_Paper_Bananacoin_turk.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-white">Bilgi Raporunu (Whitepaper) indir</a>',
+    ]
+} %}
+{% endif %}
 {% if lang == 'es' %}
     {% set intro = { 
         title: 'Bananacoin', 

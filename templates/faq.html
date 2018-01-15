@@ -290,6 +290,159 @@
     ]
     } %} 
 {% endif %}
+{% if lang == 'turk' %}
+    {% set faq = { 
+        title: 'Sıkça sorulan bazı sorular',
+    description: 'Tam şeffaflığı savunuyoruz ve bu yüzden sık sorulan sorular kısmında aradığınızı bulamıyorsanız lütfen bize yazın.',
+    text_showmore: 'Daha fazla göster 
+',
+    questions: [
+    { 
+        title: 'TGE nedir?', 
+        answer: 'TGE (dijital para oluşturma) bir tür kitlesel fon oluşturma modelidir. Bu yöntemle, yatırım tabanlı işlemlerde kullanmak amacıyla kendi dijital paranızı oluşturabilirsiniz. Her dijital para, belirtilen şartlarda kar elde edilmesini sağlar.' 
+    },
+    { 
+        title: 'Biz kimiz?', 
+        answer: 'Bizler gerçek bir muz yetiştirme tesisinin sahipleriyiz. İnternet sitemizin ana sayfasında tüm ekibimizin detaylarını bulabilirsiniz. Ayrıca bizimle Telegram üzerinden direk irtibata da geçebilirsiniz - https://t.me/bananacoin_tur ' 
+    },
+    { 
+        title: 'Bananacoin çiftliğinin adresi nedir?', 
+        answer: 'Ban. NAPHONG. Distric HINHEAP.pr.VIENTIANE.
+        <br>gps - 18.5585025 102.19301210
+        <br>ayrıca google maps ile aşağıdaki adresten ulaşabilirsiniz: https://goo.gl/maps/542XdhqpETP2' 
+    },
+    { 
+        title: 'Endustriyel tarım ile blok zincir birbiriyle nasıl bağlantılı olabilir?', 
+        answer: 'Biz, endustriyel tarım ile blok zincirini birbiriyle bağlamıyoruz, sadece blok zincirin yatırım yaratma özelliğini kullanıyoruz (kitlesel fonlama).Ve gelecekte yatırımcılarımızın kar ödemelerini de yine aynı blok zinciri ile şeffaf bir şekilde yapıyor olacağız..' 
+    },
+    { 
+        title: 'Hibe programlarınız var mı?', 
+        answer: 'Hibe Programlarımız sona erdi. Detaylar için: https://bitcointalk.org/index.php?topic=2164386.0.' 
+    },
+    { 
+        title: 'Neden Vietnam veya Çin yerine Laos?', 
+        answer: 'Şu an hali hazırda Laos da tarım ile alakalıçalışmalarımız devam etmekte. Ayrıca yerel hükümetten iznimiz ve vergi avantajlarımız da mevcut. Böyle bir işi Çin de kurmanın maliyeti daha yüksek. Buna paralel olarak Vietnam, ekolojik olarak pek avantajlı değil (savaş sonrası oluşan toprak kirliliği sebebiyle)' 
+    },
+    { 
+        title: 'Neden pirinç ya da elma değil de muz?', 
+        answer: 'Bizler, muz endüstrisinde profesyonelleşmiş durumdayız be nu ticaret sayesinde para kazanmaktayız. Öte yandan, dünya tüketim listesinde muzun başı çeken ürünlerden biri olması bu ticareti daha da avantajlı ve karlı hale getirmekte.' 
+    },
+    { 
+        title: '1 adet dijital paranın değeri nedir?', 
+        answer: 'Bananacoinlerin (BCO) ilk 1 milyon tanesi 0.25 USD iken kampanya süresince bu fiyat 0.5 USD‘dır.' 
+    },
+    { 
+        title: 'Zirai ilaçlar kullanıyor musunuz?', 
+        answer: 'Hayır, plantasyonlarımız tamamen ekolojiktir.' 
+    },
+    { 
+        title: 'Kripto paraların sahip olduğu dalgalı değerlenmelere karşı ne gibi bir güvence sunmaktasınız? Şu anda, Bitcoin almak daha karlı gibi görünüyor.', 
+        answer: 'We conduct business in the real sector and therefore price binding will be to the market value of bananas in dollars. At the expense of investment prospects, the personal choice and strategy, we are ready to share our business model.Biz, fiziksel olarak pazar içinde yer alan bir iş yürütmekteyiz ve buna bağlı olarak değerleme, muzun piyasa değeri ile korunmaktadır. Daha geniş çapta yatırım, kişisel tercih ya da stratejiler için iş planımızı paylaşmaya hazırız.' 
+    },
+    { 
+        title: 'Çiftçiler iyi çalışma şartlarına sahip mi ?', 
+        answer: 'İlk başladığımız dönemde, bölgede sadece pirinç tarlaları ve yerel sakinler vardı ve başka hiçbir şey yoktu. Bölgeye elektrik sağladık, temiz su kaynakları ile bağladık ve yapılarını kurduk. Tüm şartlar çok daha iyi bir dizeye ulaştı. Şimdi ise yüksek hızlı internet için çalışmaktayız.
+        <br> Kampanya öncesinde, bir çekiliş düzenledik ve kazanan 3 yatırımcımızı bölgede misafir ederek insanlar ile tanışmalarını sağladık.' 
+    },
+    { 
+        title: 'Dijital paraların toplam sayısını kim belirliyor?', 
+        answer: 'Dijital paraların toplam miktarı yazılımcılarımız tarafından en başında 7.340.000 USD’ye denk olacak şekilde belirlendi. Yatırımların geri alımı aşamasının ardından halka açık bir şekilde yok edilecekler.' 
+    },
+    { 
+        title: 'Laos hükümetinin dijital para üretimi ile ilgili pozisyonu ve tutumu nedir? Çin’in yaptığı gibi karşısında durmaları durumunda plan nedir?',
+        answer: 'Şu anda bu konu ile alakalı olarak Laos hükümeti tarafından herhangi bir yasal düzenleme yapılmış değildir. Bu noktada tekrar etmemiz gerekirse, bizim projemiz kripto para sistemine direk bağlı değildir ve gelecekte bize liderlik edecek pozisyonda değildir. ' 
+    },
+    { 
+        title: 'Ya muza olan talep bir anda düşer ve fiyat 1$’ın altına iner ise?', 
+        answer: 'Deneyimlerimize göre muza olan talep ve buna bağlı olarak fiyatı, dünya çapındaki popülaritesi sebebiyle her zaman yüksek kalacaktır.' 
+    },
+    { 
+        title: 'Avrupa’ya da Japonya’ya satmak varken neden Çin’e ?', 
+        answer: 'Çin şu aşamada tüm muz miktarını satın alıyor ve en önemlisi en yakın komşumuz. Biryandan da 3-4 yıl içerisinde Japonya pazarına da girmeyi düşünüyoruz.' 
+    },
+    { 
+        title: 'Projenin yetki sınırları hangi ülkeler dahilindedir?', 
+        answer: 'Hem firmamız hem de tesislerimiz Laos dahilindedir.' 
+    },
+    { 
+        title: 'Nasıl yatırım yapabilirim?', 
+        answer: 'Bu konu ile ilgili detaylı bilgilendirmeyi internet sitemizin ana sayfasında bulabilirsiniz. Ayrıca dilerseniz Telegram gruplarımızdaki yetkililerimizden direk destek alabilirsiniz. Yatırım yapmanın en kolay yolu Ethereum transferi gerçekleştirdiğiniz ERC20 destekli kişisel cüzdanınız üzerinden akıllı kontrat oluşturmaktır. Teyidin ardından dijital paranız otomatik olarak cüzdanınıza düşecektir.' 
+    },
+    { 
+        title: 'Dijital paraların (Token) sayısı limitli mi?', 
+        answer: 'Evet.' 
+    },
+    { 
+        title: 'Beklenen minimum yatırım miktarına ulaşılamaz ise ne olacak?', 
+        answer: 'Bu durumda minimum miktar, birkaç büyük yatırımcı tarafından tamamlanacak.' 
+    },
+    { 
+        title: 'ERC223 Token standardı nedir?', 
+        answer: 'Bu Ethereum ağına dayalı en gelişmiş token teknolojisidir. Yatırımcılar ile olan işlemlerin tamamen şeffaf olmasını mümkün kılacaktır.
+Önemli: Ethereum cüzdanınızın, Bananacoinleri alabilmesi için bu standarda sahip olması gerekmektedir.' 
+    },
+    { 
+        title: 'Buna benzer başka projeleriniz olacak mı?', 
+        answer: 'Henüz başlatılmış olmamakla beraber, yeni alanlarda mango, avokado ve kahve ile benzer girişimler oluşturma planımız mevcut.' 
+    },
+    { 
+        title: 'Ya önümüzdeki yılın hasadı zayıf yada bir doğal afet olursa ?', 
+        answer: 'Laos açık denizlere uzak yüksek alanlara kurulmuş bir ülke ve doğal afet oranları çok düşük. Sadece yoğun yağmur dönemleri geçiriyoruz. Ayrıca iyi hasat bu bölge için standart.' 
+    },
+    { 
+        title: 'Proje neden klasik yatırımcılar ile gerçekleşmiyor?', 
+        answer: 'Aslında kripto sektörü dışından da birçok yatırım teklifi aldık, ancak tüm yatırımcıların aynı şartlara sahip olmasını istedik.' 
+    },
+    { 
+        title: 'Ethereum ya da Bitcoin’e bağlı bir token’in değeri nasıl hesap edilir?', 
+        answer: 'Değer, borsalarda oluşan ortalama fiyat üzerinden belirlenir ve işlem sırasındaki değişim bu değer üzerinden yapılır. Ktipto para alanına yeni girenler için giriş sayfamızda detaylı bilgi mevzuttur. (Eğer yatımınız 100.000$’dan fazla ise yüzyüze görüşmeyi tercih ederiz.)' 
+    },
+    { 
+        
+           title: 'Internet sitesinin ana sayfasında ve profil sayfamda farklı Ethereum adresleri görüyorum. Nasıl ödeme yapacağım?', 
+        answer: 'Eğer erc20 destekli kişisel cüzdanınızdan direkt ödeme yapıyor iseniz, ana sayfadaki akıllı kontrat adresini kullanabilirsiniz. Tokenlar bu hesaba aynı şekilde geri dönecektir. Yok eğer, takası borsa hesaplarından ya da bir takasçı üzerinden yapacak iseniz, kişisel hesabınızdaki adresi kullanmanız doğru olacaktır. Bu durumda tokenlar bu hesaba geçecektir.' 
+    },
+    { 
+        title: 'Bananacoin hangi borsalarda işlem görecek?', 
+        answer: 'Bu bilgi yakında paylaşılacaktır.' 
+    },
+    {
+        title: 'Tokenlar paraya nasıl çevrilecek?', 
+        answer: 'Açık bir çeviri için gereken şeffaf bir algoritma üzerinde çalışıyoruz. Bu, öncelikli olarak borsalar üzerinden takası mümkün kılacakken sonrasında kendi internet sitemiz üzerinde bir platform oluşturmayı planlıyoruz.' 
+    },
+    { 
+        title: 'TGE’ye katılımda herhangi bir sınırlandırma varmı?', 
+        answer: 'Hayır. Bu konuda herhangi bir sınırlandırma yok.' 
+    },
+    { 
+        title: 'Dijital paralarımı muz ile değiştirmek istiyorum, bana gönderim yapabilirmisiniz?', 
+        answer: 'Bizim için en karlı iş, ürünlerimizi en yakın bölgelere satmaktan geçiyor. Eğer Çin de iseniz ve büyük bir alım yapmayı planlıyorsanız bizimle irtibata geçin. Diğer durumlarda ise sevkiyatı sizin organize etmeniz gerekmekte.' 
+    },
+    { 
+        title: 'Siz muzun minimum ihracat fiyatı 1 USD diyorsunuz ancak yakınımdaki markette muzlar tezgahta 1 USD’ye satılıyor?', 
+        answer: 'Marketlerde satılan muzların tümü Cavendish ve Williams’tır. İhracat fiyatları 0.25 USD civarındanır. Bizim yetiştirdiğimiz “Lady Finger” cinsi ise Çin pazarının en pahalı muzu ve yıl içinde 1 kilogramı 3.5 USD fiyata kadar yükselmekte.' 
+    },
+    { 
+        title: 'Yatırımcı çekmede neden sadece klasik yöntemleri kullanmıyorsunuz?', 
+        answer: 'Güzel soru. Öncelikle bizler, işimizin profesyonelleriyiz ve başarılı bir muz yetiştirme tesisinin nasıl işletilmesi gerektiği bilgisine sahibiz. Bu sebepten, klasik yöntem ile bulacağımız büyük yatırımcılarla belli bir süre sonra fikir anlaşmazlıkları sebebiyle problem yaşama ihtimalini yok etmek istiyoruz. İkinci olarak, kitlesel fonlama yöntemi yatırımcılara işletmenin hissesini dağıtmaz, sadece onlara finansal bir enstrüman kazandırır bu da işin kontrolünün yine ana ekipte kalmasını sağlar. Son olarak, bu proje bizim için bir gelecekte uygulamayı düşündüğümüz çok daha geniş çaplı bir projenin başlangıç ayağı. Bu yüzden kitlesel fonlamanın mekaniğini öğrenebilmek ve sistemin başarısına dair Laos hükümetine kanıt sunabilmek için bu yolu seçtik.' 
+    },
+    { 
+        title: 'Ana sayfada görülen insanlar ve ekip gerçekten var mı ? Bunu ne kanıtlıyor ?', 
+        answer: 'Biz gerçeğiz! Dilediğiniz zaman Laos daki plantasyonumuza gelip bizi ziyaret edebilirsiniz. Daha önceki aşamada bir çekiliş düzenleyip kazanan talihlileri burada ağırladık ve bizim gerçek olduğumuzu gördüler.' 
+    },
+    { 
+        title: 'Şuanki tesis nasıl işlemekte? Toprak sahibi kim? Tesiste kimler çalışmakta?', 
+        answer: 'Şirketimiz şuanki alanı yerli sahiplerinden kiralamış durumda. Karşılığında hem kira bedeli hemde çalışmaları karşılığı ücret almaktalar. ' 
+    },
+    { 
+        title: 'Buradakilerden farklı bir sorum var …', 
+        answer: 'Projemiz hakkında bilgi almanın en iyi yolu bizimle direk iletişime geçmenizdir. Bu sayfanın en sonunda, iletişim kanallarımız ile ilgili detayları bulabilirsiniz.' 
+    },
+
+
+]
+    } %} 
+{% endif %}
 {% if lang == 'es' %}
     {% set faq = { 
         title: 'Algunas preguntas mas frecuentes',

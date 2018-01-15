@@ -12,6 +12,22 @@
         { completed: false, title: 'December 2018', description: '<b>6th stage</b><br>Token' },
     ]
 } %}
+{% if lang == 'turk' %}
+    {% set roadmap = { 
+       title: 'Yol Haritamız', 
+    steps: [
+        { completed: true, title: 'Mart 2015', description: 'Çinli uzmanlar ile kiralık plantasyon konusunda işbirliği' },
+        { completed: true, title: 'Haziran 2016', description: 'Kendi plantasyonumuzu kurmak' },
+        { completed: true, title: 'Aralık 2016', description: 'İlk Hasat' },
+        { completed: true, title: 'Eylül 2017', description: '<b>Aşama 1</b><br> Ön Satış' },
+        { completed: false, title: 'Ekim - 29 Kasım 2017', description: '<b>Aşama 2</b><br>Özel Satış' },
+        { completed: false, title: '29 Kasım - 30 Şubat 2018', description: '<b>Aşama 3</b><br>TGE' },
+        { completed: false, title: 'Aralık 2017 - Mart 2018', description: '<b>Aşama 4</b><br>Alanın Hazırlanışı' },
+        { completed: false, title: 'Nisan - Aralık 2018', description: '<b>Aşama 5</b><br>Yeni bir plantasyonda muz üretimi' },
+        { completed: false, title: 'Aralık 2018', description: '<b>Aşama 6</b><br>Token (Dijital Para)' },
+    ]
+    } %} 
+{% endif %}
 {% if lang == 'ru' %}
     {% set roadmap = { 
         title: 'Дорожная карта', 

@@ -35,6 +35,20 @@
     }%}
     {% set text_tg = 'Contactenos via Telegram' %}
 {% endif %}
+
+{% if lang == 'turk' %}
+    {% set countdown = { 
+title: 'Token satış özeti<br>1 token (BCO) = 0.5 USD', 
+    titleStart: 'Token sale started',
+    description: countdown.description,
+    starttime: countdown.starttime,
+    text_sold: 'TOKEN SATILDI',
+    text_total: 'TOPLAM SATILACAK TOKEN',
+    text_of: 'of',
+} %}
+{% set text_tg = 'Telegram ile bağlanın' %}
+
+{% endif %}
 {% if lang == 'jp' %}
     {% set countdown = { 
         title: 'トークンの販売モード<br>1 トークン (BCO) = 0.5 ドル', 
@@ -83,6 +97,7 @@
             {% elseif lang == 'cn' %}支持
             {% elseif lang == 'jp' %}による支援
             {% elseif lang == 'fra' %}Supporté par
+             {% elseif lang == 'turk' %}Tarafından desteklenmekte
 {% else %}Supported by{% endif %}
           
             </h4>
@@ -107,6 +122,7 @@
                </h4> <a href="https://bananacoin.io/users/sign_up" class="btn btn-yellow">
                {% if lang == 'ru' %}Купить за Биткоины
                {% elseif lang == 'es' %}Compre con Bitcoins
+               {% elseif lang == 'turk' %}Bitcoin İle Satın Alın
                {% elseif lang == 'cn' %}购买Bitcoins
                {% elseif lang == 'jp' %}Bitcoinsを購入します。
                {% elseif lang == 'fra' %}Acheter avec des Bitcoins
@@ -114,6 +130,7 @@
                  <a href="{{ lang != 'en' ? '/'~lang : '' }}/token" class="btn btn-yellow popup fancybox.ajax">
                  {% if lang == 'ru' %}Купить за Эфириум
                  {% elseif lang == 'es' %}Compre con Ethereum
+                         {% elseif lang == 'turk' %}Ethereum İle Satın Alın
                  {% elseif lang == 'jp' %}Ethereumを購入します。
                  {% elseif lang == 'cn' %}购买Ethereum
                  {% elseif lang == 'fra' %}Acheter avec des Ethereums
