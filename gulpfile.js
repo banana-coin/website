@@ -24,7 +24,7 @@ var structure = {
         es: { title: 'Es', link: '/es' },
         cn: { title: '中文', link: '/cn' },
         fra: { title: 'Fra', link: '/fra' },
-        turk: { title: 'Turk', link: '/turk' },
+        tr: { title: 'Tr', link: '/turk' },
         //kr: { title: '한국어', link: '/kr' },
         jp: { title: '日本', link: '/jp' }
     },
@@ -49,12 +49,12 @@ var structure = {
                 '<a href="https://open.kakao.com/o/gRtuHrz" target="_blank" onClick="sendEvent(\'ViewContent\')" class="kakao"></a>'
             ]
         },
-        turk: {
+        tr: {
             description: 'World first blockchain option for banana plantation',
             nav: [
                 { title: 'Proje', url: '/' },
                 { title: 'Ekolojik Plantasyon', url: '/plantation/' },
-                { title: 'SSS', url: '/faq/' },
+                { title: 'S.S.S', url: '/faq/' },
                 { title: 'Ekip', url: '/#team' },
                 { title: 'Profil', url: '/profile' },
             ],
