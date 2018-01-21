@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Bananacoin - Die erste umweltfreundliche Plantage in Laos mit einem Ether Token, dessen Preis an 1kg Bananen gebunden ist</title>
+    <meta name="description" content="">
+    <meta name="keys" content="">
+    {% include 'head.html' %}
+</head>
+
+<body class="{{ lang }}">
+    {% include 'nav.html' %}
+    <main>
+        {% include 'intro.html' %}
+        <a name="plantation" id="plantation"></a>
+        {% include 'plantation.html' %}
+        {% include 'documents.html' %}
+        {% include 'why.html' %}
+        {% include 'roadmap.html' %}
+        <a name="team" id="team"></a>
+        {% include 'team.html' %}
+        {% include 'partners.html' %}
+        {% include 'newslist.html' %}
+        <a name="faq" id="faq"></a>
+        {% include 'faq.html' with {limit:7} %}
+        {% include 'footer.html' %}
