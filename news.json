@@ -2,6 +2,11 @@
     "en": {
         "title": "News",
         "items": [
+             {
+                "title": "Coinschedule Blog post a review on Bananacoin",
+                "thumb": "/img/news/coinschedule_news.jpg",
+                "link": "https://www.coinschedule.com/blog/2018/01/19/blockchain-environment-bananacoin-io/#disqus_thread"
+            },
             {
                 "title": "Huffington Post x Bananacoin",
                 "thumb": "/img/news/huff.jpg",
@@ -37,6 +42,11 @@
     "ru": {
         "title": "Новости",
         "items": [
+                 {
+                "title": "Coinschedule Blog post a review on Bananacoin",
+                "thumb": "/img/news/coinschedule_news.jpg",
+                "link": "https://www.coinschedule.com/blog/2018/01/19/blockchain-environment-bananacoin-io/#disqus_thread"
+            },
                         {
                 "title": "Huffington Post x Bananacoin",
                 "thumb": "/img/news/huff.jpg",
@@ -77,6 +87,11 @@
     "es": {
         "title": "Noticias",
         "items": [
+                 {
+                "title": "Coinschedule Blog post a review on Bananacoin",
+                "thumb": "/img/news/coinschedule_news.jpg",
+                "link": "https://www.coinschedule.com/blog/2018/01/19/blockchain-environment-bananacoin-io/#disqus_thread"
+            },
                         {
                 "title": "Huffington Post x Bananacoin",
                 "thumb": "/img/news/huff.jpg",
