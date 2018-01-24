@@ -56,7 +56,7 @@ var structure = {
                 { title: 'Proje', url: '/' },
                 { title: 'Ekolojik Plantasyon', url: '/plantation/' },
                 { title: 'S.S.S', url: '/faq/' },
-                { title: 'Ekip', url: '/#team' },
+                { title: 'Ekip', url: '/turk/#team' },
                 { title: 'Profil', url: '/profile' },
             ],
             socials: [
@@ -76,7 +76,7 @@ var structure = {
                 { title: 'Projekt', url: '/' },
                 { title: 'Öko-Plantage', url: '/plantation/' },
                 { title: 'FAQ', url: '/faq/' },
-                { title: 'Mannschaft', url: '/#team' },
+                { title: 'Mannschaft', url: '/de/#team' },
                 { title: 'Profil', url: '/profile' },
             ],
             socials: [
@@ -96,7 +96,7 @@ var structure = {
                 { title: 'Project', url: '/' },
                 { title: 'Eco plantation', url: '/plantation/' },
                 { title: 'FAQ', url: '/faq/' },
-                { title: 'Team', url: '/#team' },
+                { title: 'Team', url: '/jp/#team' },
                 { title: '個人情報', url: '/profile' },
             ],
             socials: [
@@ -116,7 +116,7 @@ var structure = {
                 { title: '项目', url: '/' },
                 { title: '生态种植园', url: '/plantation/' },
                 { title: '常问问题', url: '/faq/' },
-                { title: '团队', url: '/#team' },
+                { title: '团队', url: '/cn/#team' },
                 { title: '简介', url: '/profile' },
             ],
             socials: [
@@ -136,7 +136,7 @@ var structure = {
                 { title: 'Projet', url: '/' },
                 { title: 'Eco Plantation', url: '/plantation/' },
                 { title: 'FAQ', url: '/faq/' },
-                { title: 'Equipe', url: '/#team' },
+                { title: 'Equipe', url: '/fra/#team' },
                 { title: 'Profil', url: '/profile' },
             ],
             socials: [
@@ -193,7 +193,7 @@ var structure = {
                 { title: 'Proyecto', url: '/es/' },
                 { title: 'Eco Plantación', url: '/es/plantation/' },
                 { title: 'Preguntas', url: '/es/faq/' },
-                { title: 'Equipo', url: '/#team' },
+                { title: 'Equipo', url: '/es/#team' },
                 { title: 'Acceso', url: '/profile' },
             ],
             socials: [

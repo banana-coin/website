@@ -108,6 +108,22 @@
     ]
     } %} 
 {% endif %}
+{% if lang == 'de' %}
+    {% set roadmap = { 
+        title: 'Roadmap', 
+        steps: [
+        { completed: true, title: 'März 2015', description: 'Kooperation mit Chinesischen spezialisten auf einer gepachteten Plantage' },
+        { completed: true, title: 'Juni 2016', description: 'Awir starten mit unserer eigenen Plantage' },
+        { completed: true, title: 'Dezember 2016', description: 'Erste Ernte' },
+        { completed: true, title: 'September 2017', description: '<b>1 Ebene</b><br>Vorverkauf' },
+        { completed: true, title: 'Oktober - 29 November 2017', description: '<b>2 Ebene</b><br>Privatverkauf' },
+        { completed: false, title: '29 November - 30 Februar 2018', description: '<b>3 Ebene</b><br>TGE' },
+        { completed: false, title: 'Dezember 2017 - März 2018', description: '<b>4 Ebene</b><br>Vorbereitung des Grundes' },
+        { completed: false, title: 'April - Dezember 2018', description: '<b>5 Ebene</b><br>Banenen auf einer neuen Plantage anbauen' },
+        { completed: false, title: 'Dezember 2018', description: '<b>6 Ebene</b><br>Token' },
+    ]
+    } %} 
+{% endif %}
 <div class="roadmap">
     <h2>{{ roadmap.title }}</h2>
     <ul>
