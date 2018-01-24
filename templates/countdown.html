@@ -85,6 +85,18 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.5 USD',
     }%}
     {% set text_tg = 'Se connecter sur Telegram' %}
 {% endif %}
+{% if lang == 'de' %}
+    {% set countdown = { 
+        title: 'Token Verkauf Status<br>1 token (BCO) = 0.5 USD', 
+        titleStart: 'Token sale started',
+        description: 'The first environmentally friendly plantation in Laos which has released a token based on Ethereum, pegged to the export price of 1 kg of bananas.',
+        starttime: '29 November 12:00 GMT — 28 Februar 12:00 GMT',
+        text_sold: 'Verkaufte TOKENS',
+        text_total: 'Gesamten Tokens',
+        text_of: 'von',
+    } %}
+    {% set text_tg = 'Mit telegram verbinden' %}
+{% endif %}
 
 <div class="panel countdown">
     <div class="row">
@@ -97,9 +109,8 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.5 USD',
             {% elseif lang == 'cn' %}支持
             {% elseif lang == 'jp' %}による支援
             {% elseif lang == 'fra' %}Supporté par
-             {% elseif lang == 'turk' %}Destekçimiz
-{% else %}Supported by{% endif %}
-          
+            {% elseif lang == 'turk' %}Destekçimiz
+            {% else %}Supported by{% endif %}
             </h4>
             <a href="http://www.coss.io" target="_blank"><img src="/img/coss.gif"></a>
         </div>
@@ -126,6 +137,7 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.5 USD',
                {% elseif lang == 'cn' %}购买Bitcoins
                {% elseif lang == 'jp' %}Bitcoinsを購入します。
                {% elseif lang == 'fra' %}Acheter avec des Bitcoins
+               {% elseif lang == 'de' %}Mit Bitcoins kaufen
                {% else %}Buy with Bitcoins{% endif %}</a>
                  <a href="{{ lang != 'en' ? '/'~lang : '' }}/token" class="btn btn-yellow popup fancybox.ajax">
                  {% if lang == 'ru' %}Купить за Эфириум
@@ -134,6 +146,7 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.5 USD',
                  {% elseif lang == 'jp' %}Ethereumを購入します。
                  {% elseif lang == 'cn' %}购买Ethereum
                  {% elseif lang == 'fra' %}Acheter avec des Ethereums
+                 {% elseif lang == 'de' %}Mit Ethereum kaufen
                  {% else %}Buy with Ethereum{% endif %}</a>
                <a href="
                {% if lang == 'ru' %}https://docs.google.com/document/d/1sDiGb4ugLtNwHL37gc1ABl-F0SDnHC4-TltH_GXzAT8/edit?usp=sharing
@@ -160,6 +173,7 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.5 USD',
                   {% elseif lang == 'turk' %}Banacoin Nasıl Alınır ?
                 {% elseif lang == 'cn' %}如何购买Bananacoin
                 {% elseif lang == 'jp' %}Bananacoinの購入方法
+                {% elseif lang == 'de' %}Wie kauft man Bananacoin
                 {% else %}How to buy Bananacoin{% endif %}</a>
             </div>
         </div>

@@ -6,15 +6,16 @@
             <div class="col-md-8 col-sm-12">
                 &copy; {{ "now"|date("Y") }} <a href="http://www.bananacoin.io">bananacoin.io</a> - All Rights Reserved
                 <p class="mini">
-                    {% if lang == 'en' %}
-                    Russian Agriculture Development Co., Ltd is not the organizer of TGE, does not conduct TGE, does not participate in the profits or losses of TGE and is not liable to buyers of Bananacoin project tokens. TGE organizers used information about the functioning of the company Russian Agriculture Development Co., Ltd solely for informational purposes.
-                    {% elseif lang == 'ru'%}
+                    {% if lang == 'ru'%}
                     Компания Russian Agriculture Development Co., Ltd не является организатором TGE, не проводит TGE, не участвует в прибылях либо убытках TGE и не несёт ответственности перед покупателями токенов проекта Bananacoin. Организаторы TGE использовали информацию о функционировании компании Russian Agriculture Development Co., Ltd исключительно в ознакомительных целях.                    
-                   {% elseif lang == 'es'%}
+                    {% elseif lang == 'es'%}
                     Russian Agriculture Development Co., Ltd no es el organizador de TGE, no realiza TGE, no participa en las ganancias o pérdidas de TGE y no es responsable ante los compradores de los tokens del proyecto Bananacoin. Los organizadores de TGE utilizaron información sobre el funcionamiento de la empresa Russian Agriculture Development Co., Ltd únicamente con fines informativos. 
-                
                     {% elseif lang == 'turk'%}
                     Rus Tarımsal Kalkınma Co Ltd şirketi TGE (Dijital Para Ön Arzı) organizatörü değildir, TGE yi yönetmez, TGE nin kar veya zarar durumuyla ilgisi yoktur, Banancoin satın alanlara karşı herhangi bir maddi sorumluluk taşımaz. TGE yöneticleri Rus Tarımsal Kalkınma Co Ltd şirketinin işleyişi hakkındaki detayları sadece bilgi amaçlı kullanmaktadır.
+                    {% elseif lang == 'de'%}
+                    Russian Agriculture Development Co., Ltd ist nicht der Veranstalter von TGE, leitet TGE nicht, beteiligt sich nicht an den Gewinnen oder Verlusten von TGE und haftet nicht für Käufer von Bananacoin-Projekt-Token. TGE-Organisatoren verwendeten Informationen über das Funktionieren der Firma Russian Agriculture Development Co., Ltd ausschließlich zu Informationszwecken.
+                    {% else %}
+                    Russian Agriculture Development Co., Ltd is not the organizer of TGE, does not conduct TGE, does not participate in the profits or losses of TGE and is not liable to buyers of Bananacoin project tokens. TGE organizers used information about the functioning of the company Russian Agriculture Development Co., Ltd solely for informational purposes.
                     {% endif %}
                 </p>
             </div>

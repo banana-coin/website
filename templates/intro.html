@@ -74,6 +74,17 @@
     ]
 } %}
 {% endif %}
+{% if lang == 'de' %}
+    {% set intro = { 
+        title: 'Bananacoin', 
+        status: 'Die erste umweltfreundliche Plantage in Laos mit einem Ether Token, dessen Preis an 1kg Bananen gebunden ist',
+        description: 'Wir wollen biologische Bananen der Sorte "Lady Finger" anbauen um diese nach China zu exportieren wo die Nachfrage größer ist als das Angebot',
+        buttons: [
+            '<a href="/files/Utility_token_eng.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-white">Legalität des Tokens</a>',
+            '<a href="/files/White_Paper_Bananacoin_en.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-white">Den Businessplan herunterladen</a>',
+        ]
+    } %}
+{% endif %}
 
 <div class="intro">
     <div class="container">
