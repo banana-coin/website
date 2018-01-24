@@ -87,6 +87,19 @@
     ]
     } %}
 {% endif %}
+{% if lang == 'de' %}
+    {% set documents = { 
+        title: 'Dokumente', 
+        description: 'Sehen Sie sich unsere Dokumente an um mehr über Bananacoin, den Token, das Team und usere ICO zu erfahren',
+        links: [
+        { html: '<a href="/files/White_Paper_Bananacoin_en.pdf" target="_blank" class="btn btn-outline">White Paper</a>' },
+        { html: '<a href="/files/Light_de.pdf" target="_blank" class="btn btn-outline">Light Paper</a>' },
+        { html: '<a href="/plan/" class="btn btn-outline">Business plan</a>' },
+        { html: '<a href="/files/terms_agreement.pdf" class="btn btn-outline">Generelle Regeln und Konditionen</a>' },
+        { html: '<a href="/files/sales_agreement.pdf" class="btn btn-outline">Token Verkauf Einigung</a>' },
+        ]
+    } %}
+{% endif %}
 <div class="documents">
     <div class="container">
         <h2>{{ documents.title }}</h2>

@@ -1,10 +1,28 @@
-{% set partners = { title: 'Partners', description: 'The first environmentally friendly plantation in Laos which has released a token based on Ethereum, pegged to the export price of 1 kg of bananas.', list: [ { logo: '/img/logos/oren.png', }, { logo:
-'/img/logos/Emblem_of_Laos.svg', }, { logo: '/img/logos/chendu.png', }, { name: 'Lemon Digital - анимационные ролики для ICO', logo: '/img/logos/lemon_d.png', }, { name: 'Law Trust', logo: '/img/lawtrust.png', link: 'https://lawstrust.com/en' }, { name:
-'happycoin.club', logo: '/img/hp.jpg', link: 'http://happycoin.club' }, { logo: '/img/logos/tokentop.jpg', link: 'https://tokentops.com/' }, { name: 'freedman.club', logo: '/img/logos/freedman.png', link: 'http://freedman.club' }, { name: 'icolist.today',
-logo: '/img/icolistlogo.png', link: 'http://icolist.today/' }, { name: 'crypto.pro', logo: '/img/cp.png', link: 'http://crypto.pro' }, { name: 'trackico.io', logo: '/img/track_ico.png', link: 'https://www.trackico.io/' }, { name: 'bestcoins.co', logo:
-'/img/bestcoins.png', link: 'https://www.bestcoins.co/' } ] } %} {% if lang == 'ru' %} {% set partners = partners|merge({title: 'Партнёры'}) %} {% endif %} {% if lang == 'es' %} {% set partners = partners|merge({title: 'Asociados '}) %} {% endif %} {%
-if lang == 'jp' %} {% set partners = partners|merge({title: 'パートナー '}) %} {% endif %} {% if lang == 'cn' %} {% set partners = partners|merge({title: '伙伴 '}) %} {% endif %} {% if lang == 'fra' %} {% set partners = partners|merge({title: 'Partenaires '})
-%} {% endif %}
+{% set partners = { 
+    title: 'Partners', 
+    description: 'The first environmentally friendly plantation in Laos which has released a token based on Ethereum, pegged to the export price of 1 kg of bananas.', 
+    list: [ 
+        { logo: '/img/logos/oren.png', }, 
+        { logo: '/img/logos/Emblem_of_Laos.svg', }, 
+        { logo: '/img/logos/chendu.png', }, 
+        { name: 'Lemon Digital - анимационные ролики для ICO', logo: '/img/logos/lemon_d.png', }, 
+        { name: 'Law Trust', logo: '/img/lawtrust.png', link: 'https://lawstrust.com/en' }, 
+        { name: 'happycoin.club', logo: '/img/hp.jpg', link: 'http://happycoin.club' }, 
+        { logo: '/img/logos/tokentop.jpg', link: 'https://tokentops.com/' }, 
+        { name: 'freedman.club', logo: '/img/logos/freedman.png', link: 'http://freedman.club' }, 
+        { name: 'icolist.today', logo: '/img/icolistlogo.png', link: 'http://icolist.today/' }, 
+        { name: 'crypto.pro', logo: '/img/cp.png', link: 'http://crypto.pro' }, 
+        { name: 'trackico.io', logo: '/img/track_ico.png', link: 'https://www.trackico.io/' }, 
+        { name: 'bestcoins.co', logo: '/img/bestcoins.png', link: 'https://www.bestcoins.co/' } 
+    ]
+} %} 
+{% if lang == 'ru' %} {% set partners = partners|merge({title: 'Партнёры'}) %} {% endif %}
+{% if lang == 'es' %} {% set partners = partners|merge({title: 'Asociados '}) %} {% endif %} 
+{% if lang == 'jp' %} {% set partners = partners|merge({title: 'パートナー '}) %} {% endif %} 
+{% if lang == 'cn' %} {% set partners = partners|merge({title: '伙伴 '}) %} {% endif %} 
+{% if lang == 'fra' %} {% set partners = partners|merge({title: 'Partenaires '}) %} {% endif %}
+{% if lang == 'de' %} {% set partners = partners|merge({title: 'Partner '}) %} {% endif %}
+
 <div class="partners">
     <div class="container">
         <h2>{{ partners.title }}</h2>
