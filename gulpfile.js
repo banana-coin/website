@@ -162,10 +162,10 @@ var structure = {
             ],
             socials: [
                 '<a href="https://t.me/bananacoin" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
-                '<a href="https://bitcointalk.org/index.php?topic=2112748" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-btc"></a>',
+                '<a href="https://bitcointalk.org/index.php?topic=2251339" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-btc"></a>',
                 '<a href="/img/qrcode_for_bananacoin_wechat.jpg" target="_blank" class="fa fa-wechat"></a>',
                 '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
-                '<a href="https://www.facebook.com/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
+                '<a href="https://www.facebook.com/BananacoinRUSSLANG/" target="_blank" class="fa fa-facebook-f"></a>',
                 '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
                 '<a href="https://www.instagram.com/bananacoin_rus/" target="_blank" class="fa fa-instagram"></a>'
             ]
