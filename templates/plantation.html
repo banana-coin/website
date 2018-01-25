@@ -68,17 +68,17 @@
             {
                 image: 'https://img.youtube.com/vi/zsingDPrHZY/hqdefault.jpg',
                 href: 'https://www.youtube.com/embed/zsingDPrHZY?autoplay=1',
-                description: 'Ekibin deneyimlerini öğrenmek için Japonya dan gelen ilk yatırımcılarımızdan biri'
+                description: "Ekibin deneyimlerini öğrenmek için Japonya'dan gelen ilk yatırımcılarımızdan biri"
             },
             {
                 image: 'https://img.youtube.com/vi/SYd4m6IRfCM/hqdefault.jpg',
                 href: 'https://www.youtube.com/embed/SYd4m6IRfCM?autoplay=1',
-                description: 'Kuzey Bokeo eyaleti yetkilileri, yakın zamanda, Çinli yatırımcıların desteklediği 18 muz üretim arazisinin faaliyetlerine, uygulamalara aykırı şekilde tarımsal kimyasallar kullandıkları gerekçesiyle son verdi.'
+                description: 'Kuzey Bokeo eyaleti yetkilileri, yakın zamanda, Çinli yatırımcıların desteklediği 18 muz üretim arazisinin faaliyetlerine, uygulamalara aykırı şekilde tarımsal kimyasallar kullandıkları gerekçesiyle son verdi'
             },
             {
                 image: 'https://img.youtube.com/vi/_nwWJzXZYVs/hqdefault.jpg',
                 href: 'https://www.youtube.com/embed/_nwWJzXZYVs?autoplay=1',
-                description: 'The worlds first blockchain option for the organic bananas production in Laos.'
+                description: 'Dünyanın ilk organik muz yetiştiriciliğinde kullanılan blokzinciri'
             },
             {
                 image: 'https://img.youtube.com/vi/tzoRWZAX-CA/hqdefault.jpg',
@@ -211,6 +211,28 @@
     } %}
 {% endif %}
 
+{% if lang == 'ind' %}
+    {% set plantation = { 
+        title: 'Perkebunan Eco', 
+        videos: [
+            {
+                image: 'https://img.youtube.com/vi/wOgn7KnR4p0/hqdefault.jpg',
+                href: 'https://www.youtube.com/embed/wOgn7KnR4p0?autoplay=1',
+                description: 'Oleg telah tinggal di Vietnam selama 10 tahun, berinvestasi dalam keadaan nyata dan mengekspor buah. Dia menginvestasikan 50 USD di banancoin, tapi istrinya 500 USD. Dia lebih beruntung - Dia memenangkan perjalanan ke perkebunan pisang Banancaoin. Dengarkan kata-katanya selama perjalanannya ke Vientiane, Laos'
+            },
+            {
+                image: 'https://img.youtube.com/vi/zsingDPrHZY/hqdefault.jpg',
+                href: 'https://www.youtube.com/embed/zsingDPrHZY?autoplay=1',
+                description: 'Banancoin Berawal dari Jepang datang untuk belajar tentang pengalaman tim.'
+            },
+            {
+                image: 'https://img.youtube.com/vi/SYd4m6IRfCM/hqdefault.jpg',
+                href: 'https://www.youtube.com/embed/SYd4m6IRfCM?autoplay=1',
+                description: 'Baru-baru ini pihak berwenang di provinsi Lao Bokeo di utara telah mendukung kegiatan 18 perkebunan pisang yang didukung oleh China setelah menemukan pelanggaran peraturan penggunaan bahan kimia agrusultural.'
+            }
+        ]
+    } %}
+{% endif %}
 
 <div class="plantation">
     <div class="container">
@@ -535,6 +557,49 @@
                         <div class="icon icon-yellow"><img src="/img/plantation_icon6.svg"></div>
                         <p class="title">Gute Anlagemöglichkeit</p>
                         <p>Die Plantage ist eine gute Anlagemöglichkeit, verknüpft mit einer blockchain. Es ist eine neue Technologie in der Landwirtschaft</p>
+                    </div>
+                </div>
+            {% elseif lang == 'ind' %}
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon1.png"></div>
+                        <p class="title">Tidak ada Pestisida</p>
+                        <p>Kami tidak menggunakan pestisida dalam produksi. Siklus produksi sesuai dengan Peraturan Laos untuk Penggunaan Bahan Kimia Pertanian.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon2.svg"></div>
+                        <p class="title">Ramah Lingkungan</p>
+                        <p>Kami berencana untuk menciptakan «pertanian organik» - perkebunan pisang yang diisolasi dari peternakan lain untuk melindungi lingkungan ekologis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon3.svg"></div>
+                        <p class="title">3 tahun</p>
+                        <p>Kami telah melakukan bisnis di Laos selama 15 tahun. 3 tahun yang lalu, kami memulai bisnis agroindustri, yaitu budidaya dan ekspor pisang.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon4.svg"></div>
+                        <p class="title">Bisnis Menguntungkan</p>
+                        <p>Kami memulai dengan menyewa perkebunan. Ini adalah bisnis yang menguntungkan. Tahun lalu kami membelinya. Langkah selanjutnya adalah perluasan bisnis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon5.png"></div>
+                        <p class="title">Dukungan Pemerintah</p>
+                        <p>Kami memiliki hubungang kuat dengan gubernur provinsi Vientiane dimana perkebunan kami berada. Dia berbicara sangat pentingnya perkebunan.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon6.svg"></div>
+                        <p class="title">Aset bukti nyata</p>
+                        <p>Perkebunan pisang adalah aset bukti nyata dengan blockchain di dalamnya. Ini adalah teknologi baru dari sektor pertanian.</p>
                     </div>
                 </div>
             {% else %}

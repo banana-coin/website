@@ -17,7 +17,8 @@ main {
     outline: none;
 }
 
-body.en {
+body.en,
+body.ind {
     h1, h2, h3 { 
         font-family: 'London Two', $font-family-sans-serif;
         font-weight: normal;
