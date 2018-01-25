@@ -1,7 +1,8 @@
 {% set partners = { 
     title: 'Partners', 
     description: 'The first environmentally friendly plantation in Laos which has released a token based on Ethereum, pegged to the export price of 1 kg of bananas.', 
-    list: [ 
+    list: [
+        { name: 'coss.io', logo: '/img/coss.gif', link: 'http://www.coss.io/' },
         { logo: '/img/logos/oren.png', }, 
         { logo: '/img/logos/Emblem_of_Laos.svg', }, 
         { logo: '/img/logos/chendu.png', }, 
@@ -13,7 +14,7 @@
         { name: 'icolist.today', logo: '/img/icolistlogo.png', link: 'http://icolist.today/' }, 
         { name: 'crypto.pro', logo: '/img/cp.png', link: 'http://crypto.pro' }, 
         { name: 'trackico.io', logo: '/img/track_ico.png', link: 'https://www.trackico.io/' }, 
-        { name: 'bestcoins.co', logo: '/img/bestcoins.png', link: 'https://www.bestcoins.co/' } 
+        { name: 'bestcoins.co', logo: '/img/bestcoins.png', link: 'https://www.bestcoins.co/' }
     ]
 } %} 
 {% if lang == 'ru' %} {% set partners = partners|merge({title: 'Партнёры'}) %} {% endif %}
