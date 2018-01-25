@@ -27,7 +27,8 @@ var structure = {
         turk: { title: 'Turk', link: '/turk' },
         de: { title: 'De', link: '/de' },
         //kr: { title: '한국어', link: '/kr' },
-        jp: { title: '日本', link: '/jp' }
+        jp: { title: '日本', link: '/jp' },
+        ind: { title: 'Ind', link: '/ind' }
     },
     nav: {
         en: {
@@ -204,6 +205,26 @@ var structure = {
                 '<a href="https://www.facebook.com/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
                 '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
                 '<a href="https://www.instagram.com/bananacoin_io/" target="_blank" class="fa fa-instagram"></a>'
+            ]
+        },
+        ind: {
+            description: 'World first blockchain option for banana plantation',
+            nav: [
+                { title: 'Proyek', url: '/ind' },
+                { title: 'Perkebunan Eco', url: '/ind/plantation/' },
+                { title: 'FAQ', url: '/ind/faq/' },
+                { title: 'Tim', url: '/ind/#team' },
+                { title: 'Profil', url: '/profile' },
+            ],
+            socials: [
+                '<a href="https://t.me/bananacoineng" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
+                '<a href="https://bitcointalk.org/index.php?topic=2112748" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-btc"></a>',
+                '<a href="/img/qrcode_for_bananacoin_wechat.jpg" target="_blank" class="fa fa-wechat"></a>',
+                '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
+                '<a href="https://www.facebook.com/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
+                '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
+                '<a href="https://www.instagram.com/bananacoin_io/" target="_blank" class="fa fa-instagram"></a>',
+                '<a href="https://open.kakao.com/o/gRtuHrz" target="_blank" onClick="sendEvent(\'ViewContent\')" class="kakao"></a>'
             ]
         }
     }

@@ -85,6 +85,17 @@
         ]
     } %}
 {% endif %}
+{% if lang == 'ind' %}
+    {% set intro = { 
+        title: 'Bananacoin', 
+        status: 'Perkebunan ramah lingkungan pertama di Laos yang telah merilis token utilitas berbasis pada Ethereum, dipatok berdasarkan harga ekspor 1 kg pisang',
+        description: 'Misi kami adalah menanam pisang organik dan sehat yang dikenal sebagai Jari Wanita "perkebunan kami di Laos dan untuk mengekspornya ke China di mana permintaan lebih tinggi daripada pasokan"',
+        buttons: [
+            '<a href="/files/Utility_token_ind.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-white">Sifat Hukum Token</a>',
+            '<a href="/files/White_Paper_Bananacoin_ind.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-white">Unduh Makalah Putih</a>',
+        ]
+    } %}
+{% endif %}
 
 <div class="intro">
     <div class="container">

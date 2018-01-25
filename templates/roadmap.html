@@ -124,6 +124,22 @@
     ]
     } %} 
 {% endif %}
+{% if lang == 'ind' %}
+    {% set roadmap = { 
+        title: 'Peta Jalan', 
+        steps: [
+        { completed: true, title: 'Maret 2015', description: 'Kerja sama dengan spesialis China di perkebunan sewaan' },
+        { completed: true, title: 'Juni 2016', description: 'Memulai perkebunan kami sendiri' },
+        { completed: true, title: 'Desember 2016', description: 'Panen pertama' },
+        { completed: true, title: 'September 2017', description: '<b>Tahap pertama</b><br>Pra-Penjualan' },
+        { completed: true, title: 'Oktober - 29 Nopember 2017', description: '<b>Tahap Kedua</b><br>Penjualan Pribadi' },
+        { completed: false, title: '29 Nopember - 29 Februari 2018', description: '<b>Tahap ketiga</b><br>TGE' },
+        { completed: false, title: 'Desember 2017 - Maret 2018', description: '<b>Tahap keempat</b><br>Persiapan tanah' },
+        { completed: false, title: 'April - Desember 2018', description: '<b>Tahap kelima</b><br>Menanam pisang di perkebunan baru' },
+        { completed: false, title: 'Desember 2018', description: '<b>Tahap keenam</b><br>Token' },
+    ]
+    } %} 
+{% endif %}
 <div class="roadmap">
     <h2>{{ roadmap.title }}</h2>
     <ul>
