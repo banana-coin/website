@@ -111,6 +111,20 @@
         ]
     } %} 
 {% endif %}
+{% if lang == 'ind' %}
+    {% set why = { 
+        title: 'Mengapa Berpartisipasi di Bananacoin', 
+        description: 'Bananacoin adalah pilihan blckchain pertama di dunia untuk berpartisipasi dalam produksi pisang organik di provinsi Vientiane, Laos.',
+        adv: [
+            'Defisit ekspor pisang ke China diperkirakan mencapai 30.000 hektar, dan meningkatnya konsumsi',
+            'Harga token Bananacoin dilindungi oleh biaya satu kilogram pisang',
+            'Dalam jangka menengah, tim kami berencana untuk meningkatkan area produksi menjadi 1.000 hektar',
+            'Varietas yang dibudidayakan dari pisang Jari Wanita "Lady Finger" adalah yang paling mahal dan paling populer di pasaran China',
+            'Setiap peserta memiliki hak untuk secara pribadi mengunjungi perkebunan kami di provinsi Vientiane, Laos',
+            'Bisnis kita mudah diukur dan berkembang menjadi pemain serius di pasar buah Asia'
+        ]
+    } %}
+{% endif %}
 <div class="why">
     <div class="container">
         <h2>{{ why.title }}</h2>
