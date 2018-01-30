@@ -140,6 +140,22 @@
     ]
     } %} 
 {% endif %}
+{% if lang == 'pt' %}
+    {% set roadmap = { 
+        title: 'Roteiro', 
+        steps: [
+            { completed: true, title: 'Março de 2015', description: 'Cooperação com especialistas chineses em uma plantação alugada em uma plantação alugada' },
+            { completed: true, title: 'Junho de 2016', description: 'Começando em nossa própria plantação' },
+            { completed: true, title: 'Dezembro de 2016', description: 'Primeira colheita' },
+            { completed: true, title: 'Setembro de 2017', description: '<b>1º estágio</b><br> Pré-venda' },
+            { completed: true, title: 'Outubro - 29 de novembro de 2017', description: '<b>2º estágio</b><br>Venda privada' },
+            { completed: false, title: '29 novembro - 30 de fevereiro de 2018', description: '<b>3º estágio</b><br>TGE' },
+            { completed: false, title: 'Dezembro 2017 - março 2018', description: '<b>4º estágio</b><br>Preparação do solo' },
+            { completed: false, title: 'Abril - dezembro de 2018', description: '<b>5º estágio</b><br>Cultivando bananas em uma nova plantação' },
+            { completed: false, title: 'Dezembro de 2018', description: '<b>6º estágio</b><br>Token' },
+        ]
+    } %}
+{% endif %}
 <div class="roadmap">
     <h2>{{ roadmap.title }}</h2>
     <ul>

@@ -97,6 +97,18 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.5 USD',
     } %}
     {% set text_tg = 'Mit telegram verbinden' %}
 {% endif %}
+{% if lang == 'pt' %}
+    {% set countdown = { 
+        title: 'Status da venda token<br>1 token (BCO) = 0.5 USD', 
+        titleStart: 'BCO também será listado em',
+        description: countdown.description,
+        starttime: '29 de Novembro 12:00 GMT — 29 de Fevereiro 12:00 GMT',
+        text_sold: 'Tokens vendidos',
+        text_total: 'Total de Tokens',
+        text_of: 'de',
+    } %}
+    {% set text_tg = 'Conecte-se com Telegram' %}
+{% endif %}
 
 <div class="panel countdown">
     <div class="row">
@@ -130,6 +142,7 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.5 USD',
                 {% elseif lang == 'jp' %}Bitcoinsを購入します。
                 {% elseif lang == 'fra' %}Acheter avec des Bitcoins
                 {% elseif lang == 'de' %}Mit Bitcoins kaufen
+                {% elseif lang == 'pt' %}Compre com Bitcoins
                 {% else %}Buy with Bitcoins{% endif %}
                 </a>
                
@@ -141,6 +154,7 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.5 USD',
                 {% elseif lang == 'cn' %}购买Ethereum
                 {% elseif lang == 'fra' %}Acheter avec des Ethereums
                 {% elseif lang == 'de' %}Mit Ethereum kaufen
+                {% elseif lang == 'pt' %}Compre com Ethereum
                 {% else %}Buy with Ethereum{% endif %}
                 </a>
 
@@ -159,6 +173,7 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.5 USD',
                 {% elseif lang == 'cn' %}如何购买Bananacoin
                 {% elseif lang == 'jp' %}Bananacoinの購入方法
                 {% elseif lang == 'de' %}Wie kauft man Bananacoin
+                {% elseif lang == 'pt' %}Como Comprar Bananacoin
                 {% else %}How to buy Bananacoin{% endif %}
                 </a>
             </div>

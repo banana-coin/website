@@ -96,6 +96,17 @@
         ]
     } %}
 {% endif %}
+{% if lang == 'pt' %}
+    {% set intro = { 
+        title: 'Bananacoin', 
+        status: 'A primeira plantação ecológica no Laos lançou uma base de token de utilidade no Ethereum, atrelada ao preço de exportação de 1 kg de bananas',
+        description: 'Nossa missão é cultivar variedades orgânicas e saudáveis de bananas conhecidas como "Lady Finger" em nossas plantações no Laos e exportá-las para a China, onde a demanda é maior.',
+        buttons: [
+            '<a href="/files/Utility_token_pt.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-white">Natureza jurídica do token</a>',
+            '<a href="/files/White_Paper_Bananacoin_pt.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-white">Download White Paper</a>',
+        ]
+    } %}
+{% endif %}
 
 <div class="intro">
     <div class="container">
