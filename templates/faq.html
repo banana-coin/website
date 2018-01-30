@@ -1211,6 +1211,152 @@
 } %}
 {% endif %}
 
+{% if lang == 'pt' %}
+{% set faq = { 
+    title: 'Algumas perguntas frequentes',
+    description: 'Nós defendemos uma transparência total, então, se você não vê suas perguntas respondidas em nossas FAQ, por favor escreva-nos e nós retornaremos para você.',
+    text_showmore: 'Mostrar mais',
+    questions: [
+    { 
+        title: 'O que é TGE?', 
+        answer: 'TGE (evento de geração de Token) é um modelo de crowdfunding que nos permite emitir tokens digitais em troca de investimentos. Cada token dá ao seu proprietário o direito de receber lucros de acordo com as condições declaradas.' 
+    },
+    { 
+        title: 'Quem são vocês?', 
+        answer: 'Nós somos proprietários de uma plantação real de banana, e você pode se familiarizar com nossa equipe e desenvolvedores na página principal do site. Você também pode conversar conosco diretamente no chat http://t.me/bananacoineng Telegram.' 
+    },
+    { 
+        title: 'Qual é o endereço da fazenda Bananacoin?', 
+        answer: 'Ban. NAPHONG. Distric HINHEAP.pr.VIENTIANE. <br>gps - 18.5585025 102.19301210 <br>você também pode encontrá-lo no google map em: https://goo.gl/maps/542XdhqpETP2' 
+    },
+    { 
+        title: 'Como a agroindústria pode ser vinculada a blockchain?', 
+        answer: 'Nós não vinculamos a agroindústria à blockchain, usamos as capacidades de uma blockchain para aumentar o investimento (crowdfunding) e providenciar pagamentos transparentes para os investidores no futuro.' 
+    },
+    { 
+        title: 'Você tem um programa Bounty?', 
+        answer: 'A Bounty acabou agora. Mais detalhes disponíveis https://bitcointalk.org/index.php?topic=2164386.0.' 
+    },
+    { 
+        title: 'Por que Laos, por que não o Vietnã ou a China?', 
+        answer: 'Neste momento, já estamos envolvidos na agricultura no Laos, e temos permissões do governo local e amplas preferências fiscais. A condução de tais negócios é muito mais cara na China, enquanto o Vietnã tem territórios ecologicamente desfavoráveis no setor agrícola (poluição química após a guerra).' 
+    },
+    { 
+        title: 'Por que bananas, por que não o arroz ou as maçãs?', 
+        answer: 'Somos profissionais da indústria da banana, e estamos ganhando dinheiro com isso agora. Então agora são bananas. Além disso, as bananas ocupam o primeiro lugar em termos de consumo no mundo, tornando-se um excelente negócio.' 
+    },
+    { 
+        title: 'Qual é o custo de um token?', 
+        answer: 'O custo do primeiro milhão de BCO é de 0,25 dólares americanos por um token. O custo de um token no evento principal é de 0,5 dólares americanos.' 
+    },
+    { 
+        title: 'Você usa pesticidas?', 
+        answer: 'Não, nossas plantações são completamente ecológicas.' 
+    },
+    { 
+        title: 'Qual o seguro que você oferece aos investidores contra a volatilidade da moeda cripto? No momento, é mais rentável comprar bitcoins.', 
+        answer: 'Realizamos negócios no setor real e, portanto, o preço vinculativo será o valor de mercado das bananas em dólares. À custa das perspectivas de investimento, da escolha pessoal e da estratégia, estamos prontos para compartilhar nosso modelo de negócios.' 
+    },
+    { 
+        title: 'Os agricultores têm boas condições de trabalho?', 
+        answer: 'Quando começamos, eram apenas aldeões e campos de arroz. Nada mais, só isso. Nós instalamos eletricidade, organizamos o acesso a água doce e construímos a infra-estrutura. As condições tornaram-se muito melhores. Agora estamos trabalhando na instalação de Internet de alta velocidade. Na fase de pré-sessão, organizamos uma loteria entre os investidores, três dos quais poderiam se comunicar pessoalmente com agricultores no Laos.' 
+    },
+    { 
+        title: 'Número total de tokens - quem os emite?', 
+        answer: 'Tokens são emitidos uma vez por nossos desenvolvedores, igual ao montante cobrindo um investimento de US $ 7.340.000. Após o processo de redenção, os tokens serão destruídos publicamente.' 
+    },
+    { 
+        title: 'Qual é a posição do governo do Laos em relação à TGE, e o que acontecerá se seguirem o caminho da China?', 
+        answer: 'No momento, esta questão não é regulada pelo governo do Laos. Mas mesmo agora, nossos negócios não estão ligados à indústria de cripto, portanto, eles não poderão nos influenciar no futuro.' 
+    },
+    { 
+        title: 'E se a demanda por bananas desaparecer e o preço cai abaixo de US $ 1?', 
+        answer: 'Como mostra a prática, o preço das bananas e da demanda é sempre alto, principalmente devido à popularidade mundial.' 
+    },
+    { 
+        title: 'Por que vender para a China, e não para a Europa ou o Japão?', 
+        answer: 'A China, nesta fase, compra todos os lotes de bananas sem deixar rastros e é um vizinho próximo, talvez em 3-4 anos, entraremos no mercado japonês.' 
+    },
+    { 
+        title: 'Em que país é a jurisdição da campanha?', 
+        answer: 'A empresa e as plantações estão no Laos.' 
+    },
+    { 
+        title: 'Como posso investir?', 
+        answer: 'Você pode encontrar instruções detalhadas na página principal do site; Você também pode entrar em contato com o suporte no chat Telegram, se necessário. A maneira mais fácil é transferir o ethereum para um contrato inteligente de sua carteira pessoal com o padrão erc20. Os tokens retornam automaticamente à sua carteira após a confirmação da rede' 
+    },
+    { 
+        title: 'O número de tokens é limitado?', 
+        answer: 'Sim.' 
+    },
+    { 
+        title: 'E se a quantidade mínima de investimento não for alcançada?', 
+        answer: 'Preliminarmente, o montante mínimo de investimentos será fechado por poucos investidores reais.' 
+    },
+    { 
+        title: 'O padrão ERC223 do token, o que é?', 
+        answer: 'Este é o padrão mais moderno para um token baseado na rede Ethereum. Ele irá apoiar a transparência das transações com os investidores. Importante: sua carteira de ethereum deve suportar este padrão para obter tokens.' 
+    },
+    { 
+        title: 'Você conduzirá outros TGE no campo da agroindústria?', 
+        answer: 'Nós certamente não planejamos realizar taxas de reprodução animal, mas, após o sucesso do projeto BananaCoin, consideramos áreas como manga, abacate e café.' 
+    },
+    { 
+        title: 'E se o ano seguinte for fraco na colheita ou ocorrem desastres naturais?', 
+        answer: 'O Laos não está exposto a águas abertas (oceanos), de modo que as catástrofes naturais são raras. A maioria das plantações está em terras altas e colinas onde não há ventos fortes, mas chove regularmente, portanto, bons rendimentos de colheita são típicos para esta região.' 
+    },
+    { 
+        title: 'Por que você não atrai investidores clássicos', 
+        answer: 'No decorrer do projeto, recebemos muitas propostas de potenciais investidores que não são do setor cripto, mas todos os participantes do investimento estarão sujeitos a condições iguais.' 
+    },
+    { 
+        title: 'Quero fazer o pagamento em dólares, como faço isso?', 
+        answer: 'Para iniciantes no campo das moedas criptográficas, há uma instrução detalhada na página inicial. Se for um grande investimento (de US $ 100.000), os organizadores estão dispostos a organizar uma reunião pessoal.' 
+    },
+    { 
+        title: 'Eu vejo vários endereços de instruções para o ethereum na página principal do site e na minha conta pessoal, onde eu pago?', 
+        answer: 'Se você paga de uma carteira pessoal, com o padrão erc20, você pode pagar diretamente no endereço do contrato inteligente (endereço na página principal); os tokens retornarão automaticamente. Se o intercâmbio é com uma bolsa de valores, trocador, etc., é necessário usar um gabinete pessoal, e seus tokens serão creditados a ele.' 
+    },
+    { 
+        title: 'Em que câmbios serão negociados os tokens?', 
+        answer: 'Esta informação será publicada em breve.' 
+    },
+    { 
+        title: 'Como os tokens serão resgatados?', 
+        answer: 'Estamos desenvolvendo um algoritmo transparente para redenção aberta. Inicialmente, isso será redenção de tokens das trocas. Eventualmente, estamos considerando conectar as capacidades do nosso site para esse propósito.' 
+    },
+    { 
+        title: 'Existem restrições para a participação na TGE?', 
+        answer: 'Não. Nosso token é token de utilidade, portanto, não há restrições.' 
+    },
+    { 
+        title: 'Quero trocar tokens por bananas, você enviará para mim?', 
+        answer: 'O modelo comercial mais lucrativo para nós é a venda e o transporte dos nossos produtos para os vizinhos mais próximos. Se você está na China e pronto para comprar grandes quantidades - entre em contato conosco. Em outros casos, você terá que organizar o transporte de forma independente.' 
+    },
+    { 
+        title: 'Por que as bananas custam 1 USD na loja perto de mim, mas você diz no seu plano de negócios que o preço de exportação mínimo é de 1 USD?', 
+        answer: 'As bananas vendidas nas lojas são Cavendish e Williams, cujo preço de exportação não é superior a 0,25 USD. A variedade de banana que cultivamos, Lady Finger, é a mais cara e popular do mercado da China. O preço de exportação atinge 3,5 USD por kg.' 
+    },
+    { 
+        title: 'Por que você não usa apenas métodos clássicos para atrair investimentos?', 
+        answer: 'Boa pergunta. Primeiro, atrair investidores privados pode levar às conseqüências da fábula de Krylovs "Swan, Cancer and the Pike". Somos profissionais em nossos negócios e sabemos como fazer um negócio bem sucedido de banana. Em segundo lugar, atrair dinheiro através do TGE não dá aos investidores uma participação nos negócios - é um instrumento financeiro, depois de cumprir as obrigações em que o negócio permanecerá nas mãos do time. Em terceiro lugar, o projeto BananaCoin para nós é o início de um futuro projeto de grande escala, e queremos passar pelo negócio que entendemos para passar o "fogo de água e tubos de cobre" TGE para abordar o novo projeto em Lao PDR com o caso já bem sucedido.' 
+    },
+    { 
+        title: 'Essas pessoas na primeira página, os líderes do projeto, são reais? Eles foram verificados de alguma forma?', 
+        answer: 'Somos reais. Você pode vir a nossa plantação em Laos a qualquer momento; Nós organizamos uma loteria entre investidores pré-venda - um vencedor aleatório da pré-venda chegou à nossa plantação e viu que somos reais!' 
+    },
+    { 
+        title: 'Como funciona a plantação atual? Quem é dono da terra? Quem trabalha na plantação?', 
+        answer: 'Nossa empresa aluga a terra da plantação de camponeses locais, que, por sua vez, também trabalham nesse enredo, recebendo salário por seu trabalho.' 
+    },
+    { 
+        title: 'Ainda tenho perguntas ...', 
+        answer: 'A melhor maneira de aprender mais sobre o projeto é nos contatar diretamente. Você pode encontrar uma lista de todos os canais de comunicação na parte inferior da página.' 
+    },
+    ]
+} %}
+{% endif %}
+
 <div class="faq{{ not limit ? ' nobg' }}">
     <div class="container">
         <h2>{{ faq.title }}</h2>
