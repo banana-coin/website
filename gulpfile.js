@@ -235,7 +235,7 @@ var structure = {
                 { title: 'Plantação Ecológica', url: '/pt/plantation/' },
                 { title: 'Perguntas', url: '/pt/faq/' },
                 { title: 'Equipe', url: '/pt/#team' },
-                { title: 'Acesso', url: '/pt/profile' },
+                { title: 'Acesso', url: '/profile' },
             ],
             socials: [
                 '<a href="https://t.me/bananacoineng" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
