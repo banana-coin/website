@@ -107,6 +107,17 @@
         ]
     } %}
 {% endif %}
+{% if lang == 'ar' %}
+    {% set intro = { 
+        title: 'Bananacoin - بناناكوان', 
+        status: 'أول مزرعة صديقة للبيئة في لاوس التي أصدرت رمزا فائدة على أساس إثريوم، مربوطة بسعر التصدير لكل واحد كلجرام من الموز. مهمتنا هي أن تكون مزرعة طبيعية عضوية وصحية لانتاج الموز المعروفة باسم " Lady Finger" في مزارعنا في لاوس وتصديرها إلى الصين حيث الطلب أكبر من العرض.',
+        description: 'الطبيعة القانونية للرمز المميز -- تحميل ورقة بيضاء',
+        buttons: [
+            '<a href="/files/Utility_token_ar.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-white">الطبيعة القانونية ل</a>',
+            '<a href="/files/White_Paper_Bananacoin_en.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-white">مز المميز -- تحميل ورقة بيضاء</a>',
+        ]
+    } %}
+{% endif %}
 
 <div class="intro">
     <div class="container">

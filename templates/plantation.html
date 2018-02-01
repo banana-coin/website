@@ -267,6 +267,39 @@
     } %}
 {% endif %}
 
+{% if lang == 'ar' %}
+    {% set plantation = { 
+        title: 'بيئة المزارع', 
+        videos: [
+            {
+                image: 'https://img.youtube.com/vi/wOgn7KnR4p0/hqdefault.jpg',
+                href: 'https://www.youtube.com/embed/wOgn7KnR4p0?autoplay=1',
+                description: 'قد عاش أوليج في فيتنام لمدة تزيد عن 10 سنوات، استثمر في العقارات وصدر الفاكهة. استثمر 50 دولارا في Bananacoin ، ولكن زوجته استثمرت 500 دولار. كان أكثر حظا حيث فاز برحلة إلى مزرعة Bananacoin. الاستماع إلى كلماته خلال رحلته إلى فينتيان، لاوس.'
+            },
+            {
+                image: 'https://img.youtube.com/vi/zsingDPrHZY/hqdefault.jpg',
+                href: 'https://www.youtube.com/embed/zsingDPrHZY?autoplay=1',
+                description: 'جاء الطيور الاولى (المستثمرين في وقت مبكر ) من اليابان لمعرفة المزيد عن Bananacoin.'
+            },
+            {
+                image: 'https://img.youtube.com/vi/SYd4m6IRfCM/hqdefault.jpg',
+                href: 'https://www.youtube.com/embed/SYd4m6IRfCM?autoplay=1',
+                description: 'وفي الآونة الأخيرة اوقفت سلطات مقاطعة لاو بوكيو الشمالية نشاط 18 مزرعة موز تدعمها الصين بعد اكتشاف انتهاكات لقواعد استخدام المواد الكيميائية الزراعية.'
+            },
+            {
+                image: 'https://img.youtube.com/vi/_nwWJzXZYVs/hqdefault.jpg',
+                href: 'https://www.youtube.com/embed/_nwWJzXZYVs?autoplay=1',
+                description: 'مشروع البلوكشين الأول في العالم لإنتاج الموز بمواد عضوي صديقة للبيئة في لاوس.'
+            },
+            {
+                image: 'https://img.youtube.com/vi/tzoRWZAX-CA/hqdefault.jpg',
+                href: 'https://www.youtube.com/embed/tzoRWZAX-CA?autoplay=1',
+                description: 'تحديد قطعة ارضية جديدة من 360 هكتار. هذا هو المكان الفعلي الذي نريد فيه مزرعة باناناكوان Bananacoin.'
+            }
+        ]
+    } %}
+{% endif %}
+
 <div class="plantation">
     <div class="container">
         <div class="row">
@@ -676,6 +709,49 @@
                         <div class="icon icon-yellow"><img src="/img/plantation_icon6.svg"></div>
                         <p class="title">Ativo de prova real</p>
                         <p>A plantação de banana é um recurso de prova real com blockchain dentro. É uma nova tecnologia do setor agrícola.</p>
+                    </div>
+                </div>
+            {% elseif lang == 'ar' %}
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon1.png"></div>
+                        <p class="title">لا للمبيدات</p>
+                        <p>نحن لا تستخدم أي مبيدات في الإنتاج. وتتوافق دورة الإنتاج تماما مع قوانين لاوس المتعلقة باستخدام المواد الكيميائية الزراعية.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon2.svg"></div>
+                        <p class="title">صديقة للبيئة</p>
+                        <p>نحن نخطط لإنشاء «مزرعة عضوية» - مزرعة موز معزولة عن المزارع أخرى من أجل حماية البيئة الإيكولوجية.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon3.svg"></div>
+                        <p class="title">من 3 سنوات قبل</p>
+                        <p>لقد تم القيام بأعمال تجارية في لاوس لمدة 15 عاما. قبل 3 سنوات، بدأنا الأعمال الزراعية الصناعية، وهي زراعة الموز وتصديره.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon4.svg"></div>
+                        <p class="title">تجارة مربحة</p>
+                        <p>بدأنا باستئجار المزارع. و في العام الماضي اشتريناها. و خطوتنا التالية هي توسيع الأعمال التجارية.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon5.png"></div>
+                        <p class="title">الدعم الحكومي</p>
+                        <p>لدينا علاقة قوية مع حاكم مقاطعة فينتيان حيث توجد مزارعنا. و بما ان اعمالنا متوافقة مع قوانين البلاد عهم يدعموننا.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon6.svg"></div>
+                        <p class="title">إثبات حقيقي للأصول</p>
+                        <p>مزرعة الموز هي حقيقية بإثبات للأصول داخل البلوكشين. وهي تكنولوجيا جديدة للقطاع الزراعي.</p>
                     </div>
                 </div>
             {% else %}

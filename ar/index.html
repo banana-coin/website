@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <title>Bananacoin | Join organic token generation event</title>
+    <meta name="description" content="The price of Bananacoin token is protected by the cost of one kilogram of bananas">
+    {% include 'head.html' %}
+</head>
+
+<body class="{{ lang }}">
+    {% include 'nav.html' %}
+    <main>
+        {% include 'intro.html' %}
+        <a name="plantation" id="plantation"></a>
+        {% include 'plantation.html' %}
+        {% include 'documents.html' %}
+        {% include 'why.html' %}
+        {% include 'roadmap.html' %}
+        <a name="team" id="team"></a>
+        {% include 'team.html' %}
+        {% include 'partners.html' %}
+        {% include 'newslist.html' %}
+        <a name="faq" id="faq"></a>
+        {% include 'faq.html' with {limit:7} %}
+        {% include 'footer.html' %}

@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>BananaCoin : Organic plantation</title>
+    {% include 'head.html' %}
+</head>
+
+<body class="{{ lang }}">
+    {% include 'nav.html' %}
+    <main>
+        {% include 'plantation.html' with { fullView: true } %}
+        {% include 'footer.html' %}

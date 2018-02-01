@@ -29,7 +29,8 @@ var structure = {
         //kr: { title: '한국어', link: '/kr' },
         jp: { title: '日本', link: '/jp' },
         ind: { title: 'Ind', link: '/ind' },
-        pt: { title: 'Pt', link: '/pt' }
+        pt: { title: 'Pt', link: '/pt' },
+        ar: { title: 'العربية', link: '/ar' }
     },
     nav: {
         en: {
@@ -236,6 +237,26 @@ var structure = {
                 { title: 'Perguntas', url: '/pt/faq/' },
                 { title: 'Equipe', url: '/pt/#team' },
                 { title: 'Acesso', url: '/profile' },
+            ],
+            socials: [
+                '<a href="https://t.me/bananacoineng" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
+                '<a href="https://bitcointalk.org/index.php?topic=2112748" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-btc"></a>',
+                '<a href="/img/qrcode_for_bananacoin_wechat.jpg" target="_blank" class="fa fa-wechat"></a>',
+                '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
+                '<a href="https://www.facebook.com/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
+                '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
+                '<a href="https://www.instagram.com/bananacoin_io/" target="_blank" class="fa fa-instagram"></a>',
+                '<a href="https://open.kakao.com/o/gRtuHrz" target="_blank" onClick="sendEvent(\'ViewContent\')" class="kakao"></a>'
+            ]
+        },
+        ar: {
+            description: 'World first blockchain option for banana plantation',
+            nav: [
+                { title: 'المشروع', url: '/ar' },
+                { title: 'بيئة المزارع', url: '/ar/plantation/' },
+                { title: 'الاسئلة الشائعة', url: '/ar/faq/' },
+                { title: 'الفريق', url: '/ar/#team' },
+                { title: 'الملف الشخصي', url: '/profile' },
             ],
             socials: [
                 '<a href="https://t.me/bananacoineng" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
