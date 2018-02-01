@@ -109,6 +109,18 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.5 USD',
     } %}
     {% set text_tg = 'Conecte-se com Telegram' %}
 {% endif %}
+{% if lang == 'ar' %}
+    {% set countdown = { 
+        title: 'Token sale status<br>1 token (BCO) = 0.5 USD', 
+        titleStart: 'Token sale started',
+        description: 'The first environmentall friendly plantation in Laos which has released a utility token based on Ethereum, pegged to the export price of 1 kg of bananas.',
+        starttime: '29th November 12:00 GMT — 28th February 12:00 GMT',
+        text_sold: 'Tokens sold',
+        text_total: 'Total tokens',
+        text_of: 'of',
+    } %}
+    {% set text_tg = 'Connect with Telegram' %}
+{% endif %}
 
 <div class="panel countdown">
     <div class="row">
@@ -131,8 +143,6 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.5 USD',
     <div class="row mt-4 justify-content-md-center">
         <div class="col-md-10 col-lg-7 col-xl-7">
             <div class="buttons">
-                
-
 
                 <a href="https://bananacoin.io/users/sign_up" class="btn btn-yellow">
                 {% if lang == 'ru' %}Купить за Биткоины

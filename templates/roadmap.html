@@ -156,6 +156,22 @@
         ]
     } %}
 {% endif %}
+{% if lang == 'ar' %}
+    {% set roadmap = { 
+        title: 'خارطة الطريق', 
+        steps: [
+            { completed: true, title: 'في مارس 2015', description: 'تم التعاون مع المختصين الصينيين في المزرعة المستأجرة' },
+            { completed: true, title: 'في يونيو 2016', description: 'بدء المزارع الخاصة بنا' },
+            { completed: true, title: 'في ديسمبر 2016', description: 'الحصاد الأول' },
+            { completed: true, title: 'في سبتمبر 2017', description: '<b>المرحلة الأولى</b><br> حملة ما قبل بيع' },
+            { completed: true, title: 'من أكتوبر إلى 29 نوفمبر 2017', description: '<b>المرحلة الثانيةe</b><br>البيع الخاص' },
+            { completed: false, title: 'من 29 نوفمبر الى 28 فبراير 2018', description: '<b>المرحلة الثالثة</b><br>حدث توليد الرموز' },
+            { completed: false, title: 'من ديسمبر 2017 الى مارس 2018', description: '<b>المرحلة الرابعة</b><br>إعداد الأرض' },
+            { completed: false, title: 'من أبريل إلى ديسمبر 2018', description: '<b>المرحلة الخامسة</b><br>تطوير مزارع الموز على مزرعة جديدة' },
+            { completed: false, title: 'في ديسمبر 2018', description: '<b>المرحلة السادسة</b><br>الرمز' },
+        ]
+    } %}
+{% endif %}
 <div class="roadmap">
     <h2>{{ roadmap.title }}</h2>
     <ul>
