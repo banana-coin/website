@@ -335,7 +335,7 @@ gulp.task('static', function() {
         .pipe(gulp.dest(out + 'success_files/'));
     gulp.src(['pre-ico/**/*'])
         .pipe(gulp.dest(out + 'pre-ico/'));
-    gulp.src(['/*.html'])
+    gulp.src(['*.html'])
         .pipe(gulp.dest(out));
 });
 
