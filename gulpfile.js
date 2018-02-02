@@ -4,14 +4,11 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-var watch = require('gulp-watch');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var del = require('del');
 var twig = require('gulp-twig');
 var removeHtmlComments = require('gulp-remove-html-comments');
-var gutil = require('gulp-util');
-var ftp = require('vinyl-ftp');
 
 var news = require('./news.json');
 
