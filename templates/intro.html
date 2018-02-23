@@ -118,6 +118,17 @@
         ]
     } %}
 {% endif %}
+{% if lang == 'lao' %}
+    {% set intro = { 
+        title: 'Bananacoin', 
+        status: 'ການປູກຕົ້ນໄມ້ທໍາມະຊາດທໍາອິດໃນປະເທດລາວທີ່ໄດ້ປ່ອຍເຕົ້າໂຮມທີ່ມີປະໂຫຍດຈາກ Ethereum, ເຊິ່ງຄາດວ່າລາຄາສົ່ງອອກຂອງຫມາກກ້ວຍ 1 ກິໂລ.',
+        description: 'ພາລະກິດຂອງພວກເຮົາແມ່ນເພື່ອຂະຫຍາຍພັນພືດທີ່ມີຄຸນລັກສະນະແລະສຸຂະພາບຂອງຫມາກກ້ວຍທີ່ເອີ້ນວ່າ Lady Finger ໃນການປູກຂອງພວກເຮົາໃນລາວແລະສົ່ງອອກໄປປະເທດຈີນທີ່ມີຄວາມຕ້ອງການຫຼາຍກວ່າການສະຫນອງ.',
+        buttons: [
+            '<a href="/files/Utility_token_eng.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-white">Legal nature of token</a>',
+            '<a href="/files/White_Paper_Bananacoin_en.pdf" onclick="sendEvent(\'ViewContent\')" target="_blank" class="btn btn-white">Download White Paper</a>',
+        ]
+    } %}
+{% endif %}
 
 <div class="intro">
     <div class="container">

@@ -299,6 +299,39 @@
         ]
     } %}
 {% endif %}
+{% if lang == 'lao' %}
+    {% set plantation = { 
+        title: 'ດາວໂລດເອກະສານຄວາມປ່ອງໃສ', 
+        videos: [
+            {
+                image: 'https://img.youtube.com/vi/wOgn7KnR4p0/hqdefault.jpg',
+                href: 'https://www.youtube.com/embed/wOgn7KnR4p0?autoplay=1',
+                description: 'Oleg ໄດ້ອາໄສຢູ່ທີ່ປະເທດຫວຽດນາມມາກ່ວາ 10 ປີ, ໄດ້ລົງທືນໃນການຂາຍ ແລະ ສົ່ງອອກໝາກໄມ້. ລາວໄດ້ລົງທືນ 50 ໂດລາກັບຫຼຽນ Bananacoin ແຕ່ເມຍລາວລົງທືນ 500 ໂດລາ. ແຕ່ລາວໂຊກດີທີ່ໄດ້ຮັບລາງວັນໃນການໄປທຽ່ວສວຍກ້ອຍ. ລອງຟັງຄຳເວົ້າຈາກເຂົາທີ່ໄດ້ມາຢຽ້ມຢາມວຽງຈັນ, ປະເທດລາວ.'
+            },
+            {
+                image: 'https://img.youtube.com/vi/zsingDPrHZY/hqdefault.jpg',
+                href: 'https://www.youtube.com/embed/zsingDPrHZY?autoplay=1',
+                description: 'Bananacoin ທິມງານຮຸ່ນທຳອິດຈາກຍີ່ປຸ່ນໄດ້ມາຮຽນຮູ້ກ່ຽວກັບປະສົບການຂອງທີມງານ.'
+            },
+            {
+                image: 'https://img.youtube.com/vi/SYd4m6IRfCM/hqdefault.jpg',
+                href: 'https://www.youtube.com/embed/SYd4m6IRfCM?autoplay=1',
+                description: 'ບໍ່ດົນມານີ້, ພະນັກງານຂອງແຂວງບັກໂກໂກເຫນືອໄດ້ປະຕິເສດກິດຈະກໍາຂອງສວນປູກ 18 ແຫ່ງຂອງຈີນທີ່ໄດ້ຮັບການຊ່ວຍເຫຼືອຈາກຈີນຫຼັງຈາກໄດ້ຄົ້ນພົບວ່າການລະເມີດກົດລະບຽບຂອງການນໍາໃຊ້ສານເຄມີກະສິກໍາ.'
+            },
+            {
+                image: 'https://img.youtube.com/vi/_nwWJzXZYVs/hqdefault.jpg',
+                href: 'https://www.youtube.com/embed/_nwWJzXZYVs?autoplay=1',
+                description: 'ທາງເລືອກທີ່ blockchain ທໍາອິດຂອງໂລກສໍາລັບການຜະລິດກ້ວຍອິນຊີໃນລາວ.'
+            },
+            {
+                image: 'https://img.youtube.com/vi/tzoRWZAX-CA/hqdefault.jpg',
+                href: 'https://www.youtube.com/embed/tzoRWZAX-CA?autoplay=1',
+                description: 'ເປີດດິນຕອນໃຫມ່ຂອງ 360 ເຮັກຕາ. ນີ້ແມ່ນສະຖານທີ່ແທ້ຈິງທີ່ພວກເຮົາຕ້ອງການການປູກຕົ້ນໝາກກ້ວຍ Bananacoin.'
+            }
+        ]
+    } %}
+{% endif %}
+
 
 <div class="plantation">
     <div class="container">
@@ -754,6 +787,49 @@
                         <p>مزرعة الموز هي حقيقية بإثبات للأصول داخل البلوكشين. وهي تكنولوجيا جديدة للقطاع الزراعي.</p>
                     </div>
                 </div>
+            {% elseif lang == 'lao' %}
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon1.png"></div>
+                        <p class="title">ບໍ່ໃຊ້ຢາປາບສັດຕູພືດ</p>
+                        <p>ພວກເຮົາບໍ່ໃຊ້ຢາປາບສັດຕູພືດໃນການຜະລິດ. ວົງຈອນການຜະລິດສອດຄ່ອງກັບກົດລະບຽບຂອງລາວສໍາລັບການນໍາໃຊ້ສານເຄມີກະສິກໍາ.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon2.svg"></div>
+                        <p class="title">ທໍາມະຊາດທີ່ເປັນມິດ</p>
+                        <p>ພວກເຮົາກໍາລັງວາງແຜນທີ່ຈະສ້າງ "ຟາມອິນຊີ" - ການປູກກ້ວຍທີ່ຖືກແຍກອອກຈາກກະສິກໍາອື່ນໆເພື່ອປົກປ້ອງສະພາບແວດລ້ອມນິເວດວິທະຍາ.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-green"><img src="/img/plantation_icon3.svg"></div>
+                        <p class="title">3 ປີ</p>
+                        <p>ພວກເຮົາໄດ້ເຮັດທຸລະກິດຢູ່ລາວໃນ 15 ປີແລ້ວ. 3 ປີກ່ອນ, ພວກເຮົາໄດ້ເລີ່ມຕົ້ນທຸລະກິດກະສິກໍາ - ອຸດສາຫະກໍາຄືການປູກແລະສົ່ງອອກຫມາກກ້ວຍ.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon4.svg"></div>
+                        <p class="title">ທຸລະກິດກໍາໄລ</p>
+                        <p>ພວກເຮົາໄດ້ເລີ່ມຕົ້ນດ້ວຍການເຊົ່າຂອງການປູກ. ມັນເປັນທຸລະກິດກໍາໄລ. ປີທີ່ຜ່ານມາພວກເຮົາໄດ້ຊື້ມັນ. ຂັ້ນຕອນຕໍ່ໄປຂອງພວກເຮົາແມ່ນການຂະຫຍາຍທຸລະກິດ.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon5.png"></div>
+                        <p class="title">ລັດຖະບານສະຫນັບສະຫນູນ</p>
+                        <p>ພວກເຮົາມີການເຊື່ອມຕໍ່ທີ່ເຂັ້ມແຂງກັບເຈົ້າແຂວງວຽງຈັນທີ່ບ່ອນປູກຝັງຂອງພວກເຮົາຕັ້ງຢູ່. ລາວເວົ້າຢ່າງສູງກ່ຽວກັບການປູກ.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item">
+                        <div class="icon icon-yellow"><img src="/img/plantation_icon6.svg"></div>
+                        <p class="title">ຊັບສິນທີ່ແທ້ຈິງ</p>
+                        <p>ການປູກກ້ວຍເປັນຊັບສິນຫຼັກຖານທີ່ແທ້ຈິງທີ່ມີ blockchain ພາຍໃນ. ມັນເປັນເຕັກໂນໂລຢີໃຫມ່ຂອງຂະແຫນງກະສິກໍາ.</p>
+                    </div>
+                </div>
             {% else %}
                 <div class="col-lg-4">
                     <div class="info-item">
@@ -797,7 +873,7 @@
                         <p>Banana plantation is a real proof asset with blockchain inside. It is new technology of the agricultural sector.</p>
                     </div>
                 </div>
-            {% endif  %}
+            {% endif %}
         </div>
     </div>
     {% if fullView %}<!-- описание внутри страницы -->

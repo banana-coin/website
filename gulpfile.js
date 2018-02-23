@@ -27,7 +27,8 @@ var structure = {
         jp: { title: '日本', link: '/jp' },
         ind: { title: 'Ind', link: '/ind' },
         pt: { title: 'Pt', link: '/pt' },
-        ar: { title: 'العربية', link: '/ar' }
+        ar: { title: 'العربية', link: '/ar' },
+        lao: { title: 'ລາວ', link: '/lao'}
     },
     nav: {
         en: {
@@ -257,6 +258,26 @@ var structure = {
             ],
             socials: [
                 '<a href="https://t.me/bananacoineng" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
+                '<a href="https://bitcointalk.org/index.php?topic=2112748" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-btc"></a>',
+                '<a href="/img/qrcode_for_bananacoin_wechat.jpg" target="_blank" class="fa fa-wechat"></a>',
+                '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
+                '<a href="https://www.facebook.com/bananacoinENG/" target="_blank" class="fa fa-facebook-f"></a>',
+                '<a href="https://www.youtube.com/channel/UCkCZUIafAmqPX0ZnVO0DWdA" target="_blank" class="fa fa-youtube-play"></a>',
+                '<a href="https://www.instagram.com/bananacoin_io/" target="_blank" class="fa fa-instagram"></a>',
+                '<a href="https://open.kakao.com/o/gRtuHrz" target="_blank" onClick="sendEvent(\'ViewContent\')" class="kakao"></a>'
+            ]
+        },
+        lao: {
+            description: 'World first blockchain option for banana plantation',
+            nav: [
+                { title: 'ໂຄງການ', url: '/lao' },
+                { title: 'ການປູກຝັງ', url: '/lao/plantation/' },
+                { title: 'ຄຳຖາມທີ່ມັກພົບເລື້ອຍໆ', url: '/lao/faq/' },
+                { title: 'ທິມງານ', url: '/lao/#team' },
+                { title: 'ໂປຣໄຟ', url: '/profile' },
+            ],
+            socials: [
+                '<a href="https://T.me/Bananacoin_LAO" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
                 '<a href="https://bitcointalk.org/index.php?topic=2112748" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-btc"></a>',
                 '<a href="/img/qrcode_for_bananacoin_wechat.jpg" target="_blank" class="fa fa-wechat"></a>',
                 '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
