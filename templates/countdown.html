@@ -1,7 +1,7 @@
 {% set start = '29.11.2017 15:00'|date('U') %}{# время компа #}
 
 {% set countdown = { 
-    title: 'Token sale status<br>1 token (BCO) = 0.7 USD', 
+    title: 'Token sale finished', 
     titleStart: 'Token sale started',
     description: 'The first environmentall friendly plantation in Laos which has released a utility token based on Ethereum, pegged to the export price of 1 kg of bananas.',
     starttime: '29th November 12:00 GMT — 28th February 12:00 GMT',
@@ -13,7 +13,7 @@
 
 {% if lang == 'ru' %}
     {% set countdown = { 
-        title: 'Статус продаж токенов<br>1 токен (BCO) = 0.7 USD', 
+        title: 'Продажа токенов окончена', 
         titleStart: 'Старт продаж токенов начался',
         description: countdown.description,
         starttime: '29 Ноября 12:00 GMT — 28 Февраля 12:00 GMT',
@@ -25,7 +25,7 @@
 {% endif %}
 {% if lang == 'es' %}
     {% set countdown = { 
-        title: 'Estado de la venta de tokens<br>1 token (BCO) = 0.7 USD', 
+        title: 'Token sale finished', 
         titleStart: 'Старт продаж токенов начался',
         description: countdown.description,
         starttime: countdown.starttime,
@@ -38,7 +38,7 @@
 
 {% if lang == 'turk' %}
     {% set countdown = { 
-title: 'Token satış özeti<br>1 token (BCO) = 0.7 USD', 
+title: 'Token sale finished', 
     titleStart: 'Token sale started',
     description: countdown.description,
     starttime: '29 Kasım 15:00  - 28 Şubat 2018 15:00',
@@ -51,7 +51,7 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.7 USD',
 {% endif %}
 {% if lang == 'jp' %}
     {% set countdown = { 
-        title: 'トークンの販売モード<br>1 トークン (BCO) = 0.7 ドル', 
+        title: 'Token sale finished', 
         titleStart: 'Старт продаж токенов начался',
         description: countdown.description,
         starttime: countdown.starttime,
@@ -63,7 +63,7 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.7 USD',
 {% endif %}
 {% if lang == 'cn' %}
     {% set countdown = { 
-        title: '代币销售状态<br>1代币 (BCO) = 0.7 美元', 
+        title: 'Token sale finished', 
         titleStart: 'Старт продаж токенов начался',
         description: countdown.description,
         starttime: countdown.starttime,
@@ -75,7 +75,7 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.7 USD',
 {% endif %}
 {% if lang == 'fra' %}
     {% set countdown = { 
-        title: 'Statut de la vente de Tokens<br>1 token (BCO) = 0.7 USD', 
+        title: 'Token sale finished', 
         titleStart: 'Старт продаж токенов начался',
         description: countdown.description,
         starttime: countdown.starttime,
@@ -87,7 +87,7 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.7 USD',
 {% endif %}
 {% if lang == 'de' %}
     {% set countdown = { 
-        title: 'Token Verkauf Status<br>1 token (BCO) = 0.7 USD', 
+        title: 'Token sale finished', 
         titleStart: 'Token sale started',
         description: countdown.description,
         starttime: '29 November 12:00 GMT — 28 Februar 12:00 GMT',
@@ -99,7 +99,7 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.7 USD',
 {% endif %}
 {% if lang == 'pt' %}
     {% set countdown = { 
-        title: 'Status da venda token<br>1 token (BCO) = 0.7 USD', 
+        title: 'Token sale finished', 
         titleStart: 'BCO também será listado em',
         description: countdown.description,
         starttime: '29 de Novembro 12:00 GMT — 29 de Fevereiro 12:00 GMT',
@@ -111,7 +111,7 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.7 USD',
 {% endif %}
 {% if lang == 'ar' %}
     {% set countdown = { 
-        title: 'Token sale status<br>1 token (BCO) = 0.7 USD', 
+        title: 'Token sale finished', 
         titleStart: 'Token sale started',
         description: 'The first environmentall friendly plantation in Laos which has released a utility token based on Ethereum, pegged to the export price of 1 kg of bananas.',
         starttime: '29th November 12:00 GMT — 28th February 12:00 GMT',
@@ -123,7 +123,7 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.7 USD',
 {% endif %}
 {% if lang == 'lao' %}
     {% set countdown = { 
-        title: 'Token sale status<br>1 token (BCO) = 0.7 USD', 
+        title: 'Token sale finished', 
         titleStart: 'Token sale started',
         description: 'The first environmentall friendly plantation in Laos which has released a utility token based on Ethereum, pegged to the export price of 1 kg of bananas.',
         starttime: '29th November 12:00 GMT — 28th February 12:00 GMT',
@@ -153,61 +153,7 @@ title: 'Token satış özeti<br>1 token (BCO) = 0.7 USD',
     </div>
     <div class="starttime">{{ countdown.starttime }}</div>
     <div class="row mt-4 justify-content-md-center">
-        <div class="col-md-10 col-lg-7 col-xl-7">
             <div class="buttons">
-
-                <a href="https://bananacoin.io/users/sign_up" class="btn btn-yellow">
-                {% if lang == 'ru' %}Купить за Биткоины
-                {% elseif lang == 'es' %}Compre con Bitcoins
-                {% elseif lang == 'turk' %}Bitcoin İle Satın Alın
-                {% elseif lang == 'cn' %}购买Bitcoins
-                {% elseif lang == 'jp' %}Bitcoinsを購入します。
-                {% elseif lang == 'fra' %}Acheter avec des Bitcoins
-                {% elseif lang == 'de' %}Mit Bitcoins kaufen
-                {% elseif lang == 'pt' %}Compre com Bitcoins
-                {% else %}Buy with Bitcoins{% endif %}
-                </a>
-               
-                <a href="{{ lang != 'en' ? '/'~lang : '' }}/token" class="btn btn-yellow popup fancybox.ajax">
-                {% if lang == 'ru' %}Купить за Эфириум
-                {% elseif lang == 'es' %}Compre con Ethereum
-                {% elseif lang == 'turk' %}Ethereum İle Satın Alın
-                {% elseif lang == 'jp' %}Ethereumを購入します。
-                {% elseif lang == 'cn' %}购买Ethereum
-                {% elseif lang == 'fra' %}Acheter avec des Ethereums
-                {% elseif lang == 'de' %}Mit Ethereum kaufen
-                {% elseif lang == 'pt' %}Compre com Ethereum
-                {% else %}Buy with Ethereum{% endif %}
-                </a>
-               
-                {% if lang == 'ru' %}
-                <a href="https://docs.google.com/document/d/1RYtXe3_4Z8IoVu2wuVDd4YfmqC1Y9SBcc47U6OWPohA/edit?usp=sharing" target="_blank" class="btn btn-yellow">Банковский перевод</a>
-                {% else %}                
-                <a href="https://docs.google.com/document/d/1p-hchZ6B8_rz6FKmUyZpHs2tRpafpdRQ8SRW-A61Nac/edit?usp=sharing" target="_blank" class="btn btn-yellow">Buy with money transfers</a>
-                {% endif %}
-                
-
-                <a href="{% if lang == 'ru' %}https://docs.google.com/document/d/1nfRPSSmEcDl2NvPrrxDzwzLimZAjOv1ousdNRfAfzGA
-                {% elseif lang == 'es' %}https://docs.google.com/document/d/1Cd4YBrDxcAZMxsFoSVXpXEJElR0TUMLYmtDU3GqoybY/edit?ts=5a2d35b3#heading=h.ni8ejystzdom
-                {% elseif lang == 'jp' %}/files/How_to_buy_Bananacoin_jp.pdf
-                {% elseif lang == 'fra' %}/files/How_to_buy_Bananacoin_fra.pdf
-                {% elseif lang == 'cn' %}/files/How_to_buy_Bananacoin_cn.pdf
-                {% elseif lang == 'turk' %}/files/How_to_buy_Bananacoin_turk.pdf
-                {% else %}https://docs.google.com/document/d/1NmuebOT6Jvt7lMcBIwLsO_pMlspWXETswFi9FL3zwDI
-                {% endif %}" class="btn btn-yellow" target="_blank">
-                {% if lang == 'ru' %}Как купить Bananacoin
-                {% elseif lang == 'es' %}Como Comprar Bananacoin
-                {% elseif lang == 'fra' %}Comment acheter des Bananacoin
-                {% elseif lang == 'turk' %}Banacoin Nasıl Alınır ?
-                {% elseif lang == 'cn' %}如何购买Bananacoin
-                {% elseif lang == 'jp' %}Bananacoinの購入方法
-                {% elseif lang == 'de' %}Wie kauft man Bananacoin
-                {% elseif lang == 'pt' %}Como Comprar Bananacoin
-                {% else %}How to buy Bananacoin{% endif %}
-                </a>
-            </div>
-        </div>
-        <div class="col-md-10 col-lg-5 col-xl-4">
             {% if lang == 'cn' %}
             <img src="/img/qrcode_for_bananacoin_wechat.jpg" style="width: 180px">
             {% else %}
