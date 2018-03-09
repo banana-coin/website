@@ -1,0 +1,17 @@
+{
+    "en": {
+        "title": "Project updates",
+        "items": [
+            {
+                "title": "Blah",
+                "date": "Fri 9 Mar",
+                "link": "http://www.google.com"
+            },
+            {
+                "title": "Blah",
+                "date": "Fri 9 Mar",
+                "link": "http://www.google.com"
+            }
+        ]
+    }
+}

@@ -11,6 +11,7 @@ var twig = require('gulp-twig');
 var removeHtmlComments = require('gulp-remove-html-comments');
 
 var news = require('./news.json');
+var updates = require('./updates.json');
 
 var release = false;
 
@@ -329,6 +330,11 @@ gulp.task('static', function() {
         data.langs = structure.langs;
         data.lang = lang;
         data.news = news[lang];
+        data.updates = updates[lang];
+        if (!data.updates) {
+            data.updates = updates['en'];
+        }
+        data.price = { banana: '3.4', mango: '4.8' };
         var folders = ['plantation/', 'faq/', 'plan/', 'token/'];
         gulp.src([lang + '/index.html'])
             .pipe(twig({ data: data, base: 'templates/' }))

@@ -77,6 +77,79 @@
 }
 
 
+.updates h4,
+.prices h4 {
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.updates {
+    text-align: left;
+    ul { 
+        list-style: none; 
+        padding: 0;
+        li {
+            line-height: 20px;
+            padding: 8px 0;
+            font-size: 16px;
+            .date {
+                font-weight: 300;
+                font-size: 14px;
+            }
+            &:not(:first-child) {
+                border-top: 1px dotted #999;
+            }
+            a.fa-link {
+                width: 16px;
+                height: 16px;
+                font-size: 10px;
+                line-height: 16px;
+                border-radius: 50%;
+                text-align: center;
+                background: #989898;
+                color: #f7fafa;
+                text-decoration: none !important;
+                overflow: hidden;
+                opacity: 0.7;
+                transform: translateY(3px);
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.prices {
+    text-align: left;
+    ul { 
+        list-style: none; 
+        padding: 0;
+        li {
+            > * { 
+                line-height: 36px !important; 
+                font-size: 16px;
+            }
+            &:not(:first-child) {
+                border-top: 1px dotted #999;
+            }
+        }
+    }
+    .title {
+        font-size: 16px;
+        float: left;
+    }
+    .price {
+        text-align: right;
+        font-weight: 300;
+        span { 
+            font-weight: normal;
+        }
+    }
+}
+
 @include media-breakpoint-down(md) { 
     .countdown {
         .starttime { font-size: 14px; }

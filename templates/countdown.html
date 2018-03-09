@@ -136,6 +136,35 @@ title: 'Token sale finished',
 
 <div class="panel countdown">
     <div class="row">
+        <div class="col-md-8 updates">
+            <h4>{{ updates.title }}</h4>
+            <ul>
+                {% for update in updates.items %}
+                <li>
+                    <span class="date">{{ update.date }}</span>
+                    {{ update.title }}
+                    {% if update.link %}
+                        <a href="{{ update.link }}" class="fa fa-link"></a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-md-4 prices">
+            <h4>Market prices</h4>
+            <ul>
+                <li>
+                    <div class="title">Banana</div>
+                    <div class="price"><span>{{ price.banana }}$</span> per kg</div>
+                </li>
+                <li>
+                    <div class="title">Mango</div>
+                    <div class="price"><span>{{ price.mango }}$</span> per kg</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-12 d-flex align-items-center">
             <div class="title">{{ countdown.title }}</div>
         </div>
@@ -151,7 +180,6 @@ title: 'Token sale finished',
             <span>{{ countdown.text_total }}<span>
         </div>
     </div>
-    <div class="starttime">{{ countdown.starttime }}</div>
     <div class="row mt-4 justify-content-md-center">
         <div class="col-md-10 col-lg-5 col-xl-4">
             {% if lang == 'cn' %}
