@@ -3,15 +3,31 @@
         "title": "Project updates",
         "items": [
             {
-                "title": "Blah",
+                "title": "BCO token availiable at Etherdelta",
                 "date": "Fri 9 Mar",
-                "link": "http://www.google.com"
+                "link": "http://www.etherdelta.com"
             },
             {
-                "title": "Blah",
+                "title": "BCO token availiable at Forkdelta",
                 "date": "Fri 9 Mar",
-                "link": "http://www.google.com"
+                "link": "http://forkdelta.github.io"
+            }
+        ]
+    },
+"ru": {
+        "title": "Новости проекта",
+        "items": [
+            {
+                "title": "Токен BCO доступен на Etherdelta",
+                "date": "Птн 9 Март",
+                "link": "http://www.etherdelta.com"
+            },
+            {
+                "title": "Токен BCO доступен на Forkdelta",
+                "date": "Птн 9 Март",
+                "link": "http://forkdelta.github.io"
             }
         ]
     }
+
 }

@@ -29,7 +29,7 @@ var structure = {
         ind: { title: 'Ind', link: '/ind' },
         pt: { title: 'Pt', link: '/pt' },
         ar: { title: 'العربية', link: '/ar' },
-        lao: { title: 'ລາວ', link: '/lao'}
+        lao: { title: 'ລາວ', link: '/lao' }
     },
     nav: {
         en: {
@@ -334,7 +334,7 @@ gulp.task('static', function() {
         if (!data.updates) {
             data.updates = updates['en'];
         }
-        data.price = { banana: '3.4', mango: '4.8' };
+        data.price = { banana: '2.3', mango: '2.1' };
         var folders = ['plantation/', 'faq/', 'plan/', 'token/'];
         gulp.src([lang + '/index.html'])
             .pipe(twig({ data: data, base: 'templates/' }))
