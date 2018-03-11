@@ -2,6 +2,11 @@
     "en": {
         "title": "Project updates",
         "items": [
+        {
+                "title": "Mango plantation addition press release available",
+                "date": "Sun 11 Mar",
+                "link": "/files/bananacoin_update_eng.pdf"
+                },
             {
                 "title": "BCO token availiable at Etherdelta",
                 "date": "Fri 9 Mar",
@@ -17,6 +22,11 @@
 "ru": {
         "title": "Новости проекта",
         "items": [
+            {
+                "title": "Доступен пресс-релиз о добавлении манговой плантации",
+                "date": "Вск 11 Март",
+                "link": "/files/bananacoin_update_rus.pdf"
+            },
             {
                 "title": "Токен BCO доступен на Etherdelta",
                 "date": "Птн 9 Март",
