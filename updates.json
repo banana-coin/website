@@ -2,7 +2,12 @@
     "en": {
         "title": "Project updates",
         "items": [
-        {
+          {
+                "title": "Alexander Bychkov and Oleg Dobrovoslkiy speaking on Mango addtition",
+                "date": "Tue 13 Mar",
+                "link": "https://www.youtube.com/watch?v=Guhk86UDLKY&t"
+                },
+       {
                 "title": "Mango plantation addition press release available",
                 "date": "Sun 11 Mar",
                 "link": "/files/bananacoin_update_eng.pdf"
@@ -22,6 +27,11 @@
 "ru": {
         "title": "Новости проекта",
         "items": [
+         {
+                "title": "Обращение Александра Бычкова и Олега Добровольского",
+                "date": "Вт 13 Март",
+                "link": "https://www.youtube.com/watch?v=Guhk86UDLKY&t"
+                },
             {
                 "title": "Доступен пресс-релиз о добавлении манговой плантации",
                 "date": "Вск 11 Март",
