@@ -2,6 +2,21 @@
     "en": {
         "title": "Project updates",
         "items": [
+        {
+                "title": "Kkcoin.com is now supporting BCO trading (BCO/ETH)",
+                "date": "Thur 15 Mar",
+                "link": "https://www.kkcoin.com/trade?symbol=BCO_ETH"
+            },
+                    {
+                "title": "Token.store is next trading platform to list BCO",
+                "date": "Thur 15 Mar",
+                "link": "https://token.store/trade/BCO"
+            },
+                  {
+                "title": "Important notice for investors, media and other parties concerned",
+                "date": "Wen 14 Mar",
+                "link": "/files/no_crime_eng.pdf"
+                },
           {
                 "title": "Alexander Bychkov and Oleg Dobrovolskiy speaking on Mango addtition",
                 "date": "Tue 13 Mar",
@@ -27,6 +42,21 @@
 "ru": {
         "title": "Новости проекта",
         "items": [
+        {
+                "title": "Kkcoin.com теперь поддерживает пару BCO (BCO/ETH)",
+                "date": "Чтв 15 Март",
+                "link": "https://www.kkcoin.com/trade?symbol=BCO_ETH"
+            },
+                    {
+                "title": "Token.store еще одна платформа для BCO",
+                "date": "Чтв 15 Март",
+                "link": "https://token.store/trade/BCO"
+            },
+                  {
+                "title": "Вниманию Инвесторов, представителей СМИ, а также иных заинтересованных лиц",
+                "date": "Сре 14 Март",
+                "link": "/files/no_crime_eng.pdf"
+                },
          {
                 "title": "Обращение Александра Бычкова и Олега Добровольского",
                 "date": "Вт 13 Март",
