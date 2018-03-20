@@ -1,32 +1,36 @@
 {
     "en": {
         "title": "Project updates",
-        "items": [
-        {
+        "items": [{
+                "title": "DDEX.io is next for BCO",
+                "date": "Tue 20 Mar",
+                "link": "https://ddex.io/trade/BCO-ETH"
+            },
+            {
                 "title": "Kkcoin.com is now supporting BCO trading (BCO/ETH)",
                 "date": "Thur 15 Mar",
                 "link": "https://www.kkcoin.com/trade?symbol=BCO_ETH"
             },
-                    {
+            {
                 "title": "Token.store is next trading platform to list BCO",
                 "date": "Thur 15 Mar",
                 "link": "https://token.store/trade/BCO"
             },
-                  {
+            {
                 "title": "Important notice for investors, media and other parties concerned",
                 "date": "Wen 14 Mar",
                 "link": "/files/no_crime_eng.jpeg"
-                },
-          {
+            },
+            {
                 "title": "Alexander Bychkov and Oleg Dobrovolskiy speaking on Mango addtition",
                 "date": "Tue 13 Mar",
                 "link": "https://www.youtube.com/watch?v=Guhk86UDLKY&t"
-                },
-       {
+            },
+            {
                 "title": "Mango plantation addition press release available",
                 "date": "Sun 11 Mar",
                 "link": "/files/bananacoin_update_eng.pdf"
-                },
+            },
             {
                 "title": "BCO token availiable at Etherdelta",
                 "date": "Fri 9 Mar",
@@ -39,29 +43,33 @@
             }
         ]
     },
-"ru": {
+    "ru": {
         "title": "Новости проекта",
-        "items": [
-        {
+        "items": [{
+                "title": "DDEX.io следующая платформа для BCO",
+                "date": "Вт 20 Март",
+                "link": "https://ddex.io/trade/BCO-ETH"
+            },
+            {
                 "title": "Kkcoin.com теперь поддерживает пару BCO (BCO/ETH)",
                 "date": "Чтв 15 Март",
                 "link": "https://www.kkcoin.com/trade?symbol=BCO_ETH"
             },
-                    {
+            {
                 "title": "Token.store еще одна платформа для BCO",
                 "date": "Чтв 15 Март",
                 "link": "https://token.store/trade/BCO"
             },
-                  {
+            {
                 "title": "Вниманию Инвесторов, представителей СМИ, а также иных заинтересованных лиц",
                 "date": "Сре 14 Март",
                 "link": "/files/no_crime_rus.jpeg"
-                },
-         {
+            },
+            {
                 "title": "Обращение Александра Бычкова и Олега Добровольского",
                 "date": "Вт 13 Март",
                 "link": "https://www.youtube.com/watch?v=Guhk86UDLKY&t"
-                },
+            },
             {
                 "title": "Доступен пресс-релиз о добавлении манговой плантации",
                 "date": "Вск 11 Март",
