@@ -1,7 +1,7 @@
 {% set start = '29.11.2017 15:00'|date('U') %}{# время компа #}
 
 {% set countdown = { 
-    title: 'Token sale finished', 
+    title: 'TGE finished', 
     titleStart: 'Token sale started',
     description: 'The first environmentall friendly plantation in Laos which has released a utility token based on Ethereum, pegged to the export price of 1 kg of bananas.',
     starttime: '29th November 12:00 GMT — 28th February 12:00 GMT',
@@ -13,7 +13,7 @@
 
 {% if lang == 'ru' %}
     {% set countdown = { 
-        title: 'Продажа токенов окончена', 
+        title: ' TGE завершенно', 
         titleStart: 'Старт продаж токенов начался',
         description: countdown.description,
         starttime: '29 Ноября 12:00 GMT — 28 Февраля 12:00 GMT',
@@ -25,7 +25,7 @@
 {% endif %}
 {% if lang == 'es' %}
     {% set countdown = { 
-        title: 'Token sale finished', 
+        title: 'TGE finished', 
         titleStart: 'Старт продаж токенов начался',
         description: countdown.description,
         starttime: countdown.starttime,
