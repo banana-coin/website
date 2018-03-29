@@ -56,6 +56,11 @@
     "ru": {
         "title": "Новости проекта",
         "items": [{
+                "title": "Пресс-релиз от 28 марта 2018 года",
+                "date": "Ср 28 Март",
+                "link": "https://docs.google.com/document/d/1As1GRXSRfY6TsErIEHIhYydEytYJ9_pmdDOwqRwj5VU"
+            },
+            {
                 "title": "Как купить Bananacoin после TGE?",
                 "date": "Ср 28 Март",
                 "link": "https://docs.google.com/document/d/1NmuebOT6Jvt7lMcBIwLsO_pMlspWXETswFi9FL3zwDI"
