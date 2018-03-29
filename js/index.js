@@ -20,6 +20,10 @@ $(document).ready(function () {
         }
     });
 
+    $(document).on('click', '.updates-expland span', function () {
+        $(this).closest('.updates').addClass('expland');
+    });
+
     $('a.popup').fancybox({
         maxWidth: 600
     });

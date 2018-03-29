@@ -118,7 +118,27 @@
                     opacity: 1;
                 }
             }
+            &:nth-child(n+6) {
+                display: none;
+            }
+            &.updates-expland { 
+                display: block !important;
+                span{
+                    color: darken($teal, 10%);
+                    border-bottom: 1px dashed darken($teal, 10%);
+                    font-size: 14px;
+                    cursor: pointer;
+                    &:hover {
+                        color: darken($teal, 15%);
+                        border-bottom: 1px dashed darken($teal, 15%);
+                    }
+                }
+            }
         }
+    }
+    &.expland ul li { 
+        display: block !important;
+        &.updates-expland { display: none !important; }
     }
 }
 
