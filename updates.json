@@ -1,6 +1,7 @@
 {
     "en": {
         "title": "Project updates",
+        "showmore": "Show more",
         "items": [{
                 "title": "Press-release from 28 March 2018",
                 "date": "Wen 28 Mar",
@@ -60,6 +61,7 @@
     },
     "ru": {
         "title": "Новости проекта",
+        "showmore": "Архив",
         "items": [{
                 "title": "Пресс-релиз от 28 марта 2018 года",
                 "date": "Ср 28 Март",

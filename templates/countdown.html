@@ -148,6 +148,9 @@ title: 'Token sale finished',
                     {% endif %}
                 </li>
                 {% endfor %}
+                {% if updates.items.length > 5 %}
+                    <li class="updates-expland"><span>{{ updates.showmore }}</span></li>
+                {% endif %}
             </ul>
         </div>
         <div class="col-md-4 prices">
