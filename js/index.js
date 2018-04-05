@@ -63,6 +63,29 @@ $(document).ready(function () {
         alert('Copied to clipboard');
     });
 
+    if ($("#contributed").length) {
+        /*var numberWithCommas = function(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }*/
+        var get_contributed_in_progress = false;
+        var $contributed = $("#contributed");
+        var get_contributed = function () {
+            if (get_contributed_in_progress === true) {
+                return;
+            }
+            get_contributed_in_progress = true;
+            $.get("/get_contributed2").done(function (data) {
+                $contributed.html(data);
+                get_contributed_in_progress = false;
+            })
+                .fail(function () {
+                    $contributed.html('?');
+                    get_contributed_in_progress = false;
+                });
+        };
+        get_contributed();
+        //setInterval(get_contributed, 5000);
+    }
 
     var $sliders = $('.team .members, .plantation .info-items, .plantation .slider');
     function runSlider() {
