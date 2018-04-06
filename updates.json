@@ -3,6 +3,11 @@
         "title": "Project updates",
         "showmore": "Show more",
         "items": [{
+                "title": "USA TODAY ask Bananacoin a question",
+                "date": "Fri 06 April",
+                "link": "https://www.usatoday.com/story/sponsor-story/moonlighting/2018/03/30/mistakes-freelancers-make-and-how-avoid-them/33430513/"
+            },
+            {
                 "title": "Press-release from 28 March 2018",
                 "date": "Wen 28 Mar",
                 "link": "https://docs.google.com/document/d/1qPR2I27m-s6zVxKRpuOwb4q0zozTTIpamUNomigD-DU"
@@ -63,6 +68,11 @@
         "title": "Новости проекта",
         "showmore": "Архив",
         "items": [{
+                "title": "USA TODAY задает Bananacoin вопрос",
+                "date": "Пятн 06 Апреля",
+                "link": "https://www.usatoday.com/story/sponsor-story/moonlighting/2018/03/30/mistakes-freelancers-make-and-how-avoid-them/33430513/"
+            },
+            {
                 "title": "Пресс-релиз от 28 марта 2018 года",
                 "date": "Ср 28 Март",
                 "link": "https://docs.google.com/document/d/1As1GRXSRfY6TsErIEHIhYydEytYJ9_pmdDOwqRwj5VU"
