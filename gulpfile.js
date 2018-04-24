@@ -162,7 +162,7 @@ var structure = {
                 { title: 'Профиль', url: '/profile' },
             ],
             socials: [
-                '<a href="https://t.me/bananacoin" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
+                '<a href="https://docs.google.com/forms/d/1Y1tSbwB3znzpqhXKhyLg_UXHdeHYodvz99MSA3XgD6I" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-telegram"></a>',
                 '<a href="https://bitcointalk.org/index.php?topic=2251339" onClick="sendEvent(\'ViewContent\')" target="_blank" class="fa fa-btc"></a>',
                 '<a href="/img/qrcode_for_bananacoin_wechat.jpg" target="_blank" class="fa fa-wechat"></a>',
                 '<a href="https://twitter.com/Bananacoin_Eng" target="_blank" class="fa fa-twitter"></a>',
