@@ -2,7 +2,13 @@
     "en": {
         "title": "Project updates",
         "showmore": "Show more",
-        "items": [{
+        "items": [
+            {
+                "title": "Permission to grow bananas recieved!",
+                "date": "Fri 27 April",
+                "link": "/files/grow.jpg"
+            },
+            {
                 "title": "DDEX.io and Bananacoin competition",
                 "date": "Tue 17 April",
                 "link": "https://docs.google.com/document/d/1No4RJvtHizsBbf83mN-LjsuKTPATsi-m2H3FX9fRTWs"
@@ -77,7 +83,13 @@
     "ru": {
         "title": "Новости проекта",
         "showmore": "Архив",
-        "items": [{
+        "items": [
+            {
+                "title": "Разрешение на выращивание бананов получено!",
+                "date": "Пят 27 Апреля",
+                "link": "/files/grow.jpg"
+            },
+            {
                 "title": "Как купить и продать Bananacoin (BCO) на KKCoin.com",
                 "date": "Вск 08 Апреля",
                 "link": "https://www.youtube.com/watch?v=Xe1BTO8RjyM"
