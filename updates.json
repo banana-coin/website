@@ -2,8 +2,7 @@
     "en": {
         "title": "Project updates",
         "showmore": "Show more",
-        "items": [
-            {
+        "items": [{
                 "title": "Permission to grow bananas recieved!",
                 "date": "Fri 27 April",
                 "link": "/files/grow.jpg"
@@ -83,7 +82,11 @@
     "ru": {
         "title": "Новости проекта",
         "showmore": "Архив",
-        "items": [
+        "items": [{
+                "title": "Анкета на получение доступа к русской группе Telegram",
+                "date": "Втр 1 Май",
+                "link": "https://docs.google.com/forms/d/1Y1tSbwB3znzpqhXKhyLg_UXHdeHYodvz99MSA3XgD6I"
+            },
             {
                 "title": "Разрешение на выращивание бананов получено!",
                 "date": "Пят 27 Апреля",
