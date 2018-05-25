@@ -19,17 +19,17 @@ var structure = {
     langs: {
         en: { title: 'En', link: '/' },
         ru: { title: 'Рус', link: '/ru' },
-        es: { title: 'Es', link: '/es' },
-        cn: { title: '中文', link: '/cn' },
-        fra: { title: 'Fra', link: '/fra' },
-        turk: { title: 'Turk', link: '/turk' },
-        de: { title: 'De', link: '/de' },
+        //es: { title: 'Es', link: '/es' },
+        //cn: { title: '中文', link: '/cn' },
+        //fra: { title: 'Fra', link: '/fra' },
+        //turk: { title: 'Turk', link: '/turk' },
+        //de: { title: 'De', link: '/de' },
         //kr: { title: '한국어', link: '/kr' },
-        jp: { title: '日本', link: '/jp' },
-        ind: { title: 'Ind', link: '/ind' },
-        pt: { title: 'Pt', link: '/pt' },
-        ar: { title: 'العربية', link: '/ar' },
-        lao: { title: 'ລາວ', link: '/lao' }
+        //jp: { title: '日本', link: '/jp' },
+        //ind: { title: 'Ind', link: '/ind' },
+        //pt: { title: 'Pt', link: '/pt' },
+        //ar: { title: 'العربية', link: '/ar' },
+        //lao: { title: 'ລາວ', link: '/lao' }
     },
     nav: {
         en: {
