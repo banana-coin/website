@@ -39,7 +39,7 @@ mkdir -p ../$BANANA_RAILS_NAME/public/
 cp -rf build/* ../$BANANA_RAILS_NAME/public/
 
 public_dir="../$BANANA_RAILS_NAME/public/"
-langs=( "" "ru" "jp" "cn" )
+langs=( "" "ru" )
 for ln in "${langs[@]}"
 do
   new_dir="$public_dir/$ln"
