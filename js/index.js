@@ -83,7 +83,7 @@ $(document).ready(function () {
                     get_contributed_in_progress = false;
                 });
         };
-        get_contributed();
+        // get_contributed();
         //setInterval(get_contributed, 5000);
     }
 
@@ -146,8 +146,8 @@ $(document).ready(function () {
                 get_contributed_in_progress = false;
             });
     };
-    get_contributed();
-    setInterval(get_contributed, 5000);
+    // get_contributed();
+    // setInterval(get_contributed, 5000);
 });
 
 function seconds_to_data(s) {
