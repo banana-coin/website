@@ -174,7 +174,7 @@ title: 'Token sale finished',
     </div>
     <div class="row status justify-content-center">
         <div class="col-md-12 col-lg-4">
-            <div id="tokens_sold">?</div>
+            <div id="tokens_sold">6 812 551</div>
             <span>{{ countdown.text_sold }}<span>
         </div>
         <div class="col-md-12 col-lg-2">{{ countdown.text_of }}</div>
@@ -188,7 +188,7 @@ title: 'Token sale finished',
             {% if lang == 'cn' %}
             <img src="/img/qrcode_for_bananacoin_wechat.jpg" style="width: 180px">
             {% else %}
-            <a href="https://docs.google.com/forms/d/1Y1tSbwB3znzpqhXKhyLg_UXHdeHYodvz99MSA3XgD6I{{ lang != 'ru' ? 'eng' : '' }}" target="_blank" class="btn connect-telegram">{{ text_tg }}</a>
+            <a href="https://docs.google.com/forms/d/1Y1tSbwB3znzpqhXKhyLg_UXHdeHYodvz99MSA3XgD6I{{ lang != 'ru' ? 'eng' : 'https://t.me/bananacoineng' }}" target="_blank" class="btn connect-telegram">{{ text_tg }}</a>
             {% endif %}
         </div>
     </div>
