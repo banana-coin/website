@@ -2,7 +2,13 @@
     "en": {
         "title": "Project updates",
         "showmore": "Show more",
-        "items": [{
+        "items": [
+            {
+                "title": "SIMEX.GLOBAL (top-20 world crypto exchange) x BCO",
+                "date": "Fri 28 September",
+                "link": "https://simex.global/en/exchange/bco/usd"
+            },
+            {
                 "title": "All non used tokens been burned",
                 "date": "Mon 25 June",
                 "link": "https://etherscan.io/token/0x865d176351f287fe1b0010805b110d08699c200a"
@@ -87,7 +93,13 @@
     "ru": {
         "title": "Новости проекта",
         "showmore": "Архив",
-        "items": [{
+        "items": [
+            {
+                "title": "SIMEX.GLOBAL (Топ-20 биржи мира) x BCO",
+                "date": "Пятн 28 Сентября",
+                "link": "https://simex.global/en/exchange/bco/usd"
+            },
+            {
                 "title": "Все неиспользованные токены были сожжены",
                 "date": "Пон 25 Июнь",
                 "link": "https://etherscan.io/token/0x865d176351f287fe1b0010805b110d08699c200a"
