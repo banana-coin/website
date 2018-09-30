@@ -10,7 +10,7 @@
     "popper.js": "1.12.*",
     "jquery-fancybox": "3.1.0",
     "slick-carousel": "1.8.1",
-    "gulp": "3.9.*",
+    "gulp": "3.9.1",
     "gulp-concat": "2.6.*",
     "gulp-imagemin": "3.3.*",
     "gulp-sass": "3.1.*",
