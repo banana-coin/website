@@ -309,7 +309,7 @@ gulp.task('styles', function() {
 gulp.task('js', function() {
     gulp.src(scripts)
         .pipe(concat('app.js'))
-        .pipe(uglify({ compress: { drop_console: release } }))
+        //.pipe(uglify({ compress: { drop_console: release } }))
         .pipe(gulp.dest(out + 'js/'));
 });
 
