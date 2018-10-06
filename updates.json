@@ -3,6 +3,11 @@
         "title": "Project updates",
         "showmore": "Show more",
         "items": [
+        {
+                "title": "0x865d176351f287fe1b0010805b110d08699c200a",
+                "date": "Smart-contract address for BCO",
+                "link": "https://etherscan.io/token/0x865d176351f287fe1b0010805b110d08699c200a"
+            },
             {
                 "title": "Dontoshi Exchange x BCO",
                 "date": "Fri 28 September",
@@ -94,6 +99,11 @@
         "title": "Новости проекта",
         "showmore": "Архив",
         "items": [
+            {
+                "title": "0x865d176351f287fe1b0010805b110d08699c200a",
+                "date": "Адрес смарт-контракта для BCO",
+                "link": "https://etherscan.io/token/0x865d176351f287fe1b0010805b110d08699c200a"
+            },
             {
                 "title": "Dontoshi Exchange x BCO",
                 "date": "Пятн 28 Сентября",
