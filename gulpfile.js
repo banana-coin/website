@@ -324,7 +324,7 @@ gulp.task('static', function() {
         if (!data.updates) {
             data.updates = updates['en'];
         }
-        data.price = { banana: '2', mango: '0.4' };
+        data.price = { banana: '1', mango: '1' };
         var folders = ['plantation/', 'faq/', 'plan/', 'token/'];
         gulp.src([lang + '/index.html'])
             .pipe(twig({ data: data, base: 'templates/' }))
