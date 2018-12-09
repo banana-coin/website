@@ -2,10 +2,14 @@
     "en": {
         "title": "Project updates",
         "showmore": "Show more",
-        "items": [
-        {
+        "items": [{
+                "title": "December news",
+                "date": "Sun 09 Dec",
+                "link": "https://www.youtube.com/watch?v=u7qynJZEAB8&t"
+            },
+            {
                 "title": "0x865d176351f287fe1b0010805b110d08699c200a",
-                "date": "Smart-contract address for BCO",
+                "date": "Sun 09 Dec",
                 "link": "https://etherscan.io/token/0x865d176351f287fe1b0010805b110d08699c200a"
             },
             {
@@ -98,10 +102,14 @@
     "ru": {
         "title": "Новости проекта",
         "showmore": "Архив",
-        "items": [
+        "items": [{
+                "title": "Новости декабря",
+                "date": "Воскресенья 09 Дек",
+                "link": "https://www.youtube.com/watch?v=u7qynJZEAB8&t"
+            },
             {
                 "title": "0x865d176351f287fe1b0010805b110d08699c200a",
-                "date": "Адрес смарт-контракта для BCO",
+                "date": "Воск 09 Дек",
                 "link": "https://etherscan.io/token/0x865d176351f287fe1b0010805b110d08699c200a"
             },
             {
